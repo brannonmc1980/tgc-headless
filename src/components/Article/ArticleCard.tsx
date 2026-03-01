@@ -76,7 +76,7 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h3 className="font-headline font-normal text-xl text-charcoal mt-1 leading-snug group-hover:opacity-90 transition-opacity duration-100 line-clamp-3">
+            <h3 className="font-headline text-xl text-charcoal mt-1 leading-snug group-hover:opacity-90 transition-opacity duration-100 line-clamp-3">
               {smartQuotes(article.title)}
             </h3>
           </Link>
@@ -125,7 +125,7 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline font-normal text-2xl lg:text-3xl text-charcoal mt-2 leading-snug group-hover:opacity-90 transition-opacity duration-100">
+          <h3 className="font-headline text-2xl lg:text-3xl text-charcoal mt-2 leading-snug group-hover:opacity-90 transition-opacity duration-100">
             {smartQuotes(article.title)}
           </h3>
         </Link>
