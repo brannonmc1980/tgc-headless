@@ -33,7 +33,7 @@ export default async function AuthorPage({ params }: Params) {
   if (!author) notFound()
 
   return (
-    <div className="min-h-screen bg-[#f5f5f2]">
+    <div className="min-h-screen bg-[#fbfbfa]">
       {/* Author header */}
       <div className="border-b border-stone-200 bg-[#d3cfca]/40">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-14">

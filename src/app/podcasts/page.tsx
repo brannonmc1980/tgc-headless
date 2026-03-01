@@ -42,7 +42,7 @@ function ChevronRightIcon() {
 
 export default function PodcastsPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f2]">
+    <div className="min-h-screen bg-[#fbfbfa]">
       {/* Page header */}
       <div className="border-b border-stone-200 bg-[#d3cfca]/40">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-14">

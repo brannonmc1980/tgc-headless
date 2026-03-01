@@ -40,7 +40,7 @@ export default function MainNav() {
   }, [])
 
   return (
-    <nav className="bg-[#f5f5f2] border-b border-stone-200 sticky top-0 z-50">
+    <nav className="bg-[#fbfbfa] border-b border-stone-200 sticky top-0 z-50">
       {/* Top bar */}
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -73,7 +73,7 @@ export default function MainNav() {
               </button>
 
               {browseOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-[#f5f5f2] border border-stone-200 shadow-lg rounded-sm z-50">
+                <div className="absolute top-full left-0 mt-1 w-56 bg-[#fbfbfa] border border-stone-200 shadow-lg rounded-sm z-50">
                   <div className="py-2">
                     {BROWSE_CATEGORIES.map(cat => (
                       <Link
@@ -139,7 +139,7 @@ export default function MainNav() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-stone-200 bg-[#f5f5f2]">
+        <div className="lg:hidden border-t border-stone-200 bg-[#fbfbfa]">
           <div className="px-4 py-3 space-y-1">
             <p className="text-xs font-ui font-semibold text-stone-400 uppercase tracking-widest px-3 py-1">Browse</p>
             {BROWSE_CATEGORIES.map(cat => (

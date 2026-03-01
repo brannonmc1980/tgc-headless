@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-ui antialiased bg-[#f5f5f2] text-charcoal">
+      <body className="font-ui antialiased bg-[#fbfbfa] text-charcoal">
         <MainNav />
         <main>{children}</main>
         <Footer />

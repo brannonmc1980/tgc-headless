@@ -46,11 +46,11 @@
   --color-crimson-dark: #6d9960;
   --color-charcoal: #20272a;
   --color-warm-white: #d3cfca;
-  --color-cream: #f5f5f2;
+  --color-cream: #fbfbfa;
   --color-midtone: #6e7b7d;
 
   /* Stone scale override → earthy warm palette */
-  --color-stone-50: #f5f5f2;
+  --color-stone-50: #fbfbfa;
   --color-stone-100: #e8e4df;
   --color-stone-200: #d3cfca;
   --color-stone-300: #b8b3ad;
@@ -85,7 +85,7 @@
   body {
     font-family: var(--font-ui);
     color: var(--color-charcoal);
-    background: #f5f5f2;
+    background: #fbfbfa;
     line-height: 1.6;
   }
 
@@ -134,11 +134,11 @@
 .article-prose h4 {
   font-family: "Sohne", system-ui, sans-serif;
   font-weight: 500;
-  color: var(--color-charcoal);
+  color: #303a3d;
 }
 
 .article-prose h2 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   border-top: 1px solid #d3cfca;
@@ -146,7 +146,7 @@
 }
 
 .article-prose h3 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -205,16 +205,15 @@
   border-top: 2px solid #d3cfca;
   border-bottom: 2px solid #d3cfca;
   text-align: center;
-  background: var(--color-warm-white);
 }
 
 .article-prose .pull-quote p {
   font-family: var(--font-headline);
-  font-size: 1.4rem;
+  font-size: 1.875rem;
   font-weight: 400;
   font-style: italic;
-  color: var(--color-navy);
-  line-height: 1.4;
+  color: #303a3d;
+  line-height: 1.3;
 }
 
 /* Dark mode prose overrides */
@@ -247,7 +246,6 @@
 
 .dark-article .article-prose .pull-quote {
   border-color: rgba(135, 181, 117, 0.35);
-  background: rgba(255,255,255,0.04);
 }
 
 .dark-article .article-prose .pull-quote p {

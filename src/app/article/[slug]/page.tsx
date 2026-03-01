@@ -123,7 +123,7 @@ export default async function ArticlePage({ params }: Params) {
         </div>
 
         {/* Article body */}
-        <div className={`py-12 lg:py-16 ${isDark ? 'bg-[#20272a]' : 'bg-[#f5f5f2]'}`}>
+        <div className={`py-12 lg:py-16 ${isDark ? 'bg-[#20272a]' : 'bg-[#fbfbfa]'}`}>
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
               {/* Main content */}
@@ -223,7 +223,7 @@ export default async function ArticlePage({ params }: Params) {
      STANDARD ARTICLE FORMAT
   ══════════════════════════════════════════════════════════ */
   return (
-    <div className="bg-[#f5f5f2]">
+    <div className="bg-[#fbfbfa]">
       {/* Article header */}
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         {/* Breadcrumb */}

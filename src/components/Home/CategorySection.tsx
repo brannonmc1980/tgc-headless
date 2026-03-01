@@ -42,9 +42,9 @@ export default function CategorySection({ category, articles }: CategorySectionP
 
           {/* Secondary articles */}
           <div className="lg:col-span-7">
-            <div className="space-y-4 divide-y divide-stone-100">
+            <div className="divide-y divide-stone-100">
               {rest.slice(0, 3).map(article => (
-                <div key={article.id} className="pt-4 first:pt-0">
+                <div key={article.id} className="pt-5 pb-5 first:pt-0 last:pb-0">
                   <ArticleCard article={article} variant="horizontal" showCategory={false} />
                 </div>
               ))}
