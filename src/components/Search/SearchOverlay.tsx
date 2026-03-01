@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Fuse from 'fuse.js'
 import { ARTICLES } from '@/lib/mockData'
 import { tagToSlug } from '@/lib/tagUtils'
+import { smartQuotes } from '@/lib/typography'
 
 interface SearchOverlayProps {
   onClose: () => void
@@ -182,7 +183,7 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
                           {article.category.name}
                         </span>
                         <h3 className="font-headline text-xl lg:text-2xl text-charcoal group-hover:text-navy transition-colors leading-snug mt-0.5">
-                          {article.title}
+                          {smartQuotes(article.title)}
                         </h3>
                         <p className="font-body text-stone-500 text-sm mt-1 line-clamp-1 hidden sm:block">
                           {article.subheading}
@@ -239,7 +240,7 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
                         {article.category.name}
                       </span>
                       <h3 className="font-headline text-lg text-charcoal group-hover:text-navy transition-colors leading-snug mt-0.5">
-                        {article.title}
+                        {smartQuotes(article.title)}
                       </h3>
                     </div>
                     <div className="flex-shrink-0 text-right hidden sm:block pt-1">

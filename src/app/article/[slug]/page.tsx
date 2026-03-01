@@ -9,6 +9,7 @@ import AdBlock from '@/components/Article/AdBlock'
 import ArticleCard from '@/components/Article/ArticleCard'
 import { ARTICLES } from '@/lib/mockData'
 import { tagToSlug } from '@/lib/tagUtils'
+import { smartQuotes } from '@/lib/typography'
 
 interface Params {
   params: Promise<{ slug: string }>
@@ -105,7 +106,7 @@ export default async function ArticlePage({ params }: Params) {
                 </span>
               )}
               <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-[1.1] mt-2">
-                {article.title}
+                {smartQuotes(article.title)}
               </h1>
               <p className="font-body text-stone-300 text-lg lg:text-xl mt-4 leading-relaxed max-w-2xl">
                 {article.subheading}
@@ -243,7 +244,7 @@ export default async function ArticlePage({ params }: Params) {
             {/* Article header */}
             <header className="mb-8">
               <h1 className="font-headline text-4xl sm:text-5xl lg:text-5xl xl:text-6xl text-charcoal leading-[1.15]">
-                {article.title}
+                {smartQuotes(article.title)}
               </h1>
               {article.subheading && (
                 <p className="font-body text-stone-500 text-xl mt-4 leading-relaxed">

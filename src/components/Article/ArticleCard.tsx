@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Article } from '@/lib/types'
+import { smartQuotes } from '@/lib/typography'
 
 interface ArticleCardProps {
   article: Article
@@ -37,8 +38,8 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl text-charcoal mt-2 leading-tight group-hover:text-navy transition-colors">
-              {article.title}
+            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl text-charcoal mt-2 leading-tight group-hover:opacity-90 transition-opacity duration-100">
+              {smartQuotes(article.title)}
             </h2>
           </Link>
           <p className="text-stone-500 font-body text-lg lg:text-xl mt-3 line-clamp-2 hidden md:block leading-snug">
@@ -75,8 +76,8 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h3 className="font-headline font-normal text-xl text-charcoal mt-1 leading-snug group-hover:text-navy transition-colors line-clamp-3">
-              {article.title}
+            <h3 className="font-headline font-normal text-xl text-charcoal mt-1 leading-snug group-hover:opacity-90 transition-opacity duration-100 line-clamp-3">
+              {smartQuotes(article.title)}
             </h3>
           </Link>
           <p className="text-stone-500 text-xs font-ui mt-1.5">
@@ -94,8 +95,8 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline font-normal text-xl text-charcoal mt-1.5 leading-snug group-hover:text-navy transition-colors">
-            {article.title}
+          <h3 className="font-headline font-normal text-xl text-charcoal mt-1.5 leading-snug group-hover:opacity-90 transition-opacity duration-100">
+            {smartQuotes(article.title)}
           </h3>
         </Link>
         <p className="text-stone-500 text-xs font-ui mt-1.5">
@@ -124,8 +125,8 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline font-normal text-2xl lg:text-3xl text-charcoal mt-2 leading-snug group-hover:text-navy transition-colors">
-            {article.title}
+          <h3 className="font-headline font-normal text-2xl lg:text-3xl text-charcoal mt-2 leading-snug group-hover:opacity-90 transition-opacity duration-100">
+            {smartQuotes(article.title)}
           </h3>
         </Link>
         {showExcerpt && (

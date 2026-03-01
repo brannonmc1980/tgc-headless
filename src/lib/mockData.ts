@@ -1739,6 +1739,682 @@ export const ARTICLES: Article[] = [
 <p>None of this proves the resurrection with mathematical certainty. Historical inquiry cannot do that for any event. What it can do is establish which explanation of the evidence is most probable, given everything we know. And the honest historian, willing to follow the evidence where it leads without imposing prior philosophical commitments about what is or is not possible, will find that the resurrection is a remarkably well-attested historical event. The Christian does not believe in spite of the evidence. They believe because of it—and because of the cumulative testimony of twenty centuries of transformed lives that the living Christ continues to produce.</p>
     `,
   },
+
+  // ─── Arts & Culture ───────────────────────────────────────────────────────
+
+  {
+    id: 34,
+    slug: 'beauty-as-apologetics',
+    title: 'Beauty as Apologetics: What Great Art Does That Arguments Cannot',
+    subheading: 'In an age of suspicion, a stunning poem or a transcendent piece of music can open doors that logical syllogisms cannot. Christians need to recover the apologetic power of beauty.',
+    excerpt: 'Arguments meet people at the level of the mind. Beauty meets them at the level of longing. And it is longing, not logic, that most often brings people to the foot of the cross.',
+    author: AUTHORS[1],
+    category: CATEGORIES[0],
+    tags: ['beauty', 'art', 'apologetics', 'culture', 'imagination'],
+    publishedAt: '2025-01-10T09:00:00Z',
+    updatedAt: '2025-01-10T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/beauty-art/1920/1080',
+      alt: 'Sunlight streaming through a cathedral window onto stone floor',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">C. S. Lewis was not converted by an argument. He was ambushed by joy—a longing so acute and beautiful that he eventually traced it to its source and found a person there. Sehnsucht, he called it. The inconsolable longing. And it is this faculty—the aesthetic faculty, the capacity to be undone by beauty—that may be the most underutilized resource in the church's apologetic arsenal.</p>
+
+<h2>The Problem with Pure Argument</h2>
+
+<p>Arguments are essential. Christians should be able to give a reasoned account of their faith, engage objections with intellectual honesty, and show that belief in God is not an act of intellectual suicide. But arguments have limits. They can establish that something is possible, or even probable. They rarely move the will. And it is the will, not the intellect, that ultimately determines whether a person yields to truth.</p>
+
+<p>Beauty works differently. It arrives before the defenses go up. A person who has steeled themselves against the cosmological argument may be entirely unprepared for what happens when they hear Bach's St. Matthew Passion for the first time—when the music makes them feel, against their best philosophical convictions, that there is something beyond the material, something that the material world was made to point toward.</p>
+
+<blockquote class="pull-quote">
+  <p>Beauty does not prove God. But it creates the conditions in which a person becomes willing to consider him. That is no small thing.</p>
+</blockquote>
+
+<h2>The Christian Tradition of Beauty</h2>
+
+<p>The church has not always been suspicious of beauty. For most of its history, it was the patron of the greatest art, architecture, and music in the world. The cathedrals of Europe were not merely buildings—they were arguments in stone and glass, designed to make the transcendent tangible, to create in the visitor a sense of weight and wonder that prepared the soul for worship and inquiry.</p>
+
+<p>The Psalms are poetry. The Gospel of John opens with a prologue of breathtaking literary power. The book of Revelation is a sustained act of imagination. Scripture itself understands that truth does not arrive only in propositions; it arrives also in images, in stories, in the rhythms of language that bypass the critical faculty and lodge directly in the memory and the heart.</p>
+
+<h2>What This Means for Christians Today</h2>
+
+<p>It means Christians should be investing in the arts—not as a hobby or a luxury, but as a form of witness. It means we should be reading great literature, listening to great music, and supporting the artists in our communities who are trying to make beautiful things. It means our churches should care about aesthetics—not as a concession to worldly taste but as a theological statement about the God who spoke the world into being and called it good.</p>
+
+<p>The secular world has not abandoned beauty. If anything, it is more desperate for it than ever—scrolling through images, curating feeds, bingeing on experiences in search of something that satisfies. The Christian has an answer for that desperation. The God who is himself the source of every beautiful thing has made himself known. That is the best news in the world. And sometimes, the best way to begin telling it is with a painting, a poem, or a song.</p>
+    `,
+  },
+  {
+    id: 35,
+    slug: 'what-succession-gets-right-about-the-human-heart',
+    title: "What 'Succession' Gets Right About the Human Heart",
+    subheading: "HBO's acclaimed drama about a media dynasty is not a comfortable watch. But it may be one of the most theologically honest portraits of power and lovelessness ever put on screen.",
+    excerpt: "Succession is a show about wealthy, powerful people destroying each other and themselves. It is also, inadvertently, a sustained meditation on what Augustine called the restless heart—and what happens when it tries to fill itself with everything except God.",
+    author: AUTHORS[11],
+    category: CATEGORIES[0],
+    tags: ['television', 'culture', 'power', 'wealth', 'storytelling'],
+    publishedAt: '2024-12-18T09:00:00Z',
+    updatedAt: '2024-12-18T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/succession-tv/1920/1080',
+      alt: 'An empty boardroom with a long glass table and city skyline behind',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">There is a moment in the final season of Succession that crystallizes everything the show has been building toward. Without giving away specifics: a character who has spent years clawing for power finally reaches the summit—and finds there nothing but air. The look on the actor's face in that moment is one of the most theologically eloquent things I have seen on television in years. It is the look of a soul that got everything it wanted and discovered, too late, that it had wanted the wrong thing.</p>
+
+<h2>A Show About the Wages of Lovelessness</h2>
+
+<p>Succession is not a Christian show. Its creators are not trying to make a theological argument. And yet the show's moral universe is surprisingly coherent—and surprisingly ancient. The Roy family is not condemned for being wealthy. They are condemned for being incapable of love. Every relationship in the show is transactional. Every expression of affection is a power move. Every moment of apparent vulnerability is eventually weaponized.</p>
+
+<p>The result is a portrait of a kind of hell that exists on earth—not the dramatic hell of fire and punishment, but the quieter hell of a world in which love has been systematically replaced by acquisition. No one in the Roy family is happy. No one is at peace. They have everything and it is not enough, and they cannot stop wanting more, and more is never enough either. Augustine diagnosed this condition fifteen hundred years ago: our hearts are restless until they rest in thee.</p>
+
+<blockquote class="pull-quote">
+  <p>The tragedy of the Roys is not that they are villains. It is that they are human—human beings who have never been told, or never believed, that they are loved without condition.</p>
+</blockquote>
+
+<h2>What Great Television Can Do</h2>
+
+<p>There is a kind of knowledge that only story can give. A philosophical treatise on the dangers of avarice can tell us that greed is corrosive. Succession shows us. It lets us spend four seasons inhabiting the interiority of people who have organized their entire lives around the pursuit of power, and it makes us feel—viscerally, uncomfortably—what that costs them. It creates empathy without excusing. It produces understanding without condoning.</p>
+
+<p>This is what great art does. It does not moralize. It witnesses. And the witness of Succession is a deeply moral one: that power without love is not just hollow, it is actively destructive; that the things we most deeply need—belonging, acceptance, unconditional love—cannot be purchased or seized; and that a life organized around acquisition is a life organized around loss.</p>
+
+<p>Christians watching Succession should feel something the show's secular creators may not have intended: recognition. We have a name for what these characters are missing. We have a word for the love that could actually fill what they are trying to fill with money and status and dominance. And we have a story—the central story of the universe—about a Father who gives that love freely, to children who do not deserve it, because he is that kind of Father. Succession, in its own dark way, makes you grateful for that story.</p>
+    `,
+  },
+
+  // ─── Bible & Theology ─────────────────────────────────────────────────────
+
+  {
+    id: 36,
+    slug: 'the-neglected-doctrine-of-union-with-christ',
+    title: 'The Neglected Doctrine of Union with Christ',
+    subheading: "If you asked most evangelicals to name the central theme of Paul's theology, they might say justification by faith. They would not be wrong—but they would be missing something even more fundamental.",
+    excerpt: "Union with Christ is the hinge on which every other benefit of salvation swings. Justification, sanctification, adoption, glorification—they are all ours because we are in Christ. The doctrine deserves far more attention than it typically gets.",
+    author: AUTHORS[0],
+    category: CATEGORIES[1],
+    tags: ['union with Christ', 'sanctification', 'theology', 'Paul', 'soteriology'],
+    publishedAt: '2025-02-01T09:00:00Z',
+    updatedAt: '2025-02-01T09:00:00Z',
+    readingTime: 9,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/union-christ/1920/1080',
+      alt: 'A vine with branches extending from a strong trunk in morning light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The phrase "in Christ" or its equivalents appears over 160 times in the Pauline letters. That is not a stylistic tic. It is the load-bearing wall of Paul's entire theological structure. To be a Christian, in Paul's understanding, is not merely to believe certain things about Christ or to follow his teachings or even to receive his benefits. It is to be united to him—organically, spiritually, really united—in a way that makes his history your history and his resources your resources.</p>
+
+<h2>What Union with Christ Actually Means</h2>
+
+<p>The doctrine of union with Christ can be stated simply: by faith, the believer is joined to Christ in such a way that everything that is true of him becomes true of them, and everything that is true of them is borne by him. His death is your death to sin. His resurrection is your resurrection to newness of life. His righteousness is credited to your account. His Spirit takes up residence in your heart. You are, in the most profound sense the language allows, in him—hidden in him, held by him, constituted by your relationship to him.</p>
+
+<p>This is not metaphor, though it is mysterious. Paul uses the image of marriage (Eph. 5), the image of a body and its head (Col. 1–2), the image of a vine and its branches (John 15). Each image captures something the others don't. Together they gesture at a reality that exceeds what any single image can contain: the believer's life is, at its deepest level, not their own. It is caught up into the life of another—the risen, living, reigning Christ.</p>
+
+<blockquote class="pull-quote">
+  <p>Justification gives us a new standing before God. Union with Christ gives us a new life in God. The two cannot be separated, and neither should be neglected.</p>
+</blockquote>
+
+<h2>Why This Matters for Sanctification</h2>
+
+<p>The doctrine of union with Christ is not merely a theological nicety. It has immense practical implications for how Christians think about growth in holiness. Many believers approach sanctification as if it were a matter of effort—trying harder, sinning less, doing more. This is not wrong exactly, but it is dangerously incomplete.</p>
+
+<p>Paul's approach to sanctification is different. He does not say "try to become holy." He says "become what you are." Reckon yourselves dead to sin and alive to God in Christ Jesus (Rom. 6:11). The imperative follows from the indicative. You are already united to Christ's death and resurrection—now live accordingly. You are already holy in him—now pursue holiness in practice. The motivation for obedience is not fear or performance but the astonishing fact of what has already been given.</p>
+
+<p>This is the difference between a religion of achievement and a religion of gift. The Christian is not working toward union with Christ. The Christian is working from it. That changes everything—the texture of the spiritual life, the character of our obedience, the source of our comfort in failure. We do not have to earn our way into Christ's favor. We are already there. Now we are called to live as people who know it.</p>
+    `,
+  },
+  {
+    id: 37,
+    slug: 'what-job-teaches-us-about-the-silence-of-god',
+    title: "What the Book of Job Teaches Us About the Silence of God",
+    subheading: "Job's friends had answers. God had a whirlwind. The difference between them is the difference between religion and faith.",
+    excerpt: "The book of Job does not answer the question of why the righteous suffer. It does something better: it teaches us what to do when the answer doesn't come, and what kind of God is worth trusting in the silence.",
+    author: AUTHORS[12],
+    category: CATEGORIES[1],
+    tags: ['Job', 'suffering', 'silence', 'theodicy', 'lament'],
+    publishedAt: '2025-01-05T09:00:00Z',
+    updatedAt: '2025-01-05T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/job-silence/1920/1080',
+      alt: 'A lone figure silhouetted against a vast stormy sky',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Job does not get an explanation. That is the thing most readers miss, or most want to avoid. He gets God. He gets the whirlwind, the thundering voice, the unanswerable questions about the foundations of the earth and the storehouses of snow. He gets a theophany—a direct, overwhelming encounter with the living God. But he does not get told why his children died or why his body is covered in sores or why God permitted the satan to do what he did. The explanation never comes. And yet Job is satisfied.</p>
+
+<h2>The Failure of Job's Friends</h2>
+
+<p>Job's three friends—Eliphaz, Bildad, and Zophar—represent the most natural human response to inexplicable suffering: the search for a cause. If you are suffering this much, they reason, you must have sinned this much. Their theology is tidy, their logic is airtight, and they are completely wrong. God, at the end of the book, is angry with them—not because they spoke falsely about suffering in general, but because they spoke falsely about God. They turned God into a vending machine of retribution, dispensing exactly the suffering that the sufferer deserved.</p>
+
+<p>The irony is that Job, who spends most of the book complaining about God's injustice and demanding an audience with him, is the one God vindicates. "You have not spoken of me what is right," God tells the friends, "as my servant Job has" (Job 42:7). Job's honesty—his refusal to paper over the reality of his experience with theological platitudes—was more faithful than his friends' theological correctness.</p>
+
+<blockquote class="pull-quote">
+  <p>God is not afraid of our complaints. He is afraid of our pretending. The lament tradition in Scripture assumes that honest anguish directed at God is itself an act of faith.</p>
+</blockquote>
+
+<h2>What the Whirlwind Gives</h2>
+
+<p>When God finally speaks from the whirlwind, he does not answer Job's questions. He redirects them. He asks Job where he was when the morning stars sang together, whether he can bind the Pleiades or loose Orion's belt, whether he knows how the lightning decides where to go. The questions are not cruel. They are cosmic—a reorientation of scale that places Job's suffering within a universe so vast and intricately governed that the calculus of Job's situation is simply beyond what any creature could assess from the inside.</p>
+
+<p>This is not a cold comfort. Job's response—"My ears had heard of you but now my eyes have seen you" (42:5)—suggests that the encounter itself was sufficient. He did not need the explanation. He needed the presence. And what he found in the whirlwind was not a God who owed him answers, but a God who was there—immeasurably great, irreducibly personal, and present in the storm rather than absent from it.</p>
+
+<p>For Christians who have prayed and heard nothing, who have waited for clarity that has not come, who have suffered in ways that no theological framework has adequately explained—Job is the word of Scripture most directly addressed to your experience. It does not promise an answer. It promises a God who is not absent, who is not indifferent, and who, when the time is right, will speak.</p>
+    `,
+  },
+
+  // ─── Christian Living ─────────────────────────────────────────────────────
+
+  {
+    id: 38,
+    slug: 'five-habits-that-will-outlast-the-algorithm',
+    title: "Five Habits That Will Outlast the Algorithm",
+    subheading: 'The digital age will keep changing. These ancient practices will not.',
+    excerpt: 'When every platform is vying for your attention and every app is designed to make you compulsive, the ancient Christian disciplines of prayer, Scripture, silence, community, and Sabbath are not just spiritually formative—they are countercultural acts of resistance.',
+    author: AUTHORS[6],
+    category: CATEGORIES[2],
+    tags: ['spiritual disciplines', 'habits', 'prayer', 'formation', 'digital'],
+    publishedAt: '2025-02-14T09:00:00Z',
+    updatedAt: '2025-02-14T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/habits-formation/1920/1080',
+      alt: 'An open Bible beside a simple mug of tea on a wooden table at sunrise',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Every generation has its characteristic temptations. Ours is the temptation of distraction—the compulsive, algorithmically engineered inability to be fully present anywhere. We are perpetually half-here, half-elsewhere, one eye on the screen, one ear on the notification. And in that distraction, we are losing the capacity for the kind of deep, sustained attention that faith requires. The ancient spiritual disciplines were not designed for the digital age. But they are exactly what the digital age needs.</p>
+
+<h2>1. Scripture—Read, Not Scrolled</h2>
+
+<p>Reading Scripture is different from consuming content. It requires something that social media is systematically destroying: the patience to sit with a text long enough to let it form you rather than merely inform you. The ancient practice of lectio divina—reading slowly, pausing, returning, listening—is the opposite of the scroll. It asks you to stay with a few verses rather than consume thousands of words. It trains the kind of attention that faith depends on and distraction erodes.</p>
+
+<h2>2. Prayer—Structured, Not Spontaneous Only</h2>
+
+<p>The Desert Fathers prayed at fixed hours not because spontaneous prayer was wrong but because structured prayer was honest. It acknowledges that you will not always feel like praying, and that faithfulness is not the same as feeling. Liturgical prayer—whether from a prayer book, a catechism, or simply a set of Scripture passages prayed at set times—creates a rhythm that persists through the feelings and carries you when the feelings fail.</p>
+
+<h2>3. Silence—Intentional, Not Accidental</h2>
+
+<p>We have filled every moment with sound. Commutes, meals, exercise, even waking in the night—all have become occasions for consumption. The spiritual discipline of silence is simply the practice of creating space in which God can be heard. This requires discomfort. The first minutes of silence are usually occupied with restlessness. But those who persevere report that something waits on the other side of that restlessness—a stillness in which the noise clears and the voice of God, always present, becomes audible again.</p>
+
+<h2>4. Community—Committed, Not Convenient</h2>
+
+<p>The digital age offers the illusion of community without the cost. You can be "connected" to hundreds of people without being truly known by any of them. The New Testament knows nothing of a Christianity practiced in isolation. The one-anothers of Scripture—love one another, bear one another's burdens, confess to one another—assume a community of people who know each other well enough to do these things. That kind of community requires showing up even when it is inconvenient, which is to say, it requires commitment.</p>
+
+<h2>5. Sabbath—Weekly, Not Occasional</h2>
+
+<p>Rest is not a reward for productivity. It is a theological statement about who God is and who we are. The Sabbath command assumes that the world will not fall apart if you stop working for a day, which is to say, it assumes that you are not God. In an age that treats busyness as a virtue and rest as laziness, the weekly Sabbath is a small but radical act of faith: the declaration that the world belongs to God, that your worth is not your output, and that you are a human being rather than a human doing.</p>
+    `,
+  },
+  {
+    id: 39,
+    slug: 'the-sanctity-of-the-ordinary',
+    title: 'The Sanctity of the Ordinary: Finding God in Routine',
+    subheading: 'We keep waiting for the extraordinary moments to make life meaningful. But the God of Scripture meets us most reliably in the unremarkable middle of ordinary days.',
+    excerpt: 'If we can only find God in the mountaintop experiences—the emotional worship services, the missions trips, the dramatic conversions—we will find him rarely. But the God of the Bible is present in the kitchen, the commute, and the Tuesday afternoon.',
+    author: AUTHORS[2],
+    category: CATEGORIES[2],
+    tags: ['ordinary life', 'sanctification', 'presence', 'grace', 'daily life'],
+    publishedAt: '2025-01-22T09:00:00Z',
+    updatedAt: '2025-01-22T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/ordinary-life/1920/1080',
+      alt: 'Morning light through a kitchen window casting long shadows across a simple table',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Most of your life is ordinary. Not most of the highlights—most of the actual hours. Most of the minutes you will ever live will be spent in unremarkable circumstances: making coffee, driving to work, having conversations that no one will remember, doing tasks that seem to matter only in small ways. And if God is only present in the extraordinary, you will spend most of your life without him. Which is, I think, why many Christians feel as if they do.</p>
+
+<h2>The Myth of the Spiritual High</h2>
+
+<p>Contemporary evangelical culture has an uneasy relationship with ordinariness. We celebrate the dramatic testimony, the miraculous healing, the moment of overwhelming emotional encounter. These things are real and good. But they are also rare. And when we make them the primary mode of the Christian life—when we expect that growing faith will feel like a permanent conference high—we set ourselves up for the persistent low-grade spiritual disappointment that characterizes so many Christians' experience.</p>
+
+<p>The Bible knows something we have largely forgotten: God's primary method of working in human lives is not the dramatic but the habitual. It is the daily reading of Scripture, the regular gathering with the local church, the repeated practice of prayer, the unremarkable faithfulness of keeping promises and doing your work and loving the people in front of you. This is where sanctification actually happens—not in the moments that feel spiritual, but in the habits that form the soul whether or not we feel anything at all.</p>
+
+<blockquote class="pull-quote">
+  <p>Holiness is built in ordinary moments, not extraordinary ones. The life that looks dramatic from the outside is usually made of thousands of unremarkable faithful decisions made when no one was watching.</p>
+</blockquote>
+
+<h2>The Theology of Presence</h2>
+
+<p>The incarnation is the ultimate statement about the sanctity of the ordinary. The Son of God did not arrive in glory and fanfare and live a life of continuous supernatural event. He grew up in Nazareth, worked as a craftsman, ate meals, slept, made friends, experienced boredom, and spent the vast majority of his earthly life in circumstances that would not have made headlines. He dignified the ordinary by entering it.</p>
+
+<p>The Spirit who now dwells in believers is the same Spirit who hovered over the waters at creation, who fills and sustains and governs all things. He is not only present at the emotional peaks. He is present in the kitchen on Tuesday morning. He is present in the commute and the meeting and the grocery store. The practice of the presence of God—cultivated by the great contemplatives and recommended by ordinary spiritual directors for centuries—is nothing other than the discipline of attending to what is already true: that God is here, now, in this unremarkable moment, doing his quiet and essential work in the soul that is willing to be found.</p>
+    `,
+  },
+
+  // ─── Current Events ───────────────────────────────────────────────────────
+
+  {
+    id: 40,
+    slug: 'christians-and-the-information-crisis',
+    title: 'Christians and the Information Crisis',
+    subheading: "We are swimming in information and starving for truth. Christians who believe in a God of truth have something to offer—but only if they lead by example.",
+    excerpt: "The spread of misinformation is one of the defining challenges of our moment. Christians are not immune to it—we often spread it. The remedy begins with a theology of truth and a set of practices that prioritize accuracy over speed and engagement.",
+    author: AUTHORS[3],
+    category: CATEGORIES[3],
+    tags: ['media', 'misinformation', 'truth', 'journalism', 'discernment'],
+    publishedAt: '2025-02-20T09:00:00Z',
+    updatedAt: '2025-02-20T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/information-crisis/1920/1080',
+      alt: 'Multiple glowing screens displaying conflicting headlines in a dark room',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">The ninth commandment—"You shall not bear false witness"—was given in a world without Twitter. But the principle it encodes is timeless: truth matters, accuracy matters, and God's people are to be committed to both at significant personal cost. In the current information environment, where outrage travels faster than accuracy and sharing is easier than verifying, that commandment has never been more demanding or more necessary.</p>
+
+<h2>We Are Part of the Problem</h2>
+
+<p>Let us begin with an uncomfortable acknowledgment: Christians are not exempt from the information crisis. Studies consistently show that religious social networks spread misinformation at rates comparable to or exceeding the general population. We share the outrage-bait headline without reading the article. We forward the viral video without checking whether it means what the caption says. We amplify the voices that confirm our priors and dismiss the voices that complicate them. This is not bearing witness to truth. It is bearing witness to our tribe.</p>
+
+<p>The theological stakes here are higher than we tend to recognize. When a Christian spreads a false claim—about a political opponent, about a policy, about a person—they are not merely making an error. They are bearing false witness. They are misrepresenting reality in a way that harms people and dishonors the God who created reality and called it good. That this happens so easily and so constantly in Christian social spaces suggests that we have separated our theology from our information habits in a way that should alarm us.</p>
+
+<blockquote class="pull-quote">
+  <p>The Christian commitment to truth is not primarily epistemological—it is Christological. Jesus is the truth. To bear false witness is to misrepresent him.</p>
+</blockquote>
+
+<h2>Practical Commitments for the Information Age</h2>
+
+<p>What would it look like for Christians to take the ninth commandment seriously in the social media age? A few concrete practices suggest themselves. First: verify before you share. The thirty seconds it takes to check whether a headline accurately represents its article is a form of love for your neighbor—the person who will receive the information you pass along. Second: be slow to share and quick to correct. If you shared something false, say so publicly. The asymmetry of the information environment means that corrections rarely travel as far as the original falsehood, but making them anyway is an act of integrity. Third: cultivate epistemic humility. Most of the confident claims circulating on social media are more uncertain than they appear. Christians who live under the authority of Scripture—which is itself full of ambiguity, complexity, and mystery—should be practiced in holding strong convictions with appropriate tentativeness about the details.</p>
+    `,
+  },
+  {
+    id: 41,
+    slug: 'how-to-read-the-news-without-losing-your-soul',
+    title: 'How to Read the News Without Losing Your Soul',
+    subheading: 'The news cycle is designed to produce anxiety, outrage, and helplessness. Christians do not have to participate on its terms.',
+    excerpt: "Staying informed is a civic and even a Christian responsibility. But the news cycle as currently constituted is not designed to produce informed citizens—it is designed to produce engaged, anxious, loyal consumers. Christians need a different relationship with the news.",
+    author: AUTHORS[4],
+    category: CATEGORIES[3],
+    tags: ['media', 'news', 'anxiety', 'wisdom', 'digital life'],
+    publishedAt: '2025-01-18T09:00:00Z',
+    updatedAt: '2025-01-18T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/news-soul/1920/1080',
+      alt: 'A newspaper folded on a park bench beside a quiet fountain',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">The news cycle has a theology. It is not a Christian one. It operates on the assumption that the most important things happening in the world right now are happening in Washington, or on Wall Street, or in whatever crisis is currently generating the most engagement. It assumes that your primary posture toward these events should be emotional—outraged, alarmed, or tribally triumphant. And it assumes that the appropriate response to all of this is to stay plugged in, keep consuming, and never, ever look away.</p>
+
+<h2>What the News Cycle Is Not Designed to Do</h2>
+
+<p>The news cycle is not designed to produce wisdom. It is designed to produce engagement. These are very different things. Wisdom requires time, context, the ability to hold multiple perspectives simultaneously, and a stable center from which to assess what actually matters. The news cycle, optimized for clicks and time-on-platform, is actively hostile to all of these. It rewards outrage over reflection, speed over accuracy, and novelty over significance. A person who gets most of their understanding of the world from the daily news cycle is likely to be simultaneously over-informed about the sensational and under-informed about the significant.</p>
+
+<blockquote class="pull-quote">
+  <p>Christians are called to be witnesses to a different story than the one the news tells. That requires actually believing the different story—and letting it shape our attention more than the algorithm does.</p>
+</blockquote>
+
+<h2>A Different Relationship with the News</h2>
+
+<p>This is not an argument for ignorance. Christians have a responsibility to their neighbors and to their communities, and that responsibility requires being informed about the world. But there is a difference between being informed and being consumed. A few principles for a healthier relationship with news: First, prioritize depth over frequency. Reading one long, well-sourced piece on a topic is worth more than ten brief updates. Second, seek out news sources with different perspectives—not to confirm that everyone else is wrong, but to understand the genuine complexity of contested questions. Third, ask yourself regularly whether your news consumption is producing in you the fruit of the Spirit or the opposite. Anxiety, anger, despair, and contempt are signals that something has gone wrong.</p>
+
+<p>Most importantly, remember that the news cycle is not the final word on anything. Christians believe in a God who governs history, who is not surprised by election results or economic crises, and who is working in and through and sometimes despite the events that dominate the headlines. That belief is not naivete. It is the most important piece of context in which to read the news. The story the Bible tells is larger than anything the news cycle can contain. And the ending is not uncertain.</p>
+    `,
+  },
+
+  // ─── Faith & Work ─────────────────────────────────────────────────────────
+
+  {
+    id: 42,
+    slug: 'when-your-calling-doesnt-feel-like-a-calling',
+    title: "When Your Calling Doesn't Feel Like a Calling",
+    subheading: "The evangelical theology of vocation sometimes sounds like a promise that your work will feel meaningful. It isn't. But it offers something better.",
+    excerpt: "We have told people that if they find their calling, their work will feel purposeful and fulfilling. This is not quite right—and for the many Christians who find their work grinding and unremarkable, it is actively harmful. The Bible's account of vocation is both humbler and more hopeful.",
+    author: AUTHORS[5],
+    category: CATEGORIES[4],
+    tags: ['vocation', 'calling', 'work', 'ordinary', 'faithfulness'],
+    publishedAt: '2025-02-08T09:00:00Z',
+    updatedAt: '2025-02-08T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/calling-work/1920/1080',
+      alt: 'A craftsman working carefully at a workbench in warm afternoon light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">There is a version of the theology of vocation that has done more harm than good. It goes like this: every person has a unique calling, and when you discover yours, your work will feel meaningful and purposeful and aligned with who God made you to be. The problem is that many people—perhaps most people—spend most of their working lives in jobs that do not feel this way. And when the theology of calling tells them their work should feel meaningful and it doesn't, they conclude either that they haven't found their real calling yet, or that they are somehow failing at Christianity.</p>
+
+<h2>What the Bible Actually Says About Work</h2>
+
+<p>The Bible's account of vocation is less romantic and more realistic than the version we often hear. Work was given before the fall—it is a good gift, not a punishment—but the fall made it toilsome. There is frustration built into the fabric of work in a fallen world. Things break. Efforts fail. Projects disappoint. The ground, as it were, brings forth thorns and thistles. This is not a failure of calling. It is the condition of work east of Eden.</p>
+
+<p>The New Testament does not promise that if you find your calling your work will feel profound. It says that whatever you do, you should do it as unto the Lord (Col. 3:23). This is a much more democratic and livable theology of work than the calling-as-fulfillment narrative. It says that the factory worker and the stay-at-home parent and the accountant who finds their work tedious can all work faithfully as an act of worship, regardless of how their work makes them feel.</p>
+
+<blockquote class="pull-quote">
+  <p>The question is not whether your work feels like a calling. The question is whether you are doing it faithfully, honestly, and with love for the people it serves. That is enough.</p>
+</blockquote>
+
+<h2>The Freedom of Ordinary Faithfulness</h2>
+
+<p>There is a freedom in this vision of vocation that the fulfillment narrative cannot offer. If my work must feel meaningful in order to be meaningful, then I am perpetually dependent on my emotions to validate my labor. But if my work is meaningful because I am doing it as an act of service to God and neighbor—regardless of how it feels—then I am free. The meaning does not depend on my experience of it. It depends on the God who receives it and the neighbors who are served by it.</p>
+
+<p>This is not an argument against the pursuit of work that engages your gifts and aligns with your values. Seek that, by all means. But while you are seeking, or if you never find it, or if you are called to something unglamorous for a season—do the work faithfully. Show up. Be honest. Do it well. Love the people you work with and the people you work for. That is what a calling looks like most of the time: not a feeling of cosmic alignment, but ordinary faithfulness in ordinary circumstances.</p>
+    `,
+  },
+  {
+    id: 43,
+    slug: 'the-christian-and-the-monday-morning-problem',
+    title: 'The Christian and the Monday Morning Problem',
+    subheading: 'The gap between Sunday worship and Monday work is one of the most significant discipleship failures of the modern church.',
+    excerpt: "For most churchgoers, Sunday and Monday inhabit completely different worlds—different values, different standards, different frameworks for decision-making. Closing that gap is not merely good ethics. It is the work of the gospel.",
+    author: AUTHORS[9],
+    category: CATEGORIES[4],
+    tags: ['work', 'Monday', 'vocation', 'integration', 'gospel'],
+    publishedAt: '2025-01-28T09:00:00Z',
+    updatedAt: '2025-01-28T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/monday-work/1920/1080',
+      alt: 'Empty office hallway in early morning light with long shadows',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">The Monday morning problem is this: most Christians who worship authentically on Sunday arrive at work on Monday with no clear sense of how the two are connected. The sermon was about grace, or justification, or the love of God. The meeting is about quarterly targets and a difficult colleague and an ethical gray area that the sermon did not address. And so Sunday and Monday become two parallel lives, each following its own logic, with occasional points of overlap but no deep integration.</p>
+
+<h2>Why the Gap Exists</h2>
+
+<p>The gap exists partly because of how we have structured Christian formation. Most discipleship programs focus on private piety—prayer, Bible reading, evangelism—and leave the question of work almost entirely unaddressed. We train Christians to have a quiet time but not to think Christianly about their industry. We prepare them to share their faith but not to navigate workplace ethics with theological resources. We expect them to integrate Sunday and Monday without giving them any tools to do so.</p>
+
+<p>The gap also exists because the church has often functioned with an implicit sacred-secular divide. Religious activity counts as spiritual; everything else is just living in the world. This is not a biblical worldview. The Bible envisions a creation entirely claimed by God, in which no sphere of human activity is beyond his interest or outside his lordship. The workplace is not a spiritually neutral zone. It is a location in which the kingdom of God is either advanced or resisted by the choices made there every day.</p>
+
+<blockquote class="pull-quote">
+  <p>If the gospel does not reach Monday, it has not fully arrived. The good news is not just about forgiveness—it is about the renewal of all things, including the things we spend eight hours a day doing.</p>
+</blockquote>
+
+<h2>What Integration Actually Looks Like</h2>
+
+<p>Integrating Sunday and Monday is not primarily about finding opportunities to share the gospel at the water cooler, though that may be part of it. It is about bringing a Christian understanding of human dignity, truth, justice, and excellence to bear on all the decisions made at work. It is about treating employees and colleagues as image-bearers, not resources. It is about maintaining integrity in financial reporting even when it would be easy not to. It is about doing your work with the kind of excellence that reflects something of the character of a God who made a world and called it good.</p>
+
+<p>Pastors have a responsibility here. They should be asking their congregations about their work—not just their quiet times. They should be preaching sermons that help accountants and nurses and teachers and construction workers see the connection between the gospel they believe on Sunday and the decisions they make on Monday. The Sunday-Monday gap is a pastoral problem. And closing it is one of the most significant discipleship opportunities available to the church.</p>
+    `,
+  },
+
+  // ─── Ministry ─────────────────────────────────────────────────────────────
+
+  {
+    id: 44,
+    slug: 'what-every-pastor-gets-wrong-about-preaching',
+    title: "What Every Pastor Gets Wrong About Preaching",
+    subheading: "The most common mistake is not inadequate exegesis or poor delivery. It is a failure to remember who the sermon is for.",
+    excerpt: "Pastors spend enormous effort preparing sermons. Much of that effort is spent in the wrong direction—toward impressiveness rather than clarity, toward comprehensiveness rather than application, toward the approval of the few rather than the formation of the many.",
+    author: AUTHORS[0],
+    category: CATEGORIES[5],
+    tags: ['preaching', 'pastors', 'ministry', 'exposition', 'sermon'],
+    publishedAt: '2025-02-25T09:00:00Z',
+    updatedAt: '2025-02-25T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/preaching-ministry/1920/1080',
+      alt: 'An empty pulpit in a sunlit sanctuary with warm wood and soft shadows',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">I have been preaching for over two decades, and the mistake I most consistently make—and most consistently see in other preachers—is not an exegetical mistake. It is a motivational one. The sermon was not prepared for the widow in the third row whose husband just died, or the young man in the back who is walking away from faith, or the couple in the middle who are fighting every night. It was prepared for the pastor who reads the commentaries and who has something to say about the text. These are not always the same thing.</p>
+
+<h2>The Temptation of the Impressive</h2>
+
+<p>Seminary trains preachers to handle the text with care, which is right. But it can also produce a preacher whose primary audience is, implicitly, the professor—the person who can assess whether the exegesis is sound, the original languages are handled well, and the scholarly literature is engaged. This kind of preaching is sometimes described as "expository," but it would be more accurate to call it "explanatory." It tells the congregation what the text means. It often fails to tell them why that should change anything about how they live on Monday.</p>
+
+<p>The congregation does not primarily need to know that the word translated "love" in John 21 is agapao, not phileo. They need to know that Jesus is asking them the same question he asked Peter, and that the answer requires something from them. The exegetical detail may support that application—but it is the application that feeds the soul. A sermon that is impressive and unhelpful is worse than a sermon that is modest and life-changing.</p>
+
+<blockquote class="pull-quote">
+  <p>The question to ask at every stage of sermon preparation is not "What can I say about this text?" It is "What does the person in the third row need to hear this week?"</p>
+</blockquote>
+
+<h2>Preaching for Formation, Not Information</h2>
+
+<p>The goal of preaching is not to transfer information. It is to form people—to shape the way they see God, themselves, and the world in the light of Scripture. This requires clarity above all else. A congregation that leaves a sermon confused about what the text means or what it requires of them has not been well served, regardless of how much the pastor knows about the passage.</p>
+
+<p>Practical suggestions: Begin preparation with exegesis, yes—but then step back and ask, "What is the one thing I want my congregation to know, feel, and do after this sermon?" Write that down before you write anything else. Then build the sermon around the answer to that question, not around the structure of the text. The structure of the text is the means; the formation of the congregation is the end. Preaching that forgets this produces knowledgeable Christians who are unchanged by what they know. And that, more than almost anything else, is a failure of the pastoral calling.</p>
+    `,
+  },
+  {
+    id: 45,
+    slug: 'making-disciples-in-the-age-of-distraction',
+    title: 'Making Disciples in the Age of Distraction',
+    subheading: 'Jesus spent three years with twelve people. The discipleship model of the early church was slow, relational, and deeply personal. It is also the only model that works.',
+    excerpt: "Discipleship cannot be scaled, outsourced, or gamified. It requires the thing that the digital age most radically depletes: sustained, unhurried attention given by one person to another over time.",
+    author: AUTHORS[2],
+    category: CATEGORIES[5],
+    tags: ['discipleship', 'formation', 'attention', 'mentoring', 'ministry'],
+    publishedAt: '2025-01-14T09:00:00Z',
+    updatedAt: '2025-01-14T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/discipleship-formation/1920/1080',
+      alt: 'Two people sitting together at a table in quiet conversation over open Bibles',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Discipleship is embarrassingly simple and extraordinarily difficult. It is simple because the model is right there in the Gospels: Jesus called twelve people to follow him, and over three years he walked with them, talked with them, corrected them, ate with them, prayed with them, and gradually—not immediately—transformed them into the foundation of the church. It is difficult because that model is slow, inefficient, unscalable, and entirely dependent on the one thing our age is most aggressively destroying: the capacity for sustained, patient, unhurried attention given to another person.</p>
+
+<h2>The Attention Problem</h2>
+
+<p>You cannot disciple a person you are not attending to. Discipleship is, at its core, the practice of knowing someone well enough to speak truth into their specific situation—not general truth, though that matters too, but the particular word of Scripture or the pointed question or the gentle confrontation that addresses what is actually happening in this person's life right now. That kind of knowing requires time, and it requires the kind of presence that is becoming increasingly rare: the willingness to be fully here, with this person, without reaching for the phone.</p>
+
+<p>The digital age has made us better at managing relationships and worse at having them. We can maintain contact with hundreds of people at minimal relational cost. But the contact we maintain is shallow—a like, a comment, an occasional text. The deep knowing that discipleship requires is not supported by these tools. It is built in conversations that go long, in meals that are not rushed, in the repeated small acts of showing up that eventually produce the trust in which real formation can occur.</p>
+
+<blockquote class="pull-quote">
+  <p>The church will not out-program its way to discipleship. It will disciple people the same way it always has: one person, over time, through ordinary relationship.</p>
+</blockquote>
+
+<h2>What This Requires of Church Leaders</h2>
+
+<p>Church leaders face a particular temptation in this area: to replace the slow work of personal discipleship with programs that can reach more people faster. Sunday school curricula, small group materials, sermon series—these are not bad things. But they are not discipleship in the New Testament sense. They are inputs that require a relational context to become formative. The program does not transform; the relationship does. And relationships require leaders who are willing to give their actual time—not administrative time, not programming time, but personal time—to the few people who need it most.</p>
+
+<p>Jesus did not build a movement by reaching as many people as quickly as possible. He built it by going very deep with very few people and trusting those few to reach others with the same intentionality. That is still the model. And it is still the only model that actually works—not because it is efficient, but because it is human. And human beings are not formed by content. They are formed by relationship.</p>
+    `,
+  },
+
+  // ─── The Carson Center ────────────────────────────────────────────────────
+
+  {
+    id: 46,
+    slug: 'how-biblical-theology-holds-the-bible-together',
+    title: 'How Biblical Theology Holds the Bible Together',
+    subheading: "The Bible is a diverse collection of books written over more than a thousand years. Biblical theology is the discipline that shows how, despite this diversity, it tells one story.",
+    excerpt: "Without biblical theology, the Old Testament seems like a foreign country and the New Testament a collection of unrelated letters. With it, the whole canon opens up as a single, unified narrative of redemption with a coherent center and a glorious end.",
+    author: AUTHORS[12],
+    category: CATEGORIES[6],
+    tags: ['biblical theology', 'Carson Center', 'Scripture', 'typology', 'unity'],
+    publishedAt: '2025-02-05T09:00:00Z',
+    updatedAt: '2025-02-05T09:00:00Z',
+    readingTime: 9,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/biblical-theology/1920/1080',
+      alt: 'A large open Bible spread flat on a wooden study desk in warm lamplight',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The Bible is a library. It contains law and poetry and prophecy and wisdom literature and apocalyptic vision and Gospel narrative and apostolic letters. Written over more than a millennium by dozens of authors in three languages across two continents, it does not, on first appearance, look like a unified book. Biblical theology is the discipline that shows that it is—that beneath the surface diversity there is a deep unity, a single story that runs from Genesis 1 to Revelation 22 and has a single center: the person and work of Jesus Christ.</p>
+
+<h2>What Biblical Theology Is</h2>
+
+<p>Biblical theology, as a discipline, traces the development of theological themes through the progressive unfolding of Scripture. It asks: How does the theme of the kingdom of God develop from Abraham to Moses to David to the prophets to Jesus? How does the concept of sacrifice move from the Passover to the Levitical system to the suffering servant of Isaiah to the cross? How do the promises made to Abraham in Genesis 12 find their fulfillment in Galatians 3? These are biblical-theological questions, and they open up dimensions of Scripture that verse-by-verse exposition alone cannot reach.</p>
+
+<p>Typology is one of the central tools of biblical theology. A type is an Old Testament person, event, or institution that prefigures and finds its fulfillment in Christ. Adam is a type of Christ (Rom. 5:12–21). The Passover lamb is a type of Christ (1 Cor. 5:7). The tabernacle and temple are types of Christ (John 2:19–21; Heb. 9). The Davidic king is a type of Christ (Luke 1:32–33). Learning to read these typological patterns does not allegorize the Old Testament—it reads it as the New Testament authors themselves read it, finding in its institutions and narratives the forward-pointing shadow of the substance that arrives in Jesus.</p>
+
+<blockquote class="pull-quote">
+  <p>The Old Testament is not a collection of moral examples and doctrinal prooftexts. It is the first act of a drama whose climax and resolution is Jesus Christ.</p>
+</blockquote>
+
+<h2>Why Every Christian Needs This</h2>
+
+<p>Biblical theology is not just an academic exercise. It is a pastoral necessity. Christians who do not understand the unity of Scripture will read the Old Testament as a foreign country—a collection of strange laws and violent stories with occasional moral lessons. They will miss the way Psalm 22 illuminates the cross, the way the bronze serpent of Numbers 21 illuminates John 3:14–15, the way the whole sacrificial system illuminates the meaning of Hebrews. They will be impoverished readers of the New Testament, which assumes on virtually every page that its readers know and understand the Old.</p>
+
+<p>The recovery of biblical theology in our churches would produce Christians who are more deeply rooted in Scripture, more confident in its unity and authority, and more capable of seeing how every part of the canon points to and is illuminated by the Lord Jesus. That is not a small thing. It is, in fact, the foundation on which all sound Christian thinking is built.</p>
+    `,
+  },
+  {
+    id: 47,
+    slug: 'the-art-of-expository-preaching-in-a-post-literacy-age',
+    title: 'The Art of Expository Preaching in a Post-Literacy Age',
+    subheading: "Congregations are reading less and watching more. Does this mean expository preaching is becoming obsolete? Quite the opposite.",
+    excerpt: "In an age of declining literacy and shortened attention spans, the sermon that patiently opens the Word of God is not a relic—it is a countercultural act of formation. But it must be done better than ever.",
+    author: AUTHORS[0],
+    category: CATEGORIES[6],
+    tags: ['expository preaching', 'Carson Center', 'Scripture', 'literacy', 'ministry'],
+    publishedAt: '2025-01-08T09:00:00Z',
+    updatedAt: '2025-01-08T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/expository-preaching/1920/1080',
+      alt: 'A preacher opening a large Bible at a carved wooden pulpit in a stone church',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">The argument against expository preaching in a post-literacy age goes like this: people do not read anymore; their attention spans have been permanently shortened by the internet; they cannot follow a sustained argument the way previous generations could; therefore, the forty-five-minute verse-by-verse sermon is an anachronism. The argument is superficially plausible. It is also, I believe, wrong—not just factually but theologically. The reason expository preaching matters has never depended on the literacy of the congregation. It depends on the nature of the Word of God.</p>
+
+<h2>Why Exposition Is Not Optional</h2>
+
+<p>Expository preaching is not one homiletical style among others. It is the form of preaching that takes seriously the fact that God has spoken in Scripture, that his word has a specific meaning that must be discerned by careful attention to the text, and that the preacher's job is to make plain what God has said rather than to use the text as a launching pad for the preacher's own thoughts. This is not a preference for a particular communication style. It is a statement about the authority of Scripture and the nature of the preacher's calling.</p>
+
+<p>That said, the post-literacy context does require expository preachers to become better at their craft—not to abandon exposition, but to do it more vividly, more concretely, and with more obvious connection to the lives of the people in the room. The problem with much expository preaching is not that it is too committed to the text. It is that it is too committed to the academic mode of engaging the text—explanatory rather than imaginative, informational rather than formational, and far too comfortable with abstraction.</p>
+
+<blockquote class="pull-quote">
+  <p>The post-literacy congregation does not need shorter sermons. It needs better ones—sermons that are as deeply committed to the text as ever, and as vividly connected to human experience as Scripture itself is.</p>
+</blockquote>
+
+<h2>Exposition That Forms, Not Just Informs</h2>
+
+<p>The best expository preaching in any age has always done what Scripture itself does: it has used the concrete and the specific to carry the universal and the transcendent. The Psalms are not abstractions; they are cries from particular human situations. The parables are not doctrinal summaries; they are stories with characters and conflict and surprise. The Epistles address specific churches with specific problems. Scripture is remarkably particular, and expository preaching that reflects this particularity—that grounds doctrinal truth in story, image, and concrete human experience—will find an audience in any age.</p>
+
+<p>The preacher who says "post-literacy culture can't handle expository preaching" has usually confused expository preaching with a particular (dull) mode of exposition. The preacher who is willing to work at the craft—who reads widely, who cultivates a literary imagination, who studies both the text and the congregation, who preaches with the kind of vivid clarity that makes the ancient seem immediate—will find that people are still hungry for the Word. They always have been. They always will be. The Word of God is not outdated by any cultural shift. It is the one thing that was never merely of its time.</p>
+    `,
+  },
+
+  // ─── The Keller Center ────────────────────────────────────────────────────
+
+  {
+    id: 48,
+    slug: 'what-tim-keller-taught-us-about-the-city',
+    title: 'What Tim Keller Taught Us About the City',
+    subheading: "A decade after Redeemer Presbyterian changed urban ministry, the lessons Keller drew from the streets of Manhattan are more relevant than ever.",
+    excerpt: "Tim Keller's ministry in New York City demonstrated that the gospel is not merely compatible with urban culture—it is urgently needed there, and the city is one of the most strategic places in the world to plant the church.",
+    author: AUTHORS[4],
+    category: CATEGORIES[7],
+    tags: ['Keller Center', 'city', 'urban ministry', 'cultural engagement', 'Tim Keller'],
+    publishedAt: '2025-02-18T09:00:00Z',
+    updatedAt: '2025-02-18T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/keller-city/1920/1080',
+      alt: 'Manhattan skyline at dusk with warm amber lights beginning to glow',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">When Tim Keller and a small group of Christians planted Redeemer Presbyterian Church in Manhattan in 1989, the conventional wisdom in evangelical circles was that cities were mission fields to be reached, not places where the church would take deep root and flourish. Keller believed otherwise. He believed—drawing on the urban theology of Harvie Conn and the missiology of Lesslie Newbigin—that cities are the strategic centers of cultural formation, and that the gospel planted in them would bear fruit that would spread far beyond their borders. He was right.</p>
+
+<h2>The City as Strategic Location</h2>
+
+<p>Keller's urban theology begins with a simple observation: cities are where culture is made. The artists and academics and business leaders and journalists who set the terms of cultural discourse in any given society tend to cluster in cities. If the church is not present in those cities—not as a chaplain to the culture but as a genuine community of gospel transformation—it will be absent from the conversations that most shape what society believes and values.</p>
+
+<p>This is not an argument that rural and suburban ministry matters less. It is an argument that a church that has conceded the major cities has conceded something strategically significant. Keller understood this with unusual clarity, and it shaped everything about Redeemer—its location, its intellectual seriousness, its engagement with the arts and the professions, its willingness to take seriously the objections of secular people rather than simply dismissing them.</p>
+
+<blockquote class="pull-quote">
+  <p>Keller taught us that reaching the city is not a compromise with the culture. It is the fulfillment of the church's mandate to go where people are and bring the good news that transforms them.</p>
+</blockquote>
+
+<h2>Gospel and Culture</h2>
+
+<p>Perhaps Keller's most distinctive contribution to urban ministry was his model of cultural engagement. He rejected both the stance of cultural withdrawal—retreating from the secular city into a Christian subculture—and the stance of cultural capitulation—conforming to the city's values to win its acceptance. He proposed instead a third way: the church as a community that is fully present in the city, genuinely engaged with its culture, and simultaneously bearing witness to a gospel that judges and redeems that culture rather than merely affirming or condemning it.</p>
+
+<p>This model requires a level of theological sophistication and cultural literacy that is not easily achieved. It requires preachers who understand the secular mind well enough to address it, artists who can work in mainstream contexts without losing their Christian vision, and business leaders who bring Christian values to their industries without retreating into a Christian business ghetto. The Keller Center exists in part to train and resource people who want to do this work—to follow the example Redeemer set in Manhattan in contexts all over the world. The city needs the gospel. And the gospel, planted rightly in the city, has the power to change the world.</p>
+    `,
+  },
+  {
+    id: 49,
+    slug: 'why-the-gospel-is-the-best-news-for-the-secular-city',
+    title: 'Why the Gospel Is the Best News for the Secular City',
+    subheading: "The secular person is not the enemy. They are a neighbor carrying longings that only the gospel can satisfy—if we know how to show them that.",
+    excerpt: "Effective witness in a secular age begins not with correcting what people believe but with understanding what they long for. And when you understand the secular person's deepest longings, you find that the gospel addresses them with uncanny precision.",
+    author: AUTHORS[7],
+    category: CATEGORIES[7],
+    tags: ['Keller Center', 'secularism', 'city', 'gospel', 'apologetics'],
+    publishedAt: '2025-01-30T09:00:00Z',
+    updatedAt: '2025-01-30T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/secular-city-gospel/1920/1080',
+      alt: 'Busy city street at twilight with people walking and warm shopfront lights',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">The secular person, on first encounter, appears to have everything they need—and to need nothing from the church. They have community (sort of), meaning (provisionally), morality (selectively), and hope (vaguely). They are not, for the most part, searching for God. They have concluded that the God question has been settled, and settled in the negative, and they have moved on. To approach them with a sales pitch for Christianity is to misread the situation completely. But to understand what they actually believe—and what they actually long for—is to discover that the gospel is addressed to them with a precision that should astonish us.</p>
+
+<h2>The Secular Person's Actual Beliefs</h2>
+
+<p>The secular person does not hold no worldview. They hold a worldview that claims to be neutral—to be simply the default human position from which religious belief is a departure. This claim should be gently challenged. The secular worldview makes metaphysical commitments (the material world is all there is), moral commitments (human dignity is sacred, justice matters, love is real), and eschatological commitments (progress is possible, the arc of history bends toward justice). None of these commitments can be grounded in a purely materialist metaphysics. They are borrowed capital from a theistic account of reality that secularism has otherwise rejected.</p>
+
+<p>This matters for apologetics because it means the conversation does not have to begin with "let me prove to you that God exists." It can begin with "tell me more about why you believe human dignity is sacred"—and then, in the space that question opens, gently show that the intuitions the secular person holds most deeply are more coherent within a Christian framework than within the secular one they have inherited.</p>
+
+<blockquote class="pull-quote">
+  <p>The secular person is not an enemy of the gospel. They are a witness to it—carrying in their moral convictions and their deepest longings the fingerprints of the God they have not yet met.</p>
+</blockquote>
+
+<h2>The Gospel as Answer to Secular Longing</h2>
+
+<p>Every human being longs for belonging, for significance, for forgiveness, for a love that is not contingent on performance, and for a hope that extends beyond death. The secular city offers proxies for all of these—community without covenant, significance without transcendence, therapeutic self-acceptance without actual forgiveness, and a carefully maintained denial of the death that everyone knows is coming. These proxies are not satisfying. They were not designed to be. They are, as C. S. Lewis observed, clues to a country we have not yet visited.</p>
+
+<p>The gospel does not merely correct the secular worldview. It satisfies the longings that secular life cannot satisfy. The belonging it offers is unconditional—grounded in the love of a Father who accepts his children not on the basis of their performance but on the basis of his Son's. The significance it offers is cosmic—every person made in the image of God, every life irreducibly meaningful. The forgiveness it offers is real—not the therapeutic dissolution of guilt but its actual removal by a God who bore it himself. The hope it offers faces death honestly and overcomes it actually. This is the best news for the secular city. It is, in fact, the only news that fully addresses what the secular city is actually looking for.</p>
+    `,
+  },
 ]
 
 // Get article by slug

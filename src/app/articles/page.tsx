@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ARTICLES } from '@/lib/mockData'
+import { smartQuotes } from '@/lib/typography'
 
 export const metadata: Metadata = {
   title: 'Articles — The Gospel Coalition',
@@ -73,8 +74,8 @@ export default function ArticlesPage() {
                 </div>
 
                 <Link href={`/article/${article.slug}`}>
-                  <h2 className="font-headline text-2xl lg:text-3xl text-charcoal group-hover:text-navy transition-colors leading-snug">
-                    {article.title}
+                  <h2 className="font-headline text-2xl lg:text-3xl text-charcoal group-hover:opacity-90 transition-opacity duration-100 leading-snug">
+                    {smartQuotes(article.title)}
                   </h2>
                 </Link>
 
