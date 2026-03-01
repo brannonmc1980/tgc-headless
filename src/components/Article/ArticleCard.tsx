@@ -36,7 +36,7 @@ export default function ArticleCard({
             {showCategory && (
               <CategoryBadge name={article.category.name} slug={article.category.slug} light />
             )}
-            <h2 className="font-headline text-2xl lg:text-3xl xl:text-4xl font-bold text-white mt-3 leading-tight group-hover:text-stone-200 transition-colors">
+            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-3 leading-tight group-hover:text-stone-200 transition-colors">
               {article.title}
             </h2>
             <p className="text-stone-300 font-body text-sm mt-2 line-clamp-2 hidden md:block">
@@ -74,7 +74,7 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h3 className="font-headline text-base font-bold text-charcoal mt-1 leading-snug group-hover:text-navy transition-colors line-clamp-3">
+            <h3 className="font-headline text-lg font-bold text-charcoal mt-1 leading-snug group-hover:text-navy transition-colors line-clamp-3">
               {article.title}
             </h3>
           </Link>
@@ -93,7 +93,7 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline text-base font-bold text-charcoal mt-1.5 leading-snug group-hover:text-navy transition-colors">
+          <h3 className="font-headline text-lg font-bold text-charcoal mt-1.5 leading-snug group-hover:text-navy transition-colors">
             {article.title}
           </h3>
         </Link>
@@ -123,7 +123,7 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline text-lg lg:text-xl font-bold text-charcoal mt-2 leading-snug group-hover:text-navy transition-colors">
+          <h3 className="font-headline text-xl lg:text-2xl font-bold text-charcoal mt-2 leading-snug group-hover:text-navy transition-colors">
             {article.title}
           </h3>
         </Link>

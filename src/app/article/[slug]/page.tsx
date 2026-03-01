@@ -103,7 +103,7 @@ export default async function ArticlePage({ params }: Params) {
                   Long Read
                 </span>
               )}
-              <h1 className="font-headline text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] mt-2">
+              <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mt-2">
                 {article.title}
               </h1>
               <p className="font-body text-stone-300 text-lg lg:text-xl mt-4 leading-relaxed max-w-2xl">
@@ -240,7 +240,7 @@ export default async function ArticlePage({ params }: Params) {
           <article className="lg:col-span-8">
             {/* Article header */}
             <header className="mb-8">
-              <h1 className="font-headline text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-charcoal leading-[1.15]">
+              <h1 className="font-headline text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-charcoal leading-[1.15]">
                 {article.title}
               </h1>
               {article.subheading && (
