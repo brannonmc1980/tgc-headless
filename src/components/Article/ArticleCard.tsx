@@ -37,11 +37,11 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl font-bold text-charcoal mt-2 leading-tight group-hover:text-navy transition-colors">
+            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl text-charcoal mt-2 leading-tight group-hover:text-navy transition-colors">
               {article.title}
             </h2>
           </Link>
-          <p className="text-stone-500 font-body text-base mt-2 line-clamp-2 hidden md:block">
+          <p className="text-stone-500 font-body text-lg lg:text-xl mt-3 line-clamp-2 hidden md:block leading-snug">
             {article.subheading}
           </p>
           <div className="mt-3 flex items-center gap-3 text-stone-400 text-xs font-ui">
@@ -75,7 +75,7 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h3 className="font-headline text-lg font-bold text-charcoal mt-1 leading-snug group-hover:text-navy transition-colors line-clamp-3">
+            <h3 className="font-headline text-xl text-charcoal mt-1 leading-snug group-hover:text-navy transition-colors line-clamp-3">
               {article.title}
             </h3>
           </Link>
@@ -94,7 +94,7 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline text-lg font-bold text-charcoal mt-1.5 leading-snug group-hover:text-navy transition-colors">
+          <h3 className="font-headline text-xl text-charcoal mt-1.5 leading-snug group-hover:text-navy transition-colors">
             {article.title}
           </h3>
         </Link>
@@ -124,12 +124,12 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline text-xl lg:text-2xl font-bold text-charcoal mt-2 leading-snug group-hover:text-navy transition-colors">
+          <h3 className="font-headline text-2xl lg:text-3xl text-charcoal mt-2 leading-snug group-hover:text-navy transition-colors">
             {article.title}
           </h3>
         </Link>
         {showExcerpt && (
-          <p className="font-body text-stone-600 text-sm mt-2 line-clamp-3 leading-relaxed">
+          <p className="font-body text-stone-600 text-base mt-2 line-clamp-3 leading-relaxed">
             {article.excerpt}
           </p>
         )}

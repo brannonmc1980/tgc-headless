@@ -59,7 +59,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
                 <span className="text-navy font-headline font-bold text-sm">TGC</span>
               </div>
-              <span className="font-headline font-bold text-lg text-white">
+              <span className="font-headline text-lg text-white">
                 The Gospel Coalition
               </span>
             </Link>
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Newsletter CTA */}
         <div className="mt-12 pt-10 border-t border-white/10">
           <div className="max-w-md">
-            <h3 className="font-headline text-xl font-bold text-white mb-2">
+            <h3 className="font-headline text-xl text-white mb-2">
               Stay informed with our weekly digest
             </h3>
             <p className="text-stone-300 text-sm font-ui mb-4">

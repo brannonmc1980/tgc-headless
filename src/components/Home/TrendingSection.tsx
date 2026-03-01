@@ -35,7 +35,7 @@ export default function TrendingSection({ articles }: TrendingSectionProps) {
               <span className="text-crimson text-xs font-ui font-bold uppercase tracking-widest">
                 {article.category.name}
               </span>
-              <h3 className="font-headline text-lg font-bold text-white mt-2 leading-snug group-hover:text-stone-200 transition-colors">
+              <h3 className="font-headline text-lg text-white mt-2 leading-snug group-hover:text-stone-200 transition-colors">
                 {article.title}
               </h3>
               <p className="text-stone-400 text-xs font-ui mt-3">

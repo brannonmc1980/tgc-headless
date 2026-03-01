@@ -43,7 +43,7 @@ export default function ArticleBody({ content, dark = false }: ArticleBodyProps)
     ? `
       prose prose-lg max-w-none
       prose-invert
-      prose-headings:font-headline prose-headings:font-bold
+      prose-headings:font-headline prose-headings:font-normal
       prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
       prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
       prose-p:font-body prose-p:leading-[1.85] prose-p:text-stone-300
@@ -54,11 +54,11 @@ export default function ArticleBody({ content, dark = false }: ArticleBodyProps)
       prose-strong:text-white
       [&_.article-lead]:text-xl [&_.article-lead]:font-body [&_.article-lead]:leading-relaxed [&_.article-lead]:text-stone-200 [&_.article-lead]:font-medium
       [&_.pull-quote]:not-prose [&_.pull-quote]:my-10 [&_.pull-quote]:py-8 [&_.pull-quote]:px-8 [&_.pull-quote]:border-y [&_.pull-quote]:border-crimson/30 [&_.pull-quote]:text-center
-      [&_.pull-quote_p]:font-headline [&_.pull-quote_p]:text-2xl [&_.pull-quote_p]:font-bold [&_.pull-quote_p]:text-white [&_.pull-quote_p]:leading-snug [&_.pull-quote_p]:italic
+      [&_.pull-quote_p]:font-headline [&_.pull-quote_p]:text-2xl [&_.pull-quote_p]:font-normal [&_.pull-quote_p]:text-white [&_.pull-quote_p]:leading-snug [&_.pull-quote_p]:italic
     `
     : `
       prose prose-lg max-w-none
-      prose-headings:font-headline prose-headings:font-bold prose-headings:text-charcoal
+      prose-headings:font-headline prose-headings:font-normal prose-headings:text-charcoal
       prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
       prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
       prose-p:font-body prose-p:leading-[1.85] prose-p:text-stone-700
@@ -69,7 +69,7 @@ export default function ArticleBody({ content, dark = false }: ArticleBodyProps)
       prose-strong:text-charcoal
       [&_.article-lead]:text-xl [&_.article-lead]:font-body [&_.article-lead]:leading-relaxed [&_.article-lead]:text-stone-700 [&_.article-lead]:font-medium
       [&_.pull-quote]:not-prose [&_.pull-quote]:my-10 [&_.pull-quote]:py-8 [&_.pull-quote]:px-8 [&_.pull-quote]:border-y [&_.pull-quote]:border-navy/20 [&_.pull-quote]:text-center
-      [&_.pull-quote_p]:font-headline [&_.pull-quote_p]:text-2xl [&_.pull-quote_p]:font-bold [&_.pull-quote_p]:text-navy [&_.pull-quote_p]:leading-snug [&_.pull-quote_p]:italic
+      [&_.pull-quote_p]:font-headline [&_.pull-quote_p]:text-2xl [&_.pull-quote_p]:font-normal [&_.pull-quote_p]:text-navy [&_.pull-quote_p]:leading-snug [&_.pull-quote_p]:italic
     `
 
   return (

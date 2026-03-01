@@ -92,7 +92,7 @@
 .article-prose h3,
 .article-prose h4 {
   font-family: var(--font-headline);
-  font-weight: 700;
+  font-weight: 400;
   color: var(--color-charcoal);
 }
 
@@ -170,7 +170,7 @@
 .article-prose .pull-quote p {
   font-family: var(--font-headline);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 400;
   font-style: italic;
   color: var(--color-navy);
   line-height: 1.4;

@@ -49,7 +49,7 @@ export default function MainNav() {
             <div className="w-8 h-8 bg-navy rounded-sm flex items-center justify-center">
               <span className="text-white font-headline font-bold text-sm">TGC</span>
             </div>
-            <span className="font-headline font-bold text-xl text-navy tracking-tight">
+            <span className="font-headline text-xl text-navy tracking-tight">
               The Gospel Coalition
             </span>
           </Link>

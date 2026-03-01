@@ -103,7 +103,7 @@ export default async function ArticlePage({ params }: Params) {
                   Long Read
                 </span>
               )}
-              <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mt-2">
+              <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-[1.1] mt-2">
                 {article.title}
               </h1>
               <p className="font-body text-stone-300 text-lg lg:text-xl mt-4 leading-relaxed max-w-2xl">
@@ -204,7 +204,7 @@ export default async function ArticlePage({ params }: Params) {
         {related.length > 0 && (
           <section className={`py-12 border-t ${isDark ? 'border-white/10 bg-[#20272a]' : 'border-stone-200 bg-stone-50'}`}>
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className={`font-headline text-2xl font-bold mb-8 ${isDark ? 'text-white' : 'text-charcoal'}`}>
+              <h2 className={`font-headline text-2xl mb-8 ${isDark ? 'text-white' : 'text-charcoal'}`}>
                 More from {article.category.name}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -240,7 +240,7 @@ export default async function ArticlePage({ params }: Params) {
           <article className="lg:col-span-8">
             {/* Article header */}
             <header className="mb-8">
-              <h1 className="font-headline text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-charcoal leading-[1.15]">
+              <h1 className="font-headline text-4xl sm:text-5xl lg:text-5xl xl:text-6xl text-charcoal leading-[1.15]">
                 {article.title}
               </h1>
               {article.subheading && (
@@ -329,7 +329,7 @@ export default async function ArticlePage({ params }: Params) {
             {/* More from category */}
             {related.length > 0 && (
               <section className="mt-12 pt-8 border-t border-stone-200">
-                <h2 className="font-headline text-xl font-bold text-charcoal mb-6">
+                <h2 className="font-headline text-xl text-charcoal mb-6">
                   More from {article.category.name}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -363,7 +363,7 @@ export default async function ArticlePage({ params }: Params) {
 
               {/* Newsletter CTA */}
               <div className="bg-navy text-white p-6 rounded-sm">
-                <h3 className="font-headline text-lg font-bold mb-2">
+                <h3 className="font-headline text-lg mb-2">
                   Stay Connected
                 </h3>
                 <p className="text-stone-300 text-sm font-ui mb-4 leading-relaxed">

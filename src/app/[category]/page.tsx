@@ -41,7 +41,7 @@ export default async function CategoryPage({ params }: Params) {
             <span>/</span>
             <span className="text-charcoal font-semibold">{cat.name}</span>
           </div>
-          <h1 className="font-headline text-4xl lg:text-5xl font-bold text-charcoal">
+          <h1 className="font-headline text-4xl lg:text-5xl text-charcoal">
             {cat.name}
           </h1>
           {cat.description && (
