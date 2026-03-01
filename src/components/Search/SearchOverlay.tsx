@@ -45,6 +45,7 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
   const [isStreaming, setIsStreaming] = useState(false)
   const [sidebarArticles, setSidebarArticles] = useState<Article[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
+  const chatInputRef = useRef<HTMLTextAreaElement>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
   const liveArticles = useMemo(() => {
@@ -85,6 +86,13 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages, streamingContent])
+
+  // Focus bottom chat input once conversation starts
+  useEffect(() => {
+    if (messages.length > 0 && !isStreaming) {
+      chatInputRef.current?.focus()
+    }
+  }, [messages.length, isStreaming])
 
   async function handleSubmit() {
     const query = input.trim()
@@ -247,46 +255,85 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
         {hasConversation ? (
           /* ── Two-column chat layout ── */
           <div className="h-full flex">
-            {/* Left: conversation */}
-            <div className="flex-1 overflow-y-auto border-r border-stone-200">
-              <div className="max-w-2xl mx-auto px-6 lg:px-10 py-8 space-y-8">
-                {messages.map((msg, i) =>
-                  msg.role === 'user' ? (
-                    <div key={i} className="flex justify-end">
-                      <div className="bg-navy text-white px-4 py-3 rounded-lg max-w-sm font-ui text-sm leading-relaxed">
+            {/* Left: conversation + bottom input */}
+            <div className="flex-1 flex flex-col border-r border-stone-200 overflow-hidden">
+              {/* Scrollable messages */}
+              <div className="flex-1 overflow-y-auto">
+                <div className="max-w-2xl mx-auto px-6 lg:px-10 py-8 space-y-8">
+                  {messages.map((msg, i) =>
+                    msg.role === 'user' ? (
+                      <div key={i} className="flex justify-end">
+                        <div className="bg-stone-200 text-charcoal px-4 py-3 rounded-lg max-w-sm font-ui text-sm leading-relaxed">
+                          {msg.content}
+                        </div>
+                      </div>
+                    ) : (
+                      <div
+                        key={i}
+                        className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none"
+                      >
                         {msg.content}
                       </div>
+                    )
+                  )}
+
+                  {/* Streaming response */}
+                  {isStreaming && !streamingContent && (
+                    <div className="flex gap-1.5 items-center py-2">
+                      {[0, 150, 300].map(delay => (
+                        <span
+                          key={delay}
+                          className="w-2 h-2 bg-stone-300 rounded-full animate-bounce"
+                          style={{ animationDelay: `${delay}ms` }}
+                        />
+                      ))}
                     </div>
-                  ) : (
-                    <div
-                      key={i}
-                      className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none"
+                  )}
+                  {streamingContent && (
+                    <div className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none">
+                      {streamingContent}
+                      <span className="inline-block w-0.5 h-[1em] bg-navy animate-pulse ml-0.5 align-middle" />
+                    </div>
+                  )}
+
+                  <div ref={messagesEndRef} />
+                </div>
+              </div>
+
+              {/* Bottom chat input */}
+              <div className="flex-shrink-0 border-t border-stone-200 bg-[#fbfbfa] px-6 py-4">
+                <div className="max-w-2xl mx-auto">
+                  <div className="flex items-end gap-3 border border-stone-200 rounded-xl bg-white px-4 py-3 shadow-sm focus-within:border-stone-300 transition-colors">
+                    <textarea
+                      ref={chatInputRef}
+                      value={input}
+                      onChange={e => setInput(e.target.value)}
+                      onKeyDown={e => {
+                        if (e.key === 'Enter' && !e.shiftKey) {
+                          e.preventDefault()
+                          handleSubmit()
+                        }
+                      }}
+                      placeholder="Ask a follow-up question…"
+                      rows={1}
+                      className="flex-1 bg-transparent font-ui text-sm text-charcoal placeholder-stone-300 outline-none resize-none leading-relaxed"
+                      disabled={isStreaming}
+                    />
+                    <button
+                      onClick={handleSubmit}
+                      disabled={!input.trim() || isStreaming}
+                      aria-label="Send"
+                      className="flex-shrink-0 p-1.5 bg-navy text-white rounded-lg disabled:opacity-30 hover:bg-navy/90 transition-all"
                     >
-                      {msg.content}
-                    </div>
-                  )
-                )}
-
-                {/* Streaming response */}
-                {isStreaming && !streamingContent && (
-                  <div className="flex gap-1.5 items-center py-2">
-                    {[0, 150, 300].map(delay => (
-                      <span
-                        key={delay}
-                        className="w-2 h-2 bg-stone-300 rounded-full animate-bounce"
-                        style={{ animationDelay: `${delay}ms` }}
-                      />
-                    ))}
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      </svg>
+                    </button>
                   </div>
-                )}
-                {streamingContent && (
-                  <div className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none">
-                    {streamingContent}
-                    <span className="inline-block w-0.5 h-[1em] bg-navy animate-pulse ml-0.5 align-middle" />
-                  </div>
-                )}
-
-                <div ref={messagesEndRef} />
+                  <p className="text-center font-ui text-xs text-stone-300 mt-2">
+                    Enter to send · Shift+Enter for new line
+                  </p>
+                </div>
               </div>
             </div>
 
