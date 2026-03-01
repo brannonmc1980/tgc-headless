@@ -45,13 +45,12 @@ export default function MainNav() {
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <div className="w-8 h-8 bg-navy rounded-sm flex items-center justify-center">
-              <span className="text-white font-headline font-bold text-sm">TGC</span>
-            </div>
-            <span className="font-headline text-xl text-navy tracking-tight">
-              The Gospel Coalition
-            </span>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <img
+              src="/TGC-logo.svg"
+              alt="The Gospel Coalition"
+              className="h-9 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}

@@ -55,13 +55,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                <span className="text-navy font-headline font-bold text-sm">TGC</span>
-              </div>
-              <span className="font-headline text-lg text-white">
-                The Gospel Coalition
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <img
+                src="/TGC-logo.svg"
+                alt="The Gospel Coalition"
+                className="h-8 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-stone-300 text-sm font-ui leading-relaxed mt-4">
               We exist to help Christians know and love the gospel of Jesus Christ.

@@ -1,6 +1,42 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* ─── Self-hosted fonts ──────────────────────────────────────────────────── */
+
+/* Söhne (UI font) */
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-Extraleicht.woff2") format("woff2"), url("/fonts/Sohne-Extraleicht.woff") format("woff"); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-ExtraleichtKursiv.woff2") format("woff2"), url("/fonts/Sohne-ExtraleichtKursiv.woff") format("woff"); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-Leicht.woff2") format("woff2"), url("/fonts/Sohne-Leicht.woff") format("woff"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-LeichtKursiv.woff2") format("woff2"), url("/fonts/Sohne-LeichtKursiv.woff") format("woff"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-Buch.woff2") format("woff2"), url("/fonts/Sohne-Buch.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-BuchKursiv.woff2") format("woff2"), url("/fonts/Sohne-BuchKursiv.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-Kraftig.woff2") format("woff2"), url("/fonts/Sohne-Kraftig.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sohne"; src: url("/fonts/Sohne-KraftigKursiv.woff2") format("woff2"), url("/fonts/Sohne-KraftigKursiv.woff") format("woff"); font-weight: 500; font-style: italic; font-display: swap; }
+
+/* Tiempos Headline */
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-Light.woff2") format("woff2"), url("/fonts/TiemposHeadline-Light.woff") format("woff"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-LightItalic.woff2") format("woff2"), url("/fonts/TiemposHeadline-LightItalic.woff") format("woff"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-Regular.woff2") format("woff2"), url("/fonts/TiemposHeadline-Regular.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-RegularItalic.woff2") format("woff2"), url("/fonts/TiemposHeadline-RegularItalic.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-Medium.woff2") format("woff2"), url("/fonts/TiemposHeadline-Medium.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-MediumItalic.woff2") format("woff2"), url("/fonts/TiemposHeadline-MediumItalic.woff") format("woff"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-Semibold.woff2") format("woff2"), url("/fonts/TiemposHeadline-Semibold.woff") format("woff"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-SemiboldItalic.woff2") format("woff2"), url("/fonts/TiemposHeadline-SemiboldItalic.woff") format("woff"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-Bold.woff2") format("woff2"), url("/fonts/TiemposHeadline-Bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-BoldItalic.woff2") format("woff2"), url("/fonts/TiemposHeadline-BoldItalic.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-Black.woff2") format("woff2"), url("/fonts/TiemposHeadline-Black.woff") format("woff"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Headline"; src: url("/fonts/TiemposHeadline-BlackItalic.woff2") format("woff2"), url("/fonts/TiemposHeadline-BlackItalic.woff") format("woff"); font-weight: 900; font-style: italic; font-display: swap; }
+
+/* Tiempos Text */
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-Regular.woff2") format("woff2"), url("/fonts/TiemposText-Regular.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-RegularItalic.woff2") format("woff2"), url("/fonts/TiemposText-RegularItalic.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-Medium.woff2") format("woff2"), url("/fonts/TiemposText-Medium.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-Medium Italic.woff2") format("woff2"), url("/fonts/TiemposText-Medium Italic.woff") format("woff"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-Semibold.woff2") format("woff2"), url("/fonts/TiemposText-Semibold.woff") format("woff"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-SemiboldItalic.woff2") format("woff2"), url("/fonts/TiemposText-SemiboldItalic.woff") format("woff"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-Bold.woff2") format("woff2"), url("/fonts/TiemposText-Bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiempos Text"; src: url("/fonts/TiemposText-BoldItalic.woff2") format("woff2"), url("/fonts/TiemposText-BoldItalic.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
+
 /* ─── Design tokens (Tailwind v4 theme) ─────────────────────────────────── */
 @theme {
   /* Brand colors */
@@ -26,9 +62,9 @@
   --color-stone-900: #171d1f;
 
   /* Typography */
-  --font-headline: var(--font-garamond), AGaramondPro, "Adobe Garamond Pro", garamond, Times, serif;
-  --font-body: var(--font-garamond), AGaramondPro, "Adobe Garamond Pro", garamond, Times, serif;
-  --font-ui: Inter, system-ui, -apple-system, sans-serif;
+  --font-headline: "Tiempos Headline", Georgia, Times, serif;
+  --font-body: "Tiempos Text", Georgia, Times, serif;
+  --font-ui: "Sohne", system-ui, -apple-system, sans-serif;
 
   /* Max site width */
   --width-site: 1600px;
@@ -56,6 +92,11 @@
   ::selection {
     background-color: var(--color-navy);
     color: white;
+  }
+
+  /* Tiempos Headline always renders at Light weight */
+  .font-headline {
+    font-weight: 300;
   }
 }
 
@@ -91,8 +132,8 @@
 .article-prose h2,
 .article-prose h3,
 .article-prose h4 {
-  font-family: var(--font-headline);
-  font-weight: 400;
+  font-family: "Sohne", system-ui, sans-serif;
+  font-weight: 500;
   color: var(--color-charcoal);
 }
 
@@ -112,7 +153,7 @@
 
 .article-prose p {
   font-family: var(--font-body);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.85;
   color: #20272a;
 }
