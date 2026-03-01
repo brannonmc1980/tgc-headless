@@ -88,7 +88,8 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
               <img
                 src="/TGC-logo.svg"
                 alt="The Gospel Coalition"
-                className="h-8 w-auto opacity-30"
+                className="h-9 w-auto"
+                style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(19%) saturate(513%) hue-rotate(67deg) brightness(94%) contrast(87%)' }}
               />
             </Link>
 

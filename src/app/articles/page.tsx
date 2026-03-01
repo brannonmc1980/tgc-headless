@@ -48,7 +48,7 @@ export default function ArticlesPage() {
                 href={`/article/${article.slug}`}
                 className="flex-shrink-0 sm:w-52 overflow-hidden"
               >
-                <div className="relative aspect-video sm:aspect-square overflow-hidden">
+                <div className="relative aspect-video overflow-hidden">
                   <Image
                     src={article.featuredImage.src}
                     alt={article.featuredImage.alt}
