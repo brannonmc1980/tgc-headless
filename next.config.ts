@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: '**.wp.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.thegospelcoalition.org',
+      },
       // Add your WordPress CDN here:
       // { protocol: 'https', hostname: 'cms.yourdomain.com' },
     ],
