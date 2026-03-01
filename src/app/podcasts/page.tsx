@@ -69,13 +69,13 @@ export default function PodcastsPage() {
             <div className="flex flex-col sm:flex-row gap-8 lg:gap-12">
               {/* Square cover */}
               <div className="flex-shrink-0">
-                <div className="relative w-40 h-40 lg:w-48 lg:h-48 rounded-sm overflow-hidden shadow-sm">
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-sm overflow-hidden shadow-sm">
                   <Image
                     src={podcast.cover}
                     alt={podcast.name}
                     fill
                     className="object-cover"
-                    sizes="(min-width: 1024px) 192px, 160px"
+                    sizes="(min-width: 1024px) 384px, 320px"
                   />
                 </div>
               </div>
