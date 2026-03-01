@@ -26,8 +26,8 @@
   --color-stone-900: #171d1f;
 
   /* Typography */
-  --font-headline: "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-headline: var(--font-garamond), AGaramondPro, "Adobe Garamond Pro", garamond, Times, serif;
+  --font-body: var(--font-garamond), AGaramondPro, "Adobe Garamond Pro", garamond, Times, serif;
   --font-ui: Inter, system-ui, -apple-system, sans-serif;
 
   /* Max site width */

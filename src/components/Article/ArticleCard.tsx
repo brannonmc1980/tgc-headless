@@ -19,8 +19,8 @@ export default function ArticleCard({
 
   if (variant === 'hero') {
     return (
-      <article className="relative group overflow-hidden rounded-sm">
-        <Link href={href} className="block">
+      <article className="group">
+        <Link href={href} className="block overflow-hidden rounded-sm">
           <div className="relative aspect-video w-full overflow-hidden">
             <Image
               src={article.featuredImage.src}
@@ -30,27 +30,28 @@ export default function ArticleCard({
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-          </div>
-          <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-            {showCategory && (
-              <CategoryBadge name={article.category.name} slug={article.category.slug} light />
-            )}
-            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-3 leading-tight group-hover:text-stone-200 transition-colors">
-              {article.title}
-            </h2>
-            <p className="text-stone-300 font-body text-sm mt-2 line-clamp-2 hidden md:block">
-              {article.subheading}
-            </p>
-            <div className="mt-3 flex items-center gap-3 text-stone-400 text-xs font-ui">
-              <span>{article.author.name}</span>
-              <span className="w-1 h-1 rounded-full bg-stone-500" />
-              <span>{formatDate(article.publishedAt)}</span>
-              <span className="w-1 h-1 rounded-full bg-stone-500" />
-              <span>{article.readingTime} min read</span>
-            </div>
           </div>
         </Link>
+        <div className="pt-4">
+          {showCategory && (
+            <CategoryBadge name={article.category.name} slug={article.category.slug} />
+          )}
+          <Link href={href}>
+            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl font-bold text-charcoal mt-2 leading-tight group-hover:text-navy transition-colors">
+              {article.title}
+            </h2>
+          </Link>
+          <p className="text-stone-500 font-body text-base mt-2 line-clamp-2 hidden md:block">
+            {article.subheading}
+          </p>
+          <div className="mt-3 flex items-center gap-3 text-stone-400 text-xs font-ui">
+            <span>{article.author.name}</span>
+            <span className="w-1 h-1 rounded-full bg-stone-300" />
+            <span>{formatDate(article.publishedAt)}</span>
+            <span className="w-1 h-1 rounded-full bg-stone-300" />
+            <span>{article.readingTime} min read</span>
+          </div>
+        </div>
       </article>
     )
   }

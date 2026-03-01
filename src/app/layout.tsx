@@ -1,19 +1,14 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Source_Serif_4, Inter } from 'next/font/google'
+import { EB_Garamond, Inter } from 'next/font/google'
 import MainNav from '@/components/Nav/MainNav'
 import Footer from '@/components/Layout/Footer'
 import './globals.css'
 
-const playfair = Playfair_Display({
+const ebGaramond = EB_Garamond({
   subsets: ['latin'],
-  variable: '--font-headline',
-  display: 'swap',
-})
-
-const sourceSerif = Source_Serif_4({
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['400', '600', '700'],
+  variable: '--font-garamond',
+  weight: ['400', '500', '600', '700', '800'],
+  style: ['normal', 'italic'],
   display: 'swap',
 })
 
@@ -47,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${sourceSerif.variable} ${inter.variable}`}>
+    <html lang="en" className={`${ebGaramond.variable} ${inter.variable}`}>
       <body className="font-ui antialiased bg-[#f5f5f2] text-charcoal">
         <MainNav />
         <main>{children}</main>

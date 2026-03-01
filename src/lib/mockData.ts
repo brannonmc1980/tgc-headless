@@ -513,6 +513,478 @@ export const ARTICLES: Article[] = [
 <p>Both states require grace. Both states bear witness. Both states are, in their own way, gifts—not to us but through us, to a world that needs to see what it looks like to organize an entire life around the kingdom of God and not around the achievement of romantic fulfillment.</p>
     `,
   },
+  {
+    id: 8,
+    slug: 'augustine-was-right-about-the-restless-heart',
+    title: 'Augustine Was Right About the Restless Heart',
+    subheading: 'Fifteen hundred years after his Confessions, the bishop of Hippo's diagnosis of the human condition has never been more urgent.',
+    excerpt: 'In an age of infinite distraction and curated identity, Augustine's restless heart remains the most accurate diagnosis of the human condition ever penned.',
+    author: AUTHORS[0],
+    category: CATEGORIES[1],
+    tags: ['Augustine', 'Confessions', 'desire', 'rest', 'the heart'],
+    publishedAt: '2025-03-12T09:00:00Z',
+    updatedAt: '2025-03-12T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/augustine/1920/1080',
+      alt: 'Ancient stone archway at dusk',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">You have made us for yourself, O Lord, and our heart is restless until it rests in you." Augustine wrote those words in the opening pages of his <em>Confessions</em> around the year 397. Fifteen centuries later, they remain the most precise diagnosis of the human condition ever committed to parchment.</p>
+
+<p>We are not merely thinking animals or social creatures or even moral agents. We are, at the most fundamental level, creatures of desire—made for a love we cannot manufacture, aimed at a rest we cannot earn, haunted by a belonging that no earthly arrangement can supply.</p>
+
+<h2>The Architecture of Longing</h2>
+
+<p>Augustine understood that the heart is not simply a muscle. It is the seat of love, the center of will, the organizing principle of the whole person. What we love orders everything else. "Thou madest us for thyself," he wrote, not in a moment of pious sentiment, but as a structural claim about human nature. The restlessness is not a bug; it is a feature—a God-installed homing signal that will not be satisfied until it finds its proper object.</p>
+
+<p>This is why the pursuit of satisfaction through created things is not merely unsuccessful but structurally futile. It is not that pleasure is bad, or that beauty is false, or that human love is worthless. It is that none of these things were designed to bear the weight of ultimate longing. When we ask them to, they collapse—and we are left more hungry than before.</p>
+
+<blockquote class="pull-quote">
+  <p>The restlessness is not a bug in human nature. It is a feature—a God-installed homing signal that will not be satisfied until it finds its proper object.</p>
+</blockquote>
+
+<h2>What Augustine Saw That We Have Forgotten</h2>
+
+<p>The great bishop saw something that our therapeutic culture has systematically obscured: the problem with the human heart is not primarily psychological but theological. We are not restless because of childhood wounds or social conditioning or neurological imbalance—though all of these are real. We are restless because we were made for God and we have turned away from him.</p>
+
+<p>This means that the cure is also theological. You cannot rest a restless heart with better habits, more mindfulness, or a more curated life. These things may quiet the symptoms for a season. But the ache returns—because the ache is structural. It is the form of a creature waiting to be filled by its Creator.</p>
+
+<h3>A Word for the Scrolling Generation</h3>
+
+<p>Augustine lived in a world of relatively limited distraction. He had rhetoric, philosophy, theater, and a social life in the salons of Milan. We live in a world of infinite distraction—an entire civilization organized around the proposition that the next experience, the next click, the next relationship will finally satisfy. Augustine would recognize the mechanism immediately, even if he would be astonished by the scale. He spent his early life pursuing exactly this kind of restless satisfaction, and he documented its failure with unflinching honesty. "Late have I loved you," he wrote—not with self-pity but with wonder. The love that had been available all along had finally arrived. And it was enough.</p>
+    `,
+  },
+  {
+    id: 9,
+    slug: 'how-to-talk-with-your-children-about-death',
+    title: 'How to Talk with Your Children About Death',
+    subheading: 'Christian parents have a unique opportunity—and responsibility—to help their children grieve with hope rather than terror.',
+    excerpt: 'Most parents dread the question. But children who learn to speak honestly about death within a framework of resurrection hope are better equipped for life than those who are shielded from it.',
+    author: AUTHORS[6],
+    category: CATEGORIES[2],
+    tags: ['parenting', 'death', 'grief', 'children', 'resurrection'],
+    publishedAt: '2025-03-10T09:00:00Z',
+    updatedAt: '2025-03-10T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/children-death/1920/1080',
+      alt: 'A parent and child walking hand in hand through autumn leaves',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The question arrives without warning. A goldfish floats to the surface. A grandparent's chair sits empty at Christmas. A child in the backseat asks, quietly, "Mommy, are you going to die?" Most parents freeze. Some deflect. Some reach for euphemisms—"passed away," "went to sleep," "went to be with the angels"—that protect no one and confuse everyone.</p>
+
+<p>But Christian parents have a profound opportunity in these moments that secular parenting literature almost never recognizes: we have something true and beautiful and specific to say.</p>
+
+<h2>Why Honesty Matters</h2>
+
+<p>Child development research consistently shows that children who are given honest, age-appropriate explanations of death fare better emotionally than those who are shielded from it. They grieve more healthily, process loss more effectively, and develop a more integrated sense of reality. The instinct to protect children from death is understandable. But death is not something we can protect them from—only something we can prepare them for, or fail to.</p>
+
+<p>Christian honesty about death goes one step further: we acknowledge its reality and its horror while refusing to grant it the final word. "Jesus wept" at Lazarus's tomb—and then raised him. The tears and the resurrection belong together. Our children need to see both.</p>
+
+<blockquote class="pull-quote">
+  <p>We do not need to protect our children from death. We need to prepare them for it—with truth, with tears, and with the hope that defeats it.</p>
+</blockquote>
+
+<h2>Language That Helps</h2>
+
+<p>Use direct language. "Died" and "death" are not cruel words—they are honest ones. Euphemisms like "passed away" or "went to sleep" confuse young children and can create unhelpful associations (sleep becomes frightening; "passing" has no concrete meaning). Directness paired with warmth is the goal.</p>
+
+<p>Explain what you believe. "We believe that people who love Jesus go to be with him when they die, and that one day he will give them back their bodies, better than before." This is not too complicated for a six-year-old. Children understand more than we give them credit for, especially when the framework is given consistently over time.</p>
+
+<h3>When a Pet Dies</h3>
+
+<p>Pet deaths are often a child's first encounter with loss, and they should be taken seriously rather than minimized. A goldfish flush accompanied by "we'll get another one" teaches a child that death is trivial and grief is a problem to be solved quickly. A small, honest acknowledgment of sadness—"It's okay to feel sad. Nemo was your fish, and you loved him"—teaches something far more valuable: that love matters, loss is real, and we can face both with grace.</p>
+
+<p>You do not need a perfect theology of pet resurrection to handle this moment well. What you need is honesty about the loss, permission for the grief, and confidence that the God who made your child also made goldfish—and that all things are held in his hands.</p>
+    `,
+  },
+  {
+    id: 10,
+    slug: 'the-case-for-classical-christian-education',
+    title: 'The Case for Classical Christian Education',
+    subheading: 'Why more evangelical families are rediscovering the trivium—and what it means for the church.',
+    excerpt: 'Classical Christian education is no mere educational trend. It is a deliberate recovery of a vision of human formation rooted in truth, goodness, and beauty.',
+    author: AUTHORS[3],
+    category: CATEGORIES[5],
+    tags: ['education', 'classical education', 'church', 'culture', 'formation'],
+    publishedAt: '2025-03-08T09:00:00Z',
+    updatedAt: '2025-03-08T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/classical-ed/1920/1080',
+      alt: 'Books stacked on a wooden desk in warm afternoon light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Something unusual is happening in evangelical families across the country. Parents who were educated in public schools, who sent their children to public schools, who never thought much about pedagogy or Latin or the trivium, are pulling their children out and enrolling them in classical Christian schools—or founding co-ops, or converting spare rooms into grammar classrooms. The movement is growing faster than any single institution can track.</p>
+
+<p>What is drawing them? And what does it mean for the church?</p>
+
+<h2>What Classical Education Actually Is</h2>
+
+<p>Classical education is not simply difficult education, or old-fashioned education, or education with Latin. It is a comprehensive vision of human formation organized around the belief that there is a body of truth worth knowing, a set of intellectual virtues worth cultivating, and a tradition of wisdom worth inheriting. The medieval trivium—grammar, logic, rhetoric—is not a curriculum so much as a developmental theory: first you learn to receive (grammar), then you learn to reason (logic), then you learn to persuade (rhetoric).</p>
+
+<p>The "Christian" in classical Christian education matters as much as the "classical." It means that the entire enterprise is conducted within a teleological framework: human beings are made in the image of God, are being formed for eternity, and the purpose of education is not merely to produce successful graduates but to shape persons who love what is true, good, and beautiful—because these things reflect the nature of God himself.</p>
+
+<blockquote class="pull-quote">
+  <p>The purpose of classical Christian education is not to produce successful graduates but to shape persons who love what is true, good, and beautiful.</p>
+</blockquote>
+
+<h2>Why Now?</h2>
+
+<p>Several forces have converged to drive the current revival. The first is disillusionment with progressive education's outcomes—not only academic outcomes (test scores, literacy rates) but formational ones. Parents who have watched their children graduate from college intellectually unmoored, unable to engage with a challenging idea, or incapable of constructing a sustained argument, are searching for an alternative.</p>
+
+<p>The second is a deeper hunger for rootedness. Classical education offers students something that modern education rarely provides: a sense of participation in a great conversation that stretches back to Homer, flows through Augustine and Aquinas, and remains alive today. Students are not isolated individuals making meaning from scratch; they are heirs of a tradition.</p>
+
+<h3>The Church's Stake</h3>
+
+<p>The classical renewal matters for the church because the church needs formed minds, not merely sincere hearts. The creeds were written by people trained in logic. The great hymns were composed by people steeped in rhetoric. The theological tradition that sustains evangelical faith was built by people who knew Latin and Greek and could argue about prepositions.</p>
+
+<p>Classical Christian education is not the only faithful path for Christian families. But it is a serious one—and the churches that engage it thoughtfully will find themselves with congregants who can think, argue, and bear witness with unusual depth.</p>
+    `,
+  },
+  {
+    id: 11,
+    slug: 'praying-the-psalms-when-the-world-is-on-fire',
+    title: 'Praying the Psalms When the World Is on Fire',
+    subheading: 'In an era of perpetual crisis, the ancient hymnal of Israel teaches us how to bring our full selves before God.',
+    excerpt: 'The Psalms were not written for comfortable people in comfortable times. They were written for exactly the moment we are living in—and they show us how to pray when we don't know how.',
+    author: AUTHORS[4],
+    category: CATEGORIES[1],
+    tags: ['Psalms', 'prayer', 'lament', 'worship', 'Scripture'],
+    publishedAt: '2025-03-06T09:00:00Z',
+    updatedAt: '2025-03-06T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/psalms-fire/1920/1080',
+      alt: 'Open Bible with soft natural light',
+      caption: '',
+    },
+    isFeatured: true,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">In times of crisis, our prayers tend to shrink. We become afraid of saying the wrong thing to God, so we say very little. Or we say very cheerful things that don't match the fear in our chest. Or we stop praying altogether, because the gap between what we feel and what we think we're allowed to feel before God has grown too wide to bridge.</p>
+
+<p>The Psalms were written for this exact problem. They are, as Athanasius famously said, a mirror of the soul—a book in which every movement of the human heart finds its voice and is brought into the presence of God.</p>
+
+<h2>The Permission to Lament</h2>
+
+<p>More than a third of the 150 psalms are laments—poems of anguish, complaint, confusion, and protest addressed directly to God. This is not accidental. The ancient Israelites understood something that contemporary worship culture has largely forgotten: bringing your grief to God is an act of faith, not faithlessness.</p>
+
+<p>Psalm 88 ends with the word "darkness." There is no resolution, no turn to praise, no silver lining. The psalm ends in the dark, and it ends with God. This is not spiritual failure. It is spiritual maturity—the willingness to stay in the presence of God even when the presence of God feels like absence.</p>
+
+<blockquote class="pull-quote">
+  <p>The Psalms give us permission to bring our full selves into the presence of God—not the self we think God wants to see, but the self we actually are.</p>
+</blockquote>
+
+<h2>How to Begin</h2>
+
+<p>If you have not prayed the Psalms, the simplest way to begin is to read one each morning before you check your phone. Don't filter it. Don't apologize for the parts that feel too angry or too desperate. Let the words do their work. The Psalms will teach you to pray by giving you words to pray, and those words have been formed over three thousand years of human beings bringing their whole lives before the God who made them.</p>
+
+<p>Eugene Peterson, who spent his life translating and teaching the Psalms, said that they are "a school of prayer." You don't study the Psalms the way you study a textbook. You are apprenticed to them. You let them form the shape of your prayer over years, until their vocabulary becomes your vocabulary and their movements become your movements.</p>
+
+<h3>Psalms for Particular Seasons</h3>
+
+<p>When you are afraid: Psalm 46. When you have sinned: Psalm 51. When you feel abandoned: Psalm 22. When you are overwhelmed by suffering: Psalm 88. When you need to remember what is true: Psalm 103. When the world seems out of control: Psalm 2. These are not magic formulas—they are addresses, the kind of prayer that locates you in a tradition of people who have felt what you feel and brought it before the same God you are bringing it before now. You are never the first. You are never alone.</p>
+    `,
+  },
+  {
+    id: 12,
+    slug: 'when-your-church-disappoints-you',
+    title: 'When Your Church Disappoints You',
+    subheading: 'Every church is made of people who will fail you. The question is not whether that will happen, but what you will do when it does.',
+    excerpt: 'Disillusionment with the local church is at epidemic levels. But the solution is not a more perfect church—it is a more honest understanding of what the church is and what Jesus promised it would be.',
+    author: AUTHORS[2],
+    category: CATEGORIES[5],
+    tags: ['church', 'community', 'disappointment', 'forgiveness', 'pastoral'],
+    publishedAt: '2025-03-04T09:00:00Z',
+    updatedAt: '2025-03-04T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/church-disappoint/1920/1080',
+      alt: 'Empty church pews in soft morning light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">She had been attending the same church for eleven years. She had served in children's ministry, sat with grieving families, given faithfully to the benevolence fund. Then something happened—a decision made by the elders without explanation, a friendship that ended badly, a pastoral response to her crisis that felt cold and scripted. And now she sat across from me and said the words I have heard too many times: "I don't know if I can go back."</p>
+
+<p>I have sat with enough people in this exact chair to know that her pain is real. I also know that what she does next will shape her spiritual life for decades.</p>
+
+<h2>What You Were Promised and What You Weren't</h2>
+
+<p>Jesus promised that the gates of hell would not prevail against his church. He promised to be present where two or three are gathered in his name. He promised to build his church. He never promised that his church would be made of people who would not hurt you, lead you poorly, make decisions you disagreed with, or fail you in your most vulnerable moments.</p>
+
+<p>We come to the local church carrying expectations that the church was never designed to meet. We want a community of people who are already transformed rather than a community of people who are in the process of being transformed—which is to say, still sinning, still struggling, still getting things wrong. The church is not a community of the already-arrived. It is a community of the forgiven.</p>
+
+<blockquote class="pull-quote">
+  <p>You are not looking for a church without sinners. You are looking for a church where sinners are being genuinely changed—and where you are willing to be one of them.</p>
+</blockquote>
+
+<h2>The Grace You Have Received</h2>
+
+<p>The most stabilizing question I know for a person considering leaving a church is this: Have you been forgiven by God for things as serious as what has been done to you? If you are a Christian, the answer is yes. This is not a guilt trip. It is an orientation. We extend grace not because people deserve it but because we have received what we did not deserve, and that reception has changed the calculus of our obligations to one another.</p>
+
+<h3>When to Stay and When to Go</h3>
+
+<p>Not every church is worth staying in. There are churches marked by spiritual abuse, persistent false teaching, or leadership so broken that the congregation cannot be served. In those situations, leaving is not abandonment—it is wisdom. But most church disappointments are not in this category. Most are the ordinary friction of fallen people trying to love one another across their differences, and failing sometimes. In those situations, staying—with open eyes, honest conversation, and extended grace—is almost always the more Christlike path. The church you find on the other side of disappointment, if you stay and work through it, will be a church you know more deeply, love more honestly, and serve more faithfully than the idealized church you were defending in the first place.</p>
+    `,
+  },
+  {
+    id: 13,
+    slug: 'the-problem-with-follow-your-heart',
+    title: "The Problem with 'Follow Your Heart'",
+    subheading: "Everywhere you look, the culture tells you that authentic selfhood means acting on your deepest desires. Scripture tells a different story.",
+    excerpt: "\"Follow your heart\" sounds like wisdom, but Scripture consistently warns that the heart is the last place you should look for moral guidance without redemption.",
+    author: AUTHORS[1],
+    category: CATEGORIES[0],
+    tags: ['culture', 'the heart', 'authenticity', 'desire', 'identity'],
+    publishedAt: '2025-03-02T09:00:00Z',
+    updatedAt: '2025-03-02T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/follow-heart/1920/1080',
+      alt: 'Neon sign reading "Be True to Yourself" in warm pink light',
+      caption: '',
+    },
+    isFeatured: true,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">The phrase is everywhere. Graduation speeches. Animated films. Wellness retreats. Therapy-speak. "Follow your heart." It sounds obvious and even liberating. Who would argue against following your heart? What kind of monster tells you to override your deepest feelings? But the more carefully you examine the philosophy behind this phrase, the more clearly you see that it is not wisdom. It is, at best, a half-truth. At worst, it is a recipe for moral catastrophe.</p>
+
+<h2>The Cultural Story</h2>
+
+<p>The "follow your heart" ethic is the dominant moral philosophy of our moment, and it rests on a specific set of assumptions: that the authentic self is the inner self, that authenticity is achieved by acting in accordance with your desires, and that external constraints on those desires—from family, community, religion, or tradition—are inherently suspect and probably harmful.</p>
+
+<p>This story is coherent, and it has enormous cultural momentum behind it. But it requires you to believe something about the heart that the data, and more importantly the Scripture, does not support.</p>
+
+<h2>What the Bible Says About the Heart</h2>
+
+<p>The biblical portrait of the unredeemed heart is not flattering. Jeremiah 17:9 is blunt: "The heart is deceitful above all things, and desperately sick; who can understand it?" Jesus, in Mark 7, locates the source of moral evil not in external forces but in the heart: "From within, out of the heart of man, come evil thoughts, sexual immorality, theft, murder, adultery, coveting, wickedness, deceit, sensuality, envy, slander, pride, foolishness."</p>
+
+<p>This does not mean that every desire is evil or that the heart has no role in moral discernment. The redeemed heart, shaped by the Spirit and formed by Scripture, is a genuinely trustworthy guide. "Delight yourself in the Lord," the psalmist writes, "and he will give you the desires of your heart" (Ps. 37:4)—not because God will give you whatever you want, but because the heart that delights in God will want what is genuinely good.</p>
+
+<blockquote class="pull-quote">
+  <p>The question is not whether to follow your heart. The question is whose shaping your heart has received—and whether you trust that shaper.</p>
+</blockquote>
+
+<h3>The Shape of True Authenticity</h3>
+
+<p>The Christian alternative to "follow your heart" is not "suppress your desires" or "be defined by rules." It is something more demanding and more liberating than either: "be transformed by the renewing of your mind" (Rom. 12:2), so that what you desire and what is genuinely good converge over time. This is sanctification—the slow, Spirit-driven process by which the heart itself is reshaped to love what is lovely, to want what is worth wanting.</p>
+
+<p>The fully formed Christian is not someone who has crushed desire but someone whose desires have been healed. And that person—with redeemed desires, formed affections, a conscience shaped by Scripture—can follow their heart. Not because the heart is automatically trustworthy, but because it has been entrusted to a Shepherd who is.</p>
+    `,
+  },
+  {
+    id: 14,
+    slug: 'loneliness-is-not-a-sin',
+    title: 'Loneliness Is Not a Sin',
+    subheading: 'We treat loneliness as something to be fixed or overcome. But Scripture treats it as a condition to be carried faithfully—and brought to God.',
+    excerpt: 'Loneliness has become a public health crisis. The church has something profound to offer—not the elimination of loneliness, but the transformation of it.',
+    author: AUTHORS[5],
+    category: CATEGORIES[2],
+    tags: ['loneliness', 'community', 'singleness', 'friendship', 'suffering'],
+    publishedAt: '2025-02-28T09:00:00Z',
+    updatedAt: '2025-02-28T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/loneliness/1920/1080',
+      alt: 'A single figure seated at a window in winter light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The Surgeon General of the United States has declared loneliness a public health crisis. Studies suggest that chronic loneliness carries health risks comparable to smoking fifteen cigarettes a day. And yet in the church, we often treat loneliness as a symptom of spiritual failure—evidence that someone is too withdrawn, too picky about friendships, or insufficiently invested in community. We treat it as a problem to be solved rather than a condition to be carried.</p>
+
+<p>But loneliness is not a sin. Jesus was lonely. The Psalms are full of loneliness. The prophets experienced the particular anguish of speaking to people who would not listen. Loneliness is part of the texture of fallen human experience, and the church's task is not to pretend otherwise.</p>
+
+<h2>The Loneliness Jesus Knew</h2>
+
+<p>Consider Gethsemane. Jesus asked his three closest friends to stay awake with him during the most anguished night of his life. He returned and found them sleeping—not once, but three times. There is a loneliness in that scene that is palpable and unreduced. The Son of God, fully human, faced the cup of God's wrath in the company of sleeping disciples. "Could you not watch with me one hour?"</p>
+
+<p>This matters because it means that when we bring our loneliness to Christ, we are not bringing something foreign to him. We are bringing something he has carried. He is not a High Priest who is unable to sympathize with our weakness—he is one who has been tested in every way we are (Heb. 4:15), including in the failure of community to show up when it was most needed.</p>
+
+<blockquote class="pull-quote">
+  <p>When we bring our loneliness to Christ, we are not bringing something foreign to him. We are bringing something he has carried.</p>
+</blockquote>
+
+<h2>What Faithful Loneliness Looks Like</h2>
+
+<p>Faithful loneliness is not the absence of effort toward community. It is the refusal to treat community as an idol that, when withheld, licenses despair. It is the willingness to continue reaching out, serving others, and remaining present in the body of Christ even when the body of Christ has not yet provided the belonging you need. It is the patient, sometimes anguished practice of waiting on God to meet the need that people have not yet met.</p>
+
+<h3>What the Church Can Do</h3>
+
+<p>The most important thing the church can do for lonely people is stop pretending that everyone is fine. The greeting "how are you?" has become so thoroughly emptied of meaning that it functions as an instruction: perform wellness. When churches create genuine space for honest disclosure—in small groups, in pastoral conversations, in the liturgical acknowledgment of suffering—they create the conditions in which loneliness can be named, shared, and sometimes relieved. No church can eliminate loneliness. But every church can refuse to make it worse by demanding that suffering people perform happiness they do not feel.</p>
+    `,
+  },
+  {
+    id: 15,
+    slug: 'how-cs-lewis-would-think-about-social-media',
+    title: 'How C. S. Lewis Would Think About Social Media',
+    subheading: 'Lewis never saw a smartphone, but his writings on attention, community, and the deformation of desire tell us almost everything we need to know.',
+    excerpt: 'What would the author of The Screwtape Letters make of the attention economy? His diagnosis of the demonic is more useful than almost anything written after the invention of the algorithm.',
+    author: AUTHORS[1],
+    category: CATEGORIES[0],
+    tags: ['C.S. Lewis', 'technology', 'social media', 'attention', 'Screwtape'],
+    publishedAt: '2025-02-25T09:00:00Z',
+    updatedAt: '2025-02-25T09:00:00Z',
+    readingTime: 14,
+    format: 'longread',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/lewis-social/1920/1080',
+      alt: 'Vintage typewriter beside a glowing smartphone screen',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">In Letter VI of <em>The Screwtape Letters</em>, the senior demon Screwtape advises his nephew Wormwood on how to exploit the distraction economy of wartime England. "You will say that these are very small sins," Screwtape writes, "and doubtless, like all young tempters, you are anxious to be able to report spectacular wickedness. But do remember, the only thing that matters is the extent to which you separate the man from the Enemy. It does not matter how small the sins are, provided that their cumulative effect is to edge the man away from the Light and out into the Nothing."</p>
+
+<p>Lewis wrote that in 1942. He had never seen a smartphone, an algorithm, or a social media feed engineered to maximize engagement. And yet his diagnosis of the spiritual mechanics of distraction is more precise than almost anything written since the invention of the scroll button.</p>
+
+<h2>The Screwtape Playbook and the Attention Economy</h2>
+
+<p>Screwtape's strategy for damning Wormwood's patient is remarkably consistent throughout the letters: prevent sustained attention. Interrupt contemplation. Fill the mind with a "stream of immediate sense experiences" so that the patient never has a quiet moment in which to confront what he actually believes, wants, or is becoming. "The real trouble about the set your patient is living in," Screwtape explains, "is that it is merely Christian and superficially intellectual, though it does not contain many people of real spiritual understanding." The cure? Noise. Business. The perpetual now.</p>
+
+<p>This is, with uncanny precision, the design philosophy of every major social media platform. The goal is not to inform you, or to connect you, or even to entertain you. The goal is to capture your attention and hold it—because captured attention is the product that is sold to advertisers. Everything else is incidental. The algorithm that serves you content has no interest in your flourishing. It has an interest in your engagement. These are not the same thing.</p>
+
+<blockquote class="pull-quote">
+  <p>The algorithm that serves you content has no interest in your flourishing. It has an interest in your engagement. These are not the same thing.</p>
+</blockquote>
+
+<h2>Lewis on the Corruption of Pleasure</h2>
+
+<p>One of Lewis's most important insights—developed across <em>The Screwtape Letters</em>, <em>The Weight of Glory</em>, and <em>Surprised by Joy</em>—is that demonic strategy rarely involves making things bad. It involves making them empty. Screwtape tells Wormwood: "Never forget that when we are dealing with any pleasure in its healthy and satisfying form, we are, in a sense, on the Enemy's ground. I know we have won many a soul through pleasure. All the same, it is His invention, not ours. He made the pleasures: all our research so far has not enabled us to produce one."</p>
+
+<p>The demonic strategy, then, is not to replace genuine pleasure with obvious vice. It is to replace genuine pleasure with an imitation so close to the real thing that the consumer never notices the difference—until, over years of ingestion, they find they have lost the capacity for the real thing altogether.</p>
+
+<p>This is precisely what social media does to human connection. We are social creatures. We were made for belonging, for recognition, for the experience of being known. Social media offers an imitation of all these things that is close enough to feel satisfying in the moment but hollow enough to leave us hungrier than before. The dopamine hit of a like is not the same as the experience of being genuinely seen by a friend who has known you for twenty years. But if you spend enough time pursuing the former, you will find the capacity for the latter has quietly atrophied.</p>
+
+<h2>What Lewis Would Prescribe</h2>
+
+<p>In <em>The Weight of Glory</em>, Lewis writes about the "inconsolable longing"—the <em>Sehnsucht</em>—that he believed was hardwired into human experience: a longing for something that no earthly thing satisfies, pointing toward the One who made us for himself. His counsel for the spiritual life was not primarily to avoid bad things but to cultivate good ones: deep friendship, long books, sustained prayer, the pleasures that grow rather than diminish with repetition.</p>
+
+<p>"Friendship is unnecessary," he wrote in <em>The Four Loves</em>, "like philosophy, like art, like the universe itself (for God did not need to create). It has no survival value; rather it is one of those things which give value to survival." This is the kind of thing you cannot build in a comments section. It is built in the slow accumulation of shared time, honest conversation, and the willingness to be present to another person without an audience.</p>
+
+<h3>A Practical Lewisian Audit</h3>
+
+<p>If Lewis were counseling a contemporary Christian on their relationship to social media, I suspect he would ask something like this: Does your use of these platforms increase your capacity for genuine attention, real friendship, and honest self-knowledge? Or does it diminish those capacities? If the latter, it is not merely a waste of time. It is a spiritual formation tool—one that is forming you, slowly and reliably, away from the life you were made for.</p>
+
+<p>The question is not whether social media is intrinsically evil. Lewis was far too sophisticated a thinker to traffic in such simplicities. The question is what it is doing to the texture of your inner life—to your ability to be still, to be present, to desire deeply, to love concretely. These are the questions he would want us to take seriously. And the answers, if we are honest, are not comfortable.</p>
+    `,
+  },
+  {
+    id: 16,
+    slug: 'the-theology-of-rest-why-sabbath-still-matters',
+    title: 'The Theology of Rest: Why Sabbath Still Matters',
+    subheading: 'In a culture that treats productivity as a virtue and busyness as a badge of honor, the commandment to rest is more radical—and more necessary—than ever.',
+    excerpt: 'Sabbath is not a lifestyle suggestion. It is a theological statement about who God is, who we are, and what work is ultimately for.',
+    author: AUTHORS[0],
+    category: CATEGORIES[4],
+    tags: ['Sabbath', 'rest', 'work', 'faith and work', 'Ten Commandments'],
+    publishedAt: '2025-02-22T09:00:00Z',
+    updatedAt: '2025-02-22T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/sabbath-rest/1920/1080',
+      alt: 'A hammock strung between two trees at golden hour',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Of the Ten Commandments, the fourth is the one most evangelical Christians feel most comfortable ignoring. We do not murder. We do not steal. We do not bow to idols. But "remember the Sabbath day, to keep it holy" (Exod. 20:8)—this one we treat as culturally conditioned, spiritually optional, or simply impractical in the face of modern demands. We are wrong on all three counts.</p>
+
+<h2>Sabbath as Theological Protest</h2>
+
+<p>The Sabbath is not primarily a productivity strategy, a wellness practice, or a weekly recharge cycle. It is a theological statement. To rest on the seventh day is to declare, with your body and your calendar, that you are not the source of your own sustenance. It is to act out the belief that the world will not fall apart if you stop working for a day—because you were not holding it together in the first place.</p>
+
+<p>In the ancient Near East, where Israel received this commandment, to rest was an act of defiance. In Egypt, there was no Sabbath. Pharaoh's economy ran on uninterrupted labor, extracted from a people who were valued for their productivity and discarded when they could no longer produce. The Sabbath commandment was given to a people fresh out of slavery, and it said to them: you are not slaves anymore. Your worth is not your output. God rested; now you rest. This is what freedom looks like.</p>
+
+<blockquote class="pull-quote">
+  <p>To rest on the Sabbath is to declare that you are not the source of your own sustenance—and that the world will not fall apart if you stop working for a day.</p>
+</blockquote>
+
+<h2>Why the New Testament Doesn't Eliminate It</h2>
+
+<p>Christians sometimes point to Colossians 2:16-17—where Paul says that the Sabbath is a "shadow" of Christ—as a license to ignore the day entirely. But Paul's point is not that rest no longer matters; it is that the Sabbath finds its fulfillment in Christ. Jesus is our rest. And yet Hebrews 4 holds both things in tension: "there remains a Sabbath rest for the people of God" (v. 9). The rest Christ provides is both a present reality and a future hope—and the weekly practice of Sabbath points toward both.</p>
+
+<p>Many faithful Christians through church history have observed one day in seven as a day of rest and worship, not as a legal requirement but as a spiritual discipline—a structured way of practicing dependence on God, reorienting desire toward the eternal, and resisting the cultural pressure to justify their existence through productivity.</p>
+
+<h3>What Sabbath Looks Like in Practice</h3>
+
+<p>The Sabbath is less about a strict list of prohibitions and more about a posture of reception. It is a day for things that cannot be monetized: worship, long meals, unhurried conversation, the reading of things that will not make you more efficient. It is a day to remember that you are a creature made in the image of a God who rested—and that the image you bear is the image of One who found creation good and called it enough.</p>
+
+<p>In a culture that treats busyness as virtue and rest as weakness, this is a countercultural act. It may, in fact, be one of the most prophetic things a Christian family can do: to stop one day a week and declare, by their rest, that there is a God who is working even when they are not, and that this God can be trusted.</p>
+    `,
+  },
+  {
+    id: 17,
+    slug: 'what-the-early-church-knew-about-suffering',
+    title: 'What the Early Church Knew About Suffering That We Have Forgotten',
+    subheading: 'The first Christians did not explain away suffering. They entered it—and emerged from it with a theology that sustained martyrs.',
+    excerpt: 'The early church's theology of suffering was not a cope or a rationalization. It was a hard-won, deeply biblical account of why pain matters and what it is for.',
+    author: AUTHORS[2],
+    category: CATEGORIES[1],
+    tags: ['suffering', 'early church', 'persecution', 'theology', 'faith'],
+    publishedAt: '2025-02-18T09:00:00Z',
+    updatedAt: '2025-02-18T09:00:00Z',
+    readingTime: 9,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/early-church/1920/1080',
+      alt: 'Ancient Roman catacomb with flickering candle light',
+      caption: '',
+    },
+    isFeatured: true,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">When Polycarp, bishop of Smyrna, was brought before the Roman proconsul and offered his life in exchange for cursing Christ, he declined with a sentence that has echoed across twenty centuries: "Eighty-six years have I served him, and he has done me no wrong. How can I blaspheme my King who saved me?" He was burned alive in the stadium. He was eighty-six years old. He had spent his entire adult life preparing for this moment—not because he knew it was coming, but because he had spent his entire adult life learning to hold the things of this world loosely.</p>
+
+<p>The early church produced Polycarps the way the contemporary church produces podcasters. Not because they were braver than we are, but because they had a theology of suffering that we have largely abandoned.</p>
+
+<h2>Suffering as Participation</h2>
+
+<p>The early Christian understanding of suffering was shaped at every point by the crucifixion. The death of Jesus was not a tragedy to be explained away or a scandal to be minimized. It was the central fact of history—and it reframed every subsequent experience of pain. To suffer, for the early Christian, was to participate in something. It was to be drawn into the shape of Jesus's own life: "I have been crucified with Christ," Paul writes (Gal. 2:20), using the perfect tense—a past action with ongoing present effects.</p>
+
+<p>This participation language runs throughout the New Testament. Paul speaks of "sharing in Christ's sufferings" (Phil. 3:10). Peter addresses scattered, persecuted Christians by telling them they are "partakers of Christ's sufferings" (1 Pet. 4:13). James opens his letter by telling persecuted believers to count their trials as "pure joy" (1:2). None of these writers is minimizing the pain. They are locating it—giving it a context that transforms its meaning without erasing its weight.</p>
+
+<blockquote class="pull-quote">
+  <p>The early church did not explain away suffering. It located suffering—inside the story of a crucified and risen Lord—and found that the location changed everything.</p>
+</blockquote>
+
+<h2>What the Martyrs Understood</h2>
+
+<p>The martyrdom accounts of the early church—Polycarp, Perpetua, Felicitas, Ignatius of Antioch—share a striking feature: the martyrs do not appear to be suffering despite their faith but because of it, and within it. Perpetua, a young mother facing execution in the Carthage arena, recorded her dreams and thoughts in the days before her death. What is remarkable is not her courage but her peace—a peace she attributes not to emotional detachment but to a vivid sense of being held by God in the midst of horror.</p>
+
+<p>Ignatius of Antioch, en route to Rome to be thrown to the lions, wrote letters to the churches he passed that are incandescent with a strange joy. He did not want to be rescued. He wanted to arrive at his destination—which was not Rome but Christ. "Now I begin to be a disciple," he wrote. "I care for nothing, of visible or invisible things, so that I may but win Christ."</p>
+
+<h3>What We Have Lost</h3>
+
+<p>Contemporary Christianity, especially in the prosperous West, has largely lost this theology. We have replaced the theology of participation with a theology of exemption—the belief, sometimes explicit and often implicit, that faith should protect us from suffering rather than accompany us through it. The prosperity gospel is only the most garish version of this error. Its respectable cousin shows up whenever we treat suffering primarily as a problem to be solved rather than a reality to be inhabited.</p>
+
+<p>The recovery of the early church's theology of suffering is not morbid. It is liberating. It frees us from the exhausting project of explaining why bad things happen to good people and invites us instead into the more demanding and more honest project of remaining faithful in the darkness, trusting that the darkness is not the end of the story—because we have read the end of the story, and it begins with an empty tomb.</p>
+    `,
+  },
 ]
 
 // Get article by slug
