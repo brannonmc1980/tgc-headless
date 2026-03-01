@@ -8,6 +8,7 @@ interface ArticleCardProps {
   variant?: 'default' | 'horizontal' | 'compact' | 'hero'
   showCategory?: boolean
   showExcerpt?: boolean
+  dark?: boolean
 }
 
 export default function ArticleCard({
@@ -15,6 +16,7 @@ export default function ArticleCard({
   variant = 'default',
   showCategory = true,
   showExcerpt = false,
+  dark = false,
 }: ArticleCardProps) {
   const href = `/article/${article.slug}`
 
@@ -73,14 +75,14 @@ export default function ArticleCard({
         </Link>
         <div className="flex-1 min-w-0">
           {showCategory && (
-            <CategoryBadge name={article.category.name} slug={article.category.slug} />
+            <CategoryBadge name={article.category.name} slug={article.category.slug} light={dark} />
           )}
           <Link href={href}>
-            <h3 className="font-headline text-xl text-charcoal mt-1 leading-snug group-hover:opacity-90 transition-opacity duration-100 line-clamp-3">
+            <h3 className={`font-headline text-xl mt-1 leading-snug group-hover:opacity-90 transition-opacity duration-100 line-clamp-3 ${dark ? 'text-[#fbfbfa]' : 'text-charcoal'}`}>
               {smartQuotes(article.title)}
             </h3>
           </Link>
-          <p className="text-stone-500 text-xs font-ui mt-1.5">
+          <p className={`text-xs font-ui mt-1.5 ${dark ? 'text-stone-400' : 'text-stone-500'}`}>
             {article.author.name} · {formatDate(article.publishedAt)}
           </p>
         </div>
@@ -122,23 +124,23 @@ export default function ArticleCard({
       </Link>
       <div className="pt-4 flex-1">
         {showCategory && (
-          <CategoryBadge name={article.category.name} slug={article.category.slug} />
+          <CategoryBadge name={article.category.name} slug={article.category.slug} light={dark} />
         )}
         <Link href={href}>
-          <h3 className="font-headline text-2xl lg:text-3xl text-charcoal mt-2 leading-snug group-hover:opacity-90 transition-opacity duration-100">
+          <h3 className={`font-headline text-2xl lg:text-3xl mt-2 leading-snug group-hover:opacity-90 transition-opacity duration-100 ${dark ? 'text-[#fbfbfa]' : 'text-charcoal'}`}>
             {smartQuotes(article.title)}
           </h3>
         </Link>
         {showExcerpt && (
-          <p className="font-body text-stone-600 text-base mt-2 line-clamp-3 leading-relaxed">
+          <p className={`font-body text-base mt-2 line-clamp-3 leading-relaxed ${dark ? 'text-stone-400' : 'text-stone-600'}`}>
             {article.excerpt}
           </p>
         )}
-        <div className="flex items-center gap-2 mt-3 text-stone-500 text-xs font-ui">
+        <div className={`flex items-center gap-2 mt-3 text-xs font-ui ${dark ? 'text-stone-400' : 'text-stone-500'}`}>
           <span className="font-medium">{article.author.name}</span>
-          <span className="w-1 h-1 rounded-full bg-stone-300" />
+          <span className={`w-1 h-1 rounded-full ${dark ? 'bg-stone-600' : 'bg-stone-300'}`} />
           <span>{formatDate(article.publishedAt)}</span>
-          <span className="w-1 h-1 rounded-full bg-stone-300" />
+          <span className={`w-1 h-1 rounded-full ${dark ? 'bg-stone-600' : 'bg-stone-300'}`} />
           <span>{article.readingTime} min</span>
         </div>
       </div>

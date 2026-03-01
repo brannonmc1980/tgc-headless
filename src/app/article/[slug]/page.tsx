@@ -192,7 +192,7 @@ export default async function ArticlePage({ params }: Params) {
                       </h3>
                       <div className="space-y-4">
                         {related.map(rel => (
-                          <ArticleCard key={rel.id} article={rel} variant="horizontal" showCategory />
+                          <ArticleCard key={rel.id} article={rel} variant="horizontal" showCategory dark={isDark} />
                         ))}
                       </div>
                     </div>
@@ -212,7 +212,7 @@ export default async function ArticlePage({ params }: Params) {
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {related.map(rel => (
-                  <ArticleCard key={rel.id} article={rel} variant="default" showCategory />
+                  <ArticleCard key={rel.id} article={rel} variant="default" showCategory dark={isDark} />
                 ))}
               </div>
             </div>
