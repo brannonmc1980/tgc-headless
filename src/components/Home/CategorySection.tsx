@@ -17,7 +17,7 @@ export default function CategorySection({ category, articles }: CategorySectionP
         {/* Category header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
-            <h2 className="font-headline text-xl text-charcoal">
+            <h2 className="font-ui font-semibold text-xl" style={{ color: '#303a3d' }}>
               {category.name}
             </h2>
           </div>
