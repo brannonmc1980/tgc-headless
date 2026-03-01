@@ -2,6 +2,8 @@ import Anthropic from '@anthropic-ai/sdk'
 import Fuse from 'fuse.js'
 import { ARTICLES } from '@/lib/mockData'
 
+export const maxDuration = 30
+
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 const fuse = new Fuse(ARTICLES, {
@@ -95,9 +97,9 @@ ${articleContext}`,
           }
         }
       } catch (err) {
-        controller.enqueue(
-          encoder.encode('Sorry, I encountered an error. Please try again.')
-        )
+        const msg = err instanceof Error ? err.message : String(err)
+        console.error('[/api/chat] error:', msg)
+        controller.enqueue(encoder.encode(`Error: ${msg}`))
       } finally {
         controller.close()
       }
