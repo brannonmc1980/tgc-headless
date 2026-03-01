@@ -1767,3 +1767,15 @@ export function getRecentArticles(limit = 6): Article[] {
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, limit)
 }
+
+// Get author by slug
+export function getAuthorBySlug(slug: string) {
+  return AUTHORS.find(a => a.slug === slug)
+}
+
+// Get all articles by an author slug, newest first
+export function getArticlesByAuthorSlug(slug: string): Article[] {
+  return [...ARTICLES]
+    .filter(a => a.author.slug === slug)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+}

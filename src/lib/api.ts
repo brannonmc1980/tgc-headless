@@ -1,9 +1,12 @@
 import { Article, WPPost, Category } from './types'
 import {
   ARTICLES,
+  AUTHORS,
   CATEGORIES,
   getArticleBySlug,
   getArticlesByCategory,
+  getAuthorBySlug,
+  getArticlesByAuthorSlug,
   getFeaturedArticles,
   getEditorsPicks,
   getRecentArticles,
@@ -127,4 +130,12 @@ export async function getRecent(limit = 6): Promise<Article[]> {
   }
 }
 
-export { CATEGORIES }
+export async function getAuthor(slug: string) {
+  return getAuthorBySlug(slug) ?? null
+}
+
+export async function getAuthorArticles(slug: string) {
+  return getArticlesByAuthorSlug(slug)
+}
+
+export { CATEGORIES, AUTHORS }
