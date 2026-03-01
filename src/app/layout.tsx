@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description:
     'The Gospel Coalition exists to help Christians know and love the gospel of Jesus Christ through biblical truth, spiritual formation, and thoughtful cultural engagement.',
   metadataBase: new URL('https://tgc-headless.vercel.app'),
+  icons: {
+    icon: '/tgc-favicon.gif',
+    shortcut: '/tgc-favicon.gif',
+  },
   openGraph: {
     type: 'website',
     siteName: 'The Gospel Coalition',
