@@ -83,7 +83,7 @@ export default async function ArticlePage({ params }: Params) {
             <div
               className={`absolute inset-0 ${
                 isDark
-                  ? 'bg-gradient-to-t from-[#0f172a] via-[#0f172a]/60 to-transparent'
+                  ? 'bg-gradient-to-t from-[#20272a] via-[#20272a]/60 to-transparent'
                   : 'bg-gradient-to-t from-black/85 via-black/40 to-transparent'
               }`}
             />
@@ -123,7 +123,7 @@ export default async function ArticlePage({ params }: Params) {
         </div>
 
         {/* Article body */}
-        <div className={`py-12 lg:py-16 ${isDark ? 'bg-[#0f172a]' : 'bg-white'}`}>
+        <div className={`py-12 lg:py-16 ${isDark ? 'bg-[#20272a]' : 'bg-[#f5f5f2]'}`}>
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
               {/* Main content */}
@@ -202,7 +202,7 @@ export default async function ArticlePage({ params }: Params) {
 
         {/* More from category */}
         {related.length > 0 && (
-          <section className={`py-12 border-t ${isDark ? 'border-white/10 bg-[#0f172a]' : 'border-stone-200 bg-stone-50'}`}>
+          <section className={`py-12 border-t ${isDark ? 'border-white/10 bg-[#20272a]' : 'border-stone-200 bg-stone-50'}`}>
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className={`font-headline text-2xl font-bold mb-8 ${isDark ? 'text-white' : 'text-charcoal'}`}>
                 More from {article.category.name}
@@ -223,7 +223,7 @@ export default async function ArticlePage({ params }: Params) {
      STANDARD ARTICLE FORMAT
   ══════════════════════════════════════════════════════════ */
   return (
-    <div className="bg-white">
+    <div className="bg-[#f5f5f2]">
       {/* Article header */}
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         {/* Breadcrumb */}

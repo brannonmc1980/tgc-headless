@@ -32,7 +32,7 @@ export default async function CategoryPage({ params }: Params) {
   const [heroArticle, ...rest] = articles
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#f5f5f2]">
       {/* Category header */}
       <div className="border-b border-stone-200 bg-warm-white">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
