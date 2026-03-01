@@ -4,11 +4,16 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import Link from 'next/link'
 import Fuse from 'fuse.js'
 import { ARTICLES } from '@/lib/mockData'
-import { tagToSlug } from '@/lib/tagUtils'
 import { smartQuotes } from '@/lib/typography'
+import { Article } from '@/lib/types'
 
 interface SearchOverlayProps {
   onClose: () => void
+}
+
+interface Message {
+  role: 'user' | 'assistant'
+  content: string
 }
 
 function formatDate(dateStr: string): string {
@@ -19,43 +24,44 @@ function formatDate(dateStr: string): string {
   })
 }
 
+const fuseInstance = new Fuse(ARTICLES, {
+  keys: [
+    { name: 'title', weight: 3 },
+    { name: 'author.name', weight: 2 },
+    { name: 'subheading', weight: 1.5 },
+    { name: 'tags', weight: 1 },
+    { name: 'excerpt', weight: 0.8 },
+    { name: 'category.name', weight: 0.8 },
+  ],
+  threshold: 0.35,
+  includeScore: true,
+  minMatchCharLength: 2,
+})
+
 export default function SearchOverlay({ onClose }: SearchOverlayProps) {
-  const [query, setQuery] = useState('')
-  const [sortBy, setSortBy] = useState<'relevance' | 'date'>('relevance')
+  const [input, setInput] = useState('')
+  const [messages, setMessages] = useState<Message[]>([])
+  const [streamingContent, setStreamingContent] = useState('')
+  const [isStreaming, setIsStreaming] = useState(false)
+  const [sidebarArticles, setSidebarArticles] = useState<Article[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
+  const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  const fuse = useMemo(
+  const liveArticles = useMemo(() => {
+    if (!input.trim()) return []
+    return fuseInstance.search(input).slice(0, 6).map(r => r.item)
+  }, [input])
+
+  const recentArticles = useMemo(
     () =>
-      new Fuse(ARTICLES, {
-        keys: [
-          { name: 'title', weight: 3 },
-          { name: 'author.name', weight: 2 },
-          { name: 'subheading', weight: 1.5 },
-          { name: 'tags', weight: 1 },
-          { name: 'excerpt', weight: 0.8 },
-          { name: 'category.name', weight: 0.8 },
-        ],
-        threshold: 0.35,
-        includeScore: true,
-        minMatchCharLength: 2,
-      }),
-    []
-  )
-
-  const results = useMemo(() => {
-    if (!query.trim()) return []
-    const raw = fuse.search(query)
-    if (sortBy === 'date') {
-      return [...raw]
+      [...ARTICLES]
         .sort(
           (a, b) =>
-            new Date(b.item.publishedAt).getTime() -
-            new Date(a.item.publishedAt).getTime()
+            new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
         )
-        .map(r => r.item)
-    }
-    return raw.map(r => r.item)
-  }, [query, sortBy, fuse])
+        .slice(0, 6),
+    []
+  )
 
   useEffect(() => {
     inputRef.current?.focus()
@@ -71,30 +77,87 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
 
   useEffect(() => {
     document.body.style.overflow = 'hidden'
-    return () => { document.body.style.overflow = '' }
+    return () => {
+      document.body.style.overflow = ''
+    }
   }, [])
 
-  const recentArticles = [...ARTICLES]
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, 6)
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages, streamingContent])
+
+  async function handleSubmit() {
+    const query = input.trim()
+    if (!query || isStreaming) return
+
+    const userMessage: Message = { role: 'user', content: query }
+    const newMessages = [...messages, userMessage]
+    setMessages(newMessages)
+    setInput('')
+
+    const matched = fuseInstance.search(query).slice(0, 6).map(r => r.item)
+    setSidebarArticles(matched)
+
+    setIsStreaming(true)
+    setStreamingContent('')
+
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: newMessages.map(m => ({ role: m.role, content: m.content })),
+          query,
+        }),
+      })
+
+      if (!res.ok || !res.body) throw new Error('API error')
+
+      const reader = res.body.getReader()
+      const decoder = new TextDecoder()
+      let accumulated = ''
+
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        const chunk = decoder.decode(value, { stream: true })
+        accumulated += chunk
+        setStreamingContent(accumulated)
+      }
+
+      setMessages(prev => [...prev, { role: 'assistant', content: accumulated }])
+      setStreamingContent('')
+    } catch {
+      setMessages(prev => [
+        ...prev,
+        { role: 'assistant', content: 'Sorry, I encountered an error. Please try again.' },
+      ])
+      setStreamingContent('')
+    } finally {
+      setIsStreaming(false)
+    }
+  }
+
+  const hasConversation = messages.length > 0 || isStreaming
 
   return (
     <div className="fixed inset-0 z-[200] bg-[#fbfbfa] flex flex-col animate-search-in">
-      {/* Search bar — mirrors nav height */}
+      {/* Header */}
       <div className="border-b border-stone-200 flex-shrink-0">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 h-16">
-            {/* Dimmed logo */}
             <Link href="/" onClick={onClose} className="flex-shrink-0 hidden sm:block">
               <img
                 src="/TGC-logo.svg"
                 alt="The Gospel Coalition"
                 className="h-9 w-auto"
-                style={{ filter: 'brightness(0) saturate(100%) invert(69%) sepia(19%) saturate(513%) hue-rotate(67deg) brightness(94%) contrast(87%)' }}
+                style={{
+                  filter:
+                    'brightness(0) saturate(100%) invert(69%) sepia(19%) saturate(513%) hue-rotate(67deg) brightness(94%) contrast(87%)',
+                }}
               />
             </Link>
 
-            {/* Search icon + input */}
             <div className="flex items-center gap-3 flex-1 min-w-0">
               <svg
                 className="w-5 h-5 text-stone-400 flex-shrink-0"
@@ -112,159 +175,203 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
               <input
                 ref={inputRef}
                 type="text"
-                value={query}
-                onChange={e => setQuery(e.target.value)}
-                placeholder="Search articles, authors, topics…"
+                value={input}
+                onChange={e => setInput(e.target.value)}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault()
+                    handleSubmit()
+                  }
+                }}
+                placeholder="Ask about faith, theology, culture…"
                 className="flex-1 min-w-0 bg-transparent text-lg font-ui text-charcoal placeholder-stone-300 outline-none py-4"
+                disabled={isStreaming}
               />
-              {query && (
+              {input && !isStreaming && (
                 <button
-                  onClick={() => setQuery('')}
+                  onClick={handleSubmit}
+                  className="px-3 py-1.5 bg-navy text-white text-xs font-ui font-semibold rounded-sm hover:bg-navy/90 transition-colors flex-shrink-0"
+                >
+                  Ask
+                </button>
+              )}
+              {input && (
+                <button
+                  onClick={() => setInput('')}
                   aria-label="Clear"
                   className="text-stone-400 hover:text-charcoal transition-colors p-1 flex-shrink-0"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               )}
             </div>
 
-            {/* Close */}
             <button
               onClick={onClose}
               className="flex items-center gap-1.5 text-xs font-ui text-stone-400 hover:text-charcoal transition-colors flex-shrink-0"
             >
               <span className="hidden sm:inline">Close</span>
-              <kbd className="px-1.5 py-0.5 bg-stone-100 border border-stone-200 rounded text-stone-500 font-mono text-xs">ESC</kbd>
+              <kbd className="px-1.5 py-0.5 bg-stone-100 border border-stone-200 rounded text-stone-500 font-mono text-xs">
+                ESC
+              </kbd>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Results */}
-      <div className="flex-1 overflow-y-auto">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {query.trim() ? (
-            <>
-              {/* Sort + count */}
-              <div className="flex items-center justify-between mb-6">
-                <span className="font-ui text-sm text-stone-400">
-                  {results.length} {results.length === 1 ? 'result' : 'results'}
-                </span>
-                <div className="flex items-center border border-stone-200 rounded-sm overflow-hidden">
-                  {(['relevance', 'date'] as const).map(s => (
-                    <button
-                      key={s}
-                      onClick={() => setSortBy(s)}
-                      className={`px-3 py-1.5 text-xs font-ui font-semibold capitalize transition-colors ${
-                        sortBy === s
-                          ? 'bg-navy text-white'
-                          : 'text-stone-500 hover:text-navy bg-transparent'
-                      }`}
+      {/* Body */}
+      <div className="flex-1 overflow-hidden">
+        {hasConversation ? (
+          /* ── Two-column chat layout ── */
+          <div className="h-full flex">
+            {/* Left: conversation */}
+            <div className="flex-1 overflow-y-auto border-r border-stone-200">
+              <div className="max-w-2xl mx-auto px-6 lg:px-10 py-8 space-y-8">
+                {messages.map((msg, i) =>
+                  msg.role === 'user' ? (
+                    <div key={i} className="flex justify-end">
+                      <div className="bg-navy text-white px-4 py-3 rounded-lg max-w-sm font-ui text-sm leading-relaxed">
+                        {msg.content}
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      key={i}
+                      className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none"
                     >
-                      {s}
-                    </button>
-                  ))}
-                </div>
-              </div>
+                      {msg.content}
+                    </div>
+                  )
+                )}
 
-              {results.length > 0 ? (
+                {/* Streaming response */}
+                {isStreaming && !streamingContent && (
+                  <div className="flex gap-1.5 items-center py-2">
+                    {[0, 150, 300].map(delay => (
+                      <span
+                        key={delay}
+                        className="w-2 h-2 bg-stone-300 rounded-full animate-bounce"
+                        style={{ animationDelay: `${delay}ms` }}
+                      />
+                    ))}
+                  </div>
+                )}
+                {streamingContent && (
+                  <div className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none">
+                    {streamingContent}
+                    <span className="inline-block w-0.5 h-[1em] bg-navy animate-pulse ml-0.5 align-middle" />
+                  </div>
+                )}
+
+                <div ref={messagesEndRef} />
+              </div>
+            </div>
+
+            {/* Right: related articles */}
+            <div className="w-72 xl:w-88 flex-shrink-0 overflow-y-auto bg-stone-50/60 border-l border-stone-100">
+              <div className="px-5 py-6">
+                <h2 className="font-ui text-xs font-semibold uppercase tracking-widest text-stone-400 mb-5">
+                  Related Articles
+                </h2>
+                {sidebarArticles.length > 0 ? (
+                  <div className="space-y-5">
+                    {sidebarArticles.map(article => (
+                      <Link
+                        key={article.id}
+                        href={`/article/${article.slug}`}
+                        onClick={onClose}
+                        className="block group"
+                      >
+                        <span className="font-ui text-[10px] font-semibold uppercase tracking-widest text-stone-400">
+                          {article.category.name}
+                        </span>
+                        <h3 className="font-headline text-[15px] text-charcoal group-hover:text-navy transition-colors leading-snug mt-0.5">
+                          {smartQuotes(article.title)}
+                        </h3>
+                        <p className="font-ui text-xs text-stone-400 mt-1">
+                          {article.author.name} · {formatDate(article.publishedAt)}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="font-ui text-sm text-stone-400">No matching articles.</p>
+                )}
+              </div>
+            </div>
+          </div>
+        ) : (
+          /* ── Idle state ── */
+          <div className="overflow-y-auto h-full">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <div className="max-w-2xl">
+                <h2 className="font-ui text-xs font-semibold uppercase tracking-widest text-stone-400 mb-5">
+                  {input.trim() && liveArticles.length > 0
+                    ? `${liveArticles.length} article${liveArticles.length === 1 ? '' : 's'} found — press Enter to ask`
+                    : 'Recent Articles'}
+                </h2>
                 <div className="divide-y divide-stone-100">
-                  {results.map(article => (
+                  {(input.trim() ? liveArticles : recentArticles).map(article => (
                     <Link
                       key={article.id}
                       href={`/article/${article.slug}`}
                       onClick={onClose}
-                      className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 py-5 group hover:bg-stone-50/80 -mx-4 px-4 transition-colors"
+                      className="flex items-start justify-between gap-8 py-4 group hover:bg-stone-50/80 -mx-4 px-4 transition-colors"
                     >
                       <div className="flex-1 min-w-0">
                         <span className="font-ui text-xs text-stone-400 uppercase tracking-widest">
                           {article.category.name}
                         </span>
-                        <h3 className="font-headline text-xl lg:text-2xl text-charcoal group-hover:text-navy transition-colors leading-snug mt-0.5">
+                        <h3 className="font-headline text-lg text-charcoal group-hover:text-navy transition-colors leading-snug mt-0.5">
                           {smartQuotes(article.title)}
                         </h3>
-                        <p className="font-body text-stone-500 text-sm mt-1 line-clamp-1 hidden sm:block">
-                          {article.subheading}
-                        </p>
-                        {article.tags.length > 0 && (
-                          <div className="flex flex-wrap gap-1.5 mt-2">
-                            {article.tags.slice(0, 3).map(tag => (
-                              <span
-                                key={tag}
-                                className="px-2 py-0.5 text-xs font-ui text-stone-400 bg-stone-100 rounded-full"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                        )}
                       </div>
-                      <div className="sm:text-right sm:flex-shrink-0 sm:w-44 sm:pt-1">
-                        <p className="font-ui text-xs font-semibold text-stone-600">{article.author.name}</p>
-                        <p className="font-ui text-xs text-stone-400 mt-0.5">{formatDate(article.publishedAt)}</p>
+                      <div className="flex-shrink-0 text-right hidden sm:block pt-1">
+                        <p className="font-ui text-xs font-semibold text-stone-500">
+                          {article.author.name}
+                        </p>
+                        <p className="font-ui text-xs text-stone-400 mt-0.5">
+                          {formatDate(article.publishedAt)}
+                        </p>
                       </div>
                     </Link>
                   ))}
                 </div>
-              ) : (
-                <div className="text-center py-20">
-                  <p className="font-headline text-3xl text-stone-200 mb-3">No results</p>
-                  <p className="font-ui text-sm text-stone-400">
-                    Try a different term, or{' '}
-                    <Link href="/articles" onClick={onClose} className="text-navy hover:underline">
-                      browse all articles
+                {!input.trim() && (
+                  <div className="mt-6 pt-6 border-t border-stone-100">
+                    <Link
+                      href="/articles"
+                      onClick={onClose}
+                      className="font-ui text-xs font-semibold uppercase tracking-widest text-navy hover:opacity-70 transition-opacity flex items-center gap-1"
+                    >
+                      Browse all articles
+                      <svg
+                        className="w-3.5 h-3.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
                     </Link>
-                    .
-                  </p>
-                </div>
-              )}
-            </>
-          ) : (
-            /* Empty state: recent articles */
-            <div className="max-w-2xl">
-              <h2 className="font-ui text-xs font-semibold uppercase tracking-widest text-stone-400 mb-5">
-                Recent Articles
-              </h2>
-              <div className="divide-y divide-stone-100">
-                {recentArticles.map(article => (
-                  <Link
-                    key={article.id}
-                    href={`/article/${article.slug}`}
-                    onClick={onClose}
-                    className="flex items-start justify-between gap-8 py-4 group hover:bg-stone-50/80 -mx-4 px-4 transition-colors"
-                  >
-                    <div className="flex-1 min-w-0">
-                      <span className="font-ui text-xs text-stone-400 uppercase tracking-widest">
-                        {article.category.name}
-                      </span>
-                      <h3 className="font-headline text-lg text-charcoal group-hover:text-navy transition-colors leading-snug mt-0.5">
-                        {smartQuotes(article.title)}
-                      </h3>
-                    </div>
-                    <div className="flex-shrink-0 text-right hidden sm:block pt-1">
-                      <p className="font-ui text-xs font-semibold text-stone-500">{article.author.name}</p>
-                      <p className="font-ui text-xs text-stone-400 mt-0.5">{formatDate(article.publishedAt)}</p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="mt-6 pt-6 border-t border-stone-100">
-                <Link
-                  href="/articles"
-                  onClick={onClose}
-                  className="font-ui text-xs font-semibold uppercase tracking-widest text-navy hover:opacity-70 transition-opacity flex items-center gap-1"
-                >
-                  Browse all articles
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
+                  </div>
+                )}
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   )
