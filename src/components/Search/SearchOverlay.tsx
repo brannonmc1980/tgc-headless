@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import Link from 'next/link'
 import Fuse from 'fuse.js'
-import { ARTICLES } from '@/lib/mockData'
+import ReactMarkdown from 'react-markdown'
+import { ARTICLES } from '@/lib/mockData' // still used for idle-state fuse search
 import { smartQuotes } from '@/lib/typography'
 import { Article } from '@/lib/types'
 
@@ -106,6 +107,16 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
     setIsStreaming(true)
     setStreamingContent('')
 
+    // Fetch articles and stream chat response in parallel
+    fetch('/api/search', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query }),
+    })
+      .then(r => r.json())
+      .then(articles => setSidebarArticles(articles))
+      .catch(() => {})
+
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
@@ -121,32 +132,12 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
       const reader = res.body.getReader()
       const decoder = new TextDecoder()
       let accumulated = ''
-      let headerParsed = false
-      let buffer = ''
 
       while (true) {
         const { done, value } = await reader.read()
         if (done) break
-        const chunk = decoder.decode(value, { stream: true })
-
-        if (!headerParsed) {
-          buffer += chunk
-          const newlineIdx = buffer.indexOf('\n')
-          if (newlineIdx !== -1) {
-            const header = buffer.slice(0, newlineIdx)
-            const rest = buffer.slice(newlineIdx + 1)
-            if (header.startsWith('ARTICLES:')) {
-              const slugs: string[] = JSON.parse(header.slice(9))
-              setSidebarArticles(ARTICLES.filter(a => slugs.includes(a.slug)))
-            }
-            headerParsed = true
-            accumulated += rest
-            setStreamingContent(accumulated)
-          }
-        } else {
-          accumulated += chunk
-          setStreamingContent(accumulated)
-        }
+        accumulated += decoder.decode(value, { stream: true })
+        setStreamingContent(accumulated)
       }
 
       setMessages(prev => [...prev, { role: 'assistant', content: accumulated }])
@@ -270,9 +261,9 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
                     ) : (
                       <div
                         key={i}
-                        className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none"
+                        className="font-body text-charcoal prose prose-stone max-w-none prose-p:text-[1.25rem] prose-p:leading-[1.85] prose-headings:font-ui prose-headings:font-medium prose-headings:text-charcoal prose-strong:text-charcoal"
                       >
-                        {msg.content}
+                        <ReactMarkdown>{msg.content}</ReactMarkdown>
                       </div>
                     )
                   )}
@@ -290,8 +281,8 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
                     </div>
                   )}
                   {streamingContent && (
-                    <div className="font-body text-charcoal leading-relaxed text-[15px] prose prose-stone max-w-none">
-                      {streamingContent}
+                    <div className="font-body text-charcoal prose prose-stone max-w-none prose-p:text-[1.25rem] prose-p:leading-[1.85] prose-headings:font-ui prose-headings:font-medium prose-headings:text-charcoal prose-strong:text-charcoal">
+                      <ReactMarkdown>{streamingContent}</ReactMarkdown>
                       <span className="inline-block w-0.5 h-[1em] bg-navy animate-pulse ml-0.5 align-middle" />
                     </div>
                   )}
