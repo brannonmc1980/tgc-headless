@@ -7,6 +7,8 @@ import ArticleBody from '@/components/Article/ArticleBody'
 import AuthorByline from '@/components/Article/AuthorByline'
 import AdBlock from '@/components/Article/AdBlock'
 import ArticleCard from '@/components/Article/ArticleCard'
+import ShareButtons from '@/components/Article/ShareButtons'
+import FollowAuthorButton from '@/components/Article/FollowAuthorButton'
 import { ARTICLES } from '@/lib/mockData'
 import { tagToSlug } from '@/lib/tagUtils'
 import { smartQuotes } from '@/lib/typography'
@@ -120,6 +122,12 @@ export default async function ArticlePage({ params }: Params) {
                 <span className="w-1 h-1 rounded-full bg-stone-500" />
                 <span>{article.readingTime} min read</span>
               </div>
+              <div className="mt-5">
+                <ShareButtons
+                  url={`https://tgc-headless.vercel.app/article/${article.slug}`}
+                  title={article.title}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -147,13 +155,16 @@ export default async function ArticlePage({ params }: Params) {
                       height={56}
                       className="rounded-full flex-shrink-0"
                     />
-                    <div>
-                      <Link
-                        href={`/author/${article.author.slug}`}
-                        className={`font-ui font-semibold hover:text-crimson transition-colors ${isDark ? 'text-white' : 'text-charcoal'}`}
-                      >
-                        {article.author.name}
-                      </Link>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3">
+                        <Link
+                          href={`/author/${article.author.slug}`}
+                          className={`font-ui font-semibold hover:text-crimson transition-colors ${isDark ? 'text-white' : 'text-charcoal'}`}
+                        >
+                          {article.author.name}
+                        </Link>
+                        <FollowAuthorButton author={article.author} />
+                      </div>
                       <p className={`font-ui text-sm mt-1 leading-relaxed ${isDark ? 'text-stone-400' : 'text-stone-500'}`}>
                         {article.author.bio}
                       </p>
@@ -258,11 +269,17 @@ export default async function ArticlePage({ params }: Params) {
                   readingTime={article.readingTime}
                 />
               </div>
+              <div className="mt-4">
+                <ShareButtons
+                  url={`https://tgc-headless.vercel.app/article/${article.slug}`}
+                  title={article.title}
+                />
+              </div>
             </header>
 
             {/* Featured image */}
             <div className="mb-8">
-              <div className="relative aspect-video w-full overflow-hidden rounded-sm">
+              <div className="relative aspect-video w-full overflow-hidden">
                 <Image
                   src={article.featuredImage.src}
                   alt={article.featuredImage.alt}
@@ -313,15 +330,18 @@ export default async function ArticlePage({ params }: Params) {
                   height={56}
                   className="rounded-full flex-shrink-0"
                 />
-                <div>
-                  <Link
-                    href={`/author/${article.author.slug}`}
-                    className="font-ui font-semibold text-charcoal hover:text-crimson transition-colors"
-                  >
-                    {article.author.name}
-                  </Link>
+                <div className="flex-1">
+                  <div className="flex items-center gap-3">
+                    <Link
+                      href={`/author/${article.author.slug}`}
+                      className="font-ui font-semibold text-charcoal hover:text-crimson transition-colors"
+                    >
+                      {article.author.name}
+                    </Link>
+                    <FollowAuthorButton author={article.author} />
+                  </div>
                   {article.author.role && (
-                    <p className="text-stone-500 text-xs font-ui">{article.author.role}</p>
+                    <p className="text-stone-500 text-xs font-ui mt-0.5">{article.author.role}</p>
                   )}
                   <p className="font-ui text-sm text-stone-500 mt-2 leading-relaxed">
                     {article.author.bio}

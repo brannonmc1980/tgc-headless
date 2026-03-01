@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center mb-4">
+            <Link href="/" className="inline-flex items-center mb-4 opacity-100 hover:opacity-80 transition-opacity">
               <img
                 src="/TGC-logo.svg"
                 alt="The Gospel Coalition"

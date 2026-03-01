@@ -52,9 +52,8 @@ export default function ArticleBody({ content, dark = false }: ArticleBodyProps)
       prose-blockquote:text-stone-200 prose-blockquote:font-headline
       prose-a:text-crimson prose-a:no-underline hover:prose-a:underline
       prose-strong:text-white
-      [&_.article-lead]:text-xl [&_.article-lead]:font-body [&_.article-lead]:leading-relaxed [&_.article-lead]:text-stone-200 [&_.article-lead]:font-medium
-      [&_.pull-quote]:not-prose [&_.pull-quote]:my-10 [&_.pull-quote]:py-8 [&_.pull-quote]:px-8 [&_.pull-quote]:border-y [&_.pull-quote]:border-crimson/30 [&_.pull-quote]:text-center
-      [&_.pull-quote_p]:font-headline [&_.pull-quote_p]:text-2xl [&_.pull-quote_p]:font-normal [&_.pull-quote_p]:text-white [&_.pull-quote_p]:leading-snug [&_.pull-quote_p]:italic
+      [&_.article-lead]:text-xl [&_.article-lead]:font-body [&_.article-lead]:leading-relaxed [&_.article-lead]:text-stone-200
+      [&_.pull-quote]:not-prose
     `
     : `
       prose prose-lg max-w-none
@@ -67,9 +66,8 @@ export default function ArticleBody({ content, dark = false }: ArticleBodyProps)
       prose-blockquote:text-charcoal prose-blockquote:font-headline
       prose-a:text-navy prose-a:no-underline hover:prose-a:underline
       prose-strong:text-charcoal
-      [&_.article-lead]:text-xl [&_.article-lead]:font-body [&_.article-lead]:leading-relaxed [&_.article-lead]:text-stone-700 [&_.article-lead]:font-medium
-      [&_.pull-quote]:not-prose [&_.pull-quote]:my-10 [&_.pull-quote]:py-8 [&_.pull-quote]:px-8 [&_.pull-quote]:border-y [&_.pull-quote]:border-navy/20 [&_.pull-quote]:text-center
-      [&_.pull-quote_p]:font-headline [&_.pull-quote_p]:text-2xl [&_.pull-quote_p]:font-normal [&_.pull-quote_p]:text-navy [&_.pull-quote_p]:leading-snug [&_.pull-quote_p]:italic
+      [&_.article-lead]:text-xl [&_.article-lead]:font-body [&_.article-lead]:leading-relaxed [&_.article-lead]:text-stone-700
+      [&_.pull-quote]:not-prose
     `
 
   return (

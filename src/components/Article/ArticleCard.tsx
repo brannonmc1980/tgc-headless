@@ -40,7 +40,7 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} />
           )}
           <Link href={href}>
-            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl text-charcoal mt-2 leading-tight group-hover:opacity-90 transition-opacity duration-100">
+            <h2 className="font-headline text-3xl lg:text-4xl xl:text-5xl text-charcoal mt-2 leading-tight group-hover:opacity-80 transition-opacity duration-100">
               {smartQuotes(article.title)}
             </h2>
           </Link>
@@ -61,7 +61,7 @@ export default function ArticleCard({
 
   if (variant === 'horizontal') {
     return (
-      <article className="flex gap-4 group">
+      <article className="flex items-start gap-4 group">
         <Link href={href} className="flex-shrink-0 w-28 sm:w-36">
           <div className="relative aspect-video overflow-hidden">
             <Image
@@ -78,7 +78,7 @@ export default function ArticleCard({
             <CategoryBadge name={article.category.name} slug={article.category.slug} light={dark} />
           )}
           <Link href={href}>
-            <h3 className={`font-headline text-xl mt-1 leading-snug group-hover:opacity-90 transition-opacity duration-100 line-clamp-3 ${dark ? 'text-[#fbfbfa]' : 'text-charcoal'}`}>
+            <h3 className={`font-headline text-xl mt-1 leading-snug group-hover:opacity-80 transition-opacity duration-100 line-clamp-3 ${dark ? 'text-[#fbfbfa]' : 'text-charcoal'}`}>
               {smartQuotes(article.title)}
             </h3>
           </Link>
@@ -97,7 +97,7 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} />
         )}
         <Link href={href}>
-          <h3 className="font-headline font-normal text-xl text-charcoal mt-1.5 leading-snug group-hover:opacity-90 transition-opacity duration-100">
+          <h3 className="font-headline font-normal text-xl text-charcoal mt-1.5 leading-snug group-hover:opacity-80 transition-opacity duration-100">
             {smartQuotes(article.title)}
           </h3>
         </Link>
@@ -127,7 +127,7 @@ export default function ArticleCard({
           <CategoryBadge name={article.category.name} slug={article.category.slug} light={dark} />
         )}
         <Link href={href}>
-          <h3 className={`font-headline text-2xl lg:text-3xl mt-2 leading-snug group-hover:opacity-90 transition-opacity duration-100 ${dark ? 'text-[#fbfbfa]' : 'text-charcoal'}`}>
+          <h3 className={`font-headline text-2xl lg:text-3xl mt-2 leading-snug group-hover:opacity-80 transition-opacity duration-100 ${dark ? 'text-[#fbfbfa]' : 'text-charcoal'}`}>
             {smartQuotes(article.title)}
           </h3>
         </Link>

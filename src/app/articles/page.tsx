@@ -74,7 +74,7 @@ export default function ArticlesPage() {
                 </div>
 
                 <Link href={`/article/${article.slug}`}>
-                  <h2 className="font-headline text-2xl lg:text-3xl text-charcoal group-hover:opacity-90 transition-opacity duration-100 leading-snug">
+                  <h2 className="font-headline text-2xl lg:text-3xl text-charcoal group-hover:opacity-80 transition-opacity duration-100 leading-snug">
                     {smartQuotes(article.title)}
                   </h2>
                 </Link>

@@ -19,11 +19,13 @@ const NAV_ITEMS = [
   { label: 'Articles', href: '/articles' },
   { label: 'Podcasts', href: '/podcasts' },
   { label: 'Videos', href: '/videos' },
-  { label: 'Commentary', href: '/commentary' },
-  { label: 'Essays', href: '/essays' },
-  { label: 'Courses', href: '/courses' },
+  { label: 'Cohorts', href: '/cohorts' },
+  { label: 'About', href: '/about' },
   { label: 'Store', href: 'https://store.thegospelcoalition.org/', external: true },
 ]
+
+// Shared class for desktop nav text items
+const navItemClass = 'px-3 py-2 text-sm font-ui font-normal text-charcoal hover:text-[#303a3e] transition-colors'
 
 export default function MainNav() {
   const [browseOpen, setBrowseOpen] = useState(false)
@@ -49,7 +51,7 @@ export default function MainNav() {
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0">
+          <Link href="/" className="flex items-center flex-shrink-0 opacity-100 hover:opacity-80 transition-opacity">
             <img
               src="/TGC-logo.svg"
               alt="The Gospel Coalition"
@@ -63,7 +65,7 @@ export default function MainNav() {
             <div className="relative" ref={browseRef}>
               <button
                 onClick={() => setBrowseOpen(!browseOpen)}
-                className="flex items-center gap-1 px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy transition-colors uppercase tracking-wide"
+                className={`flex items-center gap-1 ${navItemClass}`}
               >
                 Browse
                 <svg
@@ -84,7 +86,7 @@ export default function MainNav() {
                         key={cat.href}
                         href={cat.href}
                         onClick={() => setBrowseOpen(false)}
-                        className="block px-4 py-2.5 text-sm font-ui text-charcoal hover:bg-stone-50 hover:text-navy transition-colors"
+                        className="block px-4 py-2.5 text-sm font-ui font-normal text-charcoal hover:bg-stone-50 hover:text-[#303a3e] transition-colors"
                       >
                         {cat.label}
                       </Link>
@@ -102,7 +104,7 @@ export default function MainNav() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy transition-colors uppercase tracking-wide"
+                  className={navItemClass}
                 >
                   {item.label}
                 </a>
@@ -110,7 +112,7 @@ export default function MainNav() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy transition-colors uppercase tracking-wide"
+                  className={navItemClass}
                 >
                   {item.label}
                 </Link>
@@ -118,20 +120,26 @@ export default function MainNav() {
             ))}
           </div>
 
-          {/* Right side: search + subscribe */}
+          {/* Right side: search + sign in + subscribe */}
           <div className="hidden lg:flex items-center gap-3">
             <button
               aria-label="Search"
               onClick={() => setSearchOpen(true)}
-              className="p-2 text-charcoal hover:text-navy transition-colors"
+              className="p-2 text-charcoal hover:text-[#303a3e] transition-colors"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
             <Link
+              href="/sign-in"
+              className="px-3 py-2 text-sm font-ui font-normal text-charcoal hover:text-[#87b575] transition-colors"
+            >
+              Sign In
+            </Link>
+            <Link
               href="/newsletters"
-              className="px-4 py-1.5 bg-navy text-white text-sm font-ui font-semibold rounded-sm hover:bg-navy/90 transition-colors tracking-wide"
+              className="px-5 py-2 bg-[#87b575] text-white text-sm font-ui font-normal rounded-sm hover:bg-[#6d9960] transition-colors"
             >
               Subscribe
             </Link>
@@ -142,7 +150,7 @@ export default function MainNav() {
             <button
               aria-label="Search"
               onClick={() => setSearchOpen(true)}
-              className="p-2 text-charcoal hover:text-navy transition-colors"
+              className="p-2 text-charcoal hover:text-[#303a3e] transition-colors"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -169,13 +177,13 @@ export default function MainNav() {
       {mobileOpen && (
         <div className="lg:hidden border-t border-stone-200 bg-[#fbfbfa]">
           <div className="px-4 py-3 space-y-1">
-            <p className="text-xs font-ui font-semibold text-stone-400 uppercase tracking-widest px-3 py-1">Browse</p>
+            <p className="text-xs font-ui font-normal text-stone-400 uppercase tracking-widest px-3 py-1">Browse</p>
             {BROWSE_CATEGORIES.map(cat => (
               <Link
                 key={cat.href}
                 href={cat.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-3 py-2 text-sm font-ui text-charcoal hover:text-navy"
+                className="block px-3 py-2 text-sm font-ui font-normal text-charcoal hover:text-[#303a3e]"
               >
                 {cat.label}
               </Link>
@@ -188,7 +196,7 @@ export default function MainNav() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy uppercase tracking-wide"
+                  className="block px-3 py-2 text-sm font-ui font-normal text-charcoal hover:text-[#303a3e]"
                 >
                   {item.label}
                 </a>
@@ -197,16 +205,23 @@ export default function MainNav() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="block px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy uppercase tracking-wide"
+                  className="block px-3 py-2 text-sm font-ui font-normal text-charcoal hover:text-[#303a3e]"
                 >
                   {item.label}
                 </Link>
               )
             ))}
-            <div className="pt-3">
+            <div className="pt-3 space-y-2">
+              <Link
+                href="/sign-in"
+                onClick={() => setMobileOpen(false)}
+                className="block w-full text-center px-4 py-2 border border-stone-200 text-charcoal text-sm font-ui font-normal rounded-sm hover:text-[#87b575] hover:border-[#87b575] transition-colors"
+              >
+                Sign In
+              </Link>
               <Link
                 href="/newsletters"
-                className="block w-full text-center px-4 py-2 bg-navy text-white text-sm font-ui font-semibold rounded-sm"
+                className="block w-full text-center px-4 py-2.5 bg-[#87b575] text-white text-sm font-ui font-normal rounded-sm hover:bg-[#6d9960] transition-colors"
               >
                 Subscribe to Newsletter
               </Link>
