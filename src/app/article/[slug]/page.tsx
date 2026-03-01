@@ -8,6 +8,7 @@ import AuthorByline from '@/components/Article/AuthorByline'
 import AdBlock from '@/components/Article/AdBlock'
 import ArticleCard from '@/components/Article/ArticleCard'
 import { ARTICLES } from '@/lib/mockData'
+import { tagToSlug } from '@/lib/tagUtils'
 
 interface Params {
   params: Promise<{ slug: string }>
@@ -163,16 +164,17 @@ export default async function ArticlePage({ params }: Params) {
                 {article.tags.length > 0 && (
                   <div className="mt-8 flex flex-wrap gap-2">
                     {article.tags.map(tag => (
-                      <span
+                      <Link
                         key={tag}
-                        className={`px-3 py-1 text-xs font-ui rounded-full border ${
+                        href={`/tag/${tagToSlug(tag)}`}
+                        className={`px-3 py-1 text-xs font-ui rounded-full border transition-colors ${
                           isDark
-                            ? 'border-white/20 text-stone-300'
-                            : 'border-stone-200 text-stone-500'
+                            ? 'border-white/20 text-stone-300 hover:border-white/40 hover:text-white'
+                            : 'border-stone-200 text-stone-500 hover:border-stone-400 hover:text-charcoal'
                         }`}
                       >
                         {tag}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -286,12 +288,13 @@ export default async function ArticlePage({ params }: Params) {
               <div className="mt-8 pt-6 border-t border-stone-200 flex flex-wrap gap-2">
                 <span className="text-xs font-ui text-stone-400 mr-1 self-center">Topics:</span>
                 {article.tags.map(tag => (
-                  <span
+                  <Link
                     key={tag}
-                    className="px-3 py-1 text-xs font-ui text-stone-600 bg-stone-100 rounded-full border border-stone-200"
+                    href={`/tag/${tagToSlug(tag)}`}
+                    className="px-3 py-1 text-xs font-ui text-stone-600 bg-stone-100 rounded-full border border-stone-200 hover:border-stone-400 hover:text-charcoal transition-colors"
                   >
                     {tag}
-                  </span>
+                  </Link>
                 ))}
               </div>
             )}

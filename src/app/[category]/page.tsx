@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { getArticlesBycat, CATEGORIES } from '@/lib/api'
 import ArticleCard from '@/components/Article/ArticleCard'
 import AdBlock from '@/components/Article/AdBlock'
@@ -34,18 +35,18 @@ export default async function CategoryPage({ params }: Params) {
   return (
     <div className="min-h-screen bg-[#fbfbfa]">
       {/* Category header */}
-      <div className="border-b border-stone-200 bg-warm-white">
+      <div className="bg-[#20272a] border-b border-white/10">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="flex items-center gap-2 text-xs font-ui text-stone-400 mb-3">
-            <a href="/" className="hover:text-navy transition-colors">Home</a>
-            <span>/</span>
-            <span className="text-charcoal font-semibold">{cat.name}</span>
+          <div className="flex items-center gap-2 text-xs font-ui mb-4">
+            <Link href="/" className="text-stone-400 hover:text-stone-200 transition-colors">Home</Link>
+            <span className="text-stone-600">/</span>
+            <span className="text-[#86b474] font-semibold">{cat.name}</span>
           </div>
-          <h1 className="font-headline text-4xl lg:text-5xl text-charcoal">
+          <h1 className="font-headline text-4xl lg:text-5xl text-[#fbfbfa]">
             {cat.name}
           </h1>
           {cat.description && (
-            <p className="font-body text-stone-500 text-lg mt-3 max-w-2xl">
+            <p className="font-ui text-[#f4f4f2]/70 text-lg mt-3 max-w-2xl">
               {cat.description}
             </p>
           )}

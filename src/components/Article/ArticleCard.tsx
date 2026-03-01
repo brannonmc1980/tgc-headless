@@ -20,7 +20,7 @@ export default function ArticleCard({
   if (variant === 'hero') {
     return (
       <article className="group">
-        <Link href={href} className="block overflow-hidden rounded-sm">
+        <Link href={href} className="block overflow-hidden">
           <div className="relative aspect-video w-full overflow-hidden">
             <Image
               src={article.featuredImage.src}
@@ -60,7 +60,7 @@ export default function ArticleCard({
     return (
       <article className="flex gap-4 group">
         <Link href={href} className="flex-shrink-0 w-28 sm:w-36">
-          <div className="relative aspect-video overflow-hidden rounded-sm">
+          <div className="relative aspect-video overflow-hidden">
             <Image
               src={article.featuredImage.src}
               alt={article.featuredImage.alt}
@@ -108,7 +108,7 @@ export default function ArticleCard({
   // Default card
   return (
     <article className="group flex flex-col">
-      <Link href={href} className="block overflow-hidden rounded-sm">
+      <Link href={href} className="block overflow-hidden">
         <div className="relative aspect-video overflow-hidden">
           <Image
             src={article.featuredImage.src}

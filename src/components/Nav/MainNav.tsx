@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import SearchOverlay from '@/components/Search/SearchOverlay'
 
 const BROWSE_CATEGORIES = [
   { label: 'Arts & Culture', href: '/arts-culture' },
@@ -21,12 +22,13 @@ const NAV_ITEMS = [
   { label: 'Commentary', href: '/commentary' },
   { label: 'Essays', href: '/essays' },
   { label: 'Courses', href: '/courses' },
-  { label: 'Store', href: '/store' },
+  { label: 'Store', href: 'https://store.thegospelcoalition.org/', external: true },
 ]
 
 export default function MainNav() {
   const [browseOpen, setBrowseOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
   const browseRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -40,6 +42,8 @@ export default function MainNav() {
   }, [])
 
   return (
+    <>
+    {searchOpen && <SearchOverlay onClose={() => setSearchOpen(false)} />}
     <nav className="bg-[#fbfbfa] border-b border-stone-200 sticky top-0 z-50">
       {/* Top bar */}
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,13 +96,25 @@ export default function MainNav() {
 
             {/* Regular nav items */}
             {NAV_ITEMS.map(item => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy transition-colors uppercase tracking-wide"
-              >
-                {item.label}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy transition-colors uppercase tracking-wide"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy transition-colors uppercase tracking-wide"
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
           </div>
 
@@ -106,6 +122,7 @@ export default function MainNav() {
           <div className="hidden lg:flex items-center gap-3">
             <button
               aria-label="Search"
+              onClick={() => setSearchOpen(true)}
               className="p-2 text-charcoal hover:text-navy transition-colors"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,14 +171,26 @@ export default function MainNav() {
             ))}
             <div className="border-t border-stone-100 my-2" />
             {NAV_ITEMS.map(item => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileOpen(false)}
-                className="block px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy uppercase tracking-wide"
-              >
-                {item.label}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy uppercase tracking-wide"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-3 py-2 text-sm font-ui font-semibold text-charcoal hover:text-navy uppercase tracking-wide"
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
             <div className="pt-3">
               <Link
@@ -175,5 +204,6 @@ export default function MainNav() {
         </div>
       )}
     </nav>
+    </>
   )
 }
