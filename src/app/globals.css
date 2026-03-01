@@ -201,21 +201,7 @@
 /* Pull quote (inline blockquote styled as pull quote) */
 .article-prose .pull-quote {
   margin: 2.5rem 0;
-  padding: 1.5rem 0 1.5rem 3.75rem;
-  border-left: 3px solid var(--color-crimson);
-  position: relative;
-}
-
-.article-prose .pull-quote::before {
-  content: '\201C';
-  position: absolute;
-  left: 0.65rem;
-  top: 1rem;
-  font-family: var(--font-headline);
-  font-size: 3.75rem;
-  line-height: 1;
-  color: var(--color-crimson);
-  font-weight: 300;
+  padding: 0;
 }
 
 .article-prose .pull-quote p {
@@ -253,14 +239,6 @@
 
 .dark-article .article-prose blockquote p {
   color: #e8e4df;
-}
-
-.dark-article .article-prose .pull-quote {
-  border-color: rgba(135, 181, 117, 0.5);
-}
-
-.dark-article .article-prose .pull-quote::before {
-  color: #87b575;
 }
 
 .dark-article .article-prose .pull-quote p {
