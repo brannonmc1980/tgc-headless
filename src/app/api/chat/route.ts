@@ -38,6 +38,10 @@ export async function POST(req: Request) {
   const stream = new ReadableStream({
     async start(controller) {
       try {
+        // Send matched article slugs as a parseable header line first
+        const slugs = matchedArticles.map(a => a.slug)
+        controller.enqueue(encoder.encode(`ARTICLES:${JSON.stringify(slugs)}\n`))
+
         const response = anthropic.messages.stream({
           model: 'claude-sonnet-4-6',
           max_tokens: 1024,

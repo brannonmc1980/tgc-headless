@@ -95,9 +95,6 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
     setMessages(newMessages)
     setInput('')
 
-    const matched = fuseInstance.search(query).slice(0, 6).map(r => r.item)
-    setSidebarArticles(matched)
-
     setIsStreaming(true)
     setStreamingContent('')
 
@@ -116,13 +113,32 @@ export default function SearchOverlay({ onClose }: SearchOverlayProps) {
       const reader = res.body.getReader()
       const decoder = new TextDecoder()
       let accumulated = ''
+      let headerParsed = false
+      let buffer = ''
 
       while (true) {
         const { done, value } = await reader.read()
         if (done) break
         const chunk = decoder.decode(value, { stream: true })
-        accumulated += chunk
-        setStreamingContent(accumulated)
+
+        if (!headerParsed) {
+          buffer += chunk
+          const newlineIdx = buffer.indexOf('\n')
+          if (newlineIdx !== -1) {
+            const header = buffer.slice(0, newlineIdx)
+            const rest = buffer.slice(newlineIdx + 1)
+            if (header.startsWith('ARTICLES:')) {
+              const slugs: string[] = JSON.parse(header.slice(9))
+              setSidebarArticles(ARTICLES.filter(a => slugs.includes(a.slug)))
+            }
+            headerParsed = true
+            accumulated += rest
+            setStreamingContent(accumulated)
+          }
+        } else {
+          accumulated += chunk
+          setStreamingContent(accumulated)
+        }
       }
 
       setMessages(prev => [...prev, { role: 'assistant', content: accumulated }])
