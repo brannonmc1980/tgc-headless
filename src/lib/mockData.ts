@@ -52,11 +52,59 @@ export const AUTHORS: Author[] = [
   },
   {
     id: 7,
-    name: 'Melissa Kruger',
-    slug: 'melissa-kruger',
-    avatar: 'https://picsum.photos/seed/author7/80/80',
+    name: ‘Melissa Kruger’,
+    slug: ‘melissa-kruger’,
+    avatar: ‘https://picsum.photos/seed/author7/80/80’,
     bio: "Melissa Kruger is The Gospel Coalition’s director of women’s initiatives and the author of several books on Christian womanhood.",
     role: "Director of Women’s Initiatives, TGC",
+  },
+  {
+    id: 8,
+    name: ‘Joshua Chatraw’,
+    slug: ‘joshua-chatraw’,
+    avatar: ‘https://picsum.photos/seed/author8/80/80’,
+    bio: ‘Joshua Chatraw holds the Billy Graham chair for evangelism at Samford University and is a fellow of the Keller Center for Cultural Apologetics. He is the author of several books on apologetics, doubt, and reaching secular people with the gospel.’,
+    role: ‘Billy Graham Chair for Evangelism, Samford University’,
+  },
+  {
+    id: 9,
+    name: ‘Rebecca McLaughlin’,
+    slug: ‘rebecca-mclaughlin’,
+    avatar: ‘https://picsum.photos/seed/author9/80/80’,
+    bio: ‘Rebecca McLaughlin holds a PhD from Cambridge and a theology degree from Oak Hill College. She is a fellow of the Keller Center and the author of several books addressing contemporary objections to Christian faith.’,
+    role: ‘Author & Keller Center Fellow’,
+  },
+  {
+    id: 10,
+    name: ‘Andrew Wilson’,
+    slug: ‘andrew-wilson’,
+    avatar: ‘https://picsum.photos/seed/author10/80/80’,
+    bio: "Andrew Wilson is the teaching pastor of King’s Church London and a fellow of the Keller Center for Cultural Apologetics. He is a contributing editor at Christianity Today and the author of multiple books on theology and culture.",
+    role: "Teaching Pastor, King’s Church London",
+  },
+  {
+    id: 11,
+    name: ‘Chris Watkin’,
+    slug: ‘chris-watkin’,
+    avatar: ‘https://picsum.photos/seed/author11/80/80’,
+    bio: ‘Chris Watkin is an associate professor at Monash University in Australia and a fellow of the Keller Center. He is the author of Biblical Critical Theory and writes at the intersection of philosophy, culture, and Christian thought.’,
+    role: ‘Associate Professor, Monash University’,
+  },
+  {
+    id: 12,
+    name: ‘Alan Noble’,
+    slug: ‘alan-noble’,
+    avatar: ‘https://picsum.photos/seed/author12/80/80’,
+    bio: ‘Alan Noble is an associate professor of English at Oklahoma Baptist University and a fellow of the Keller Center. He is the author of Disruptive Witness and On Getting Out of Bed, and a co-founder of Christ and Pop Culture.’,
+    role: ‘Associate Professor of English, Oklahoma Baptist University’,
+  },
+  {
+    id: 13,
+    name: ‘Gavin Ortlund’,
+    slug: ‘gavin-ortlund’,
+    avatar: ‘https://picsum.photos/seed/author13/80/80’,
+    bio: ‘Gavin Ortlund is the president of Truth Unites, a ministry of gospel clarity and theological triage, and a visiting professor at Phoenix Seminary. He is a fellow of the Keller Center and the author of Finding the Right Hills to Die On.’,
+    role: ‘President, Truth Unites’,
   },
 ]
 
@@ -344,7 +392,7 @@ export const ARTICLES: Article[] = [
     format: 'standard',
     featuredImage: {
       src: 'https://picsum.photos/seed/work/1920/1080',
-      alt: 'A craftsman\'s hands working at a wooden workbench',
+      alt: "A craftsman\'s hands working at a wooden workbench",
     },
     isEditorsPick: true,
     content: `
@@ -983,6 +1031,712 @@ export const ARTICLES: Article[] = [
 <p>Contemporary Christianity, especially in the prosperous West, has largely lost this theology. We have replaced the theology of participation with a theology of exemption—the belief, sometimes explicit and often implicit, that faith should protect us from suffering rather than accompany us through it. The prosperity gospel is only the most garish version of this error. Its respectable cousin shows up whenever we treat suffering primarily as a problem to be solved rather than a reality to be inhabited.</p>
 
 <p>The recovery of the early church's theology of suffering is not morbid. It is liberating. It frees us from the exhausting project of explaining why bad things happen to good people and invites us instead into the more demanding and more honest project of remaining faithful in the darkness, trusting that the darkness is not the end of the story—because we have read the end of the story, and it begins with an empty tomb.</p>
+    `,
+  },
+
+  // ─── Faith & Work ────────────────────────────────────────────────────────
+  {
+    id: 18,
+    slug: 'the-myth-of-the-secular-job',
+    title: 'The Myth of the Secular Job',
+    subheading: 'The sacred-secular divide is one of the most damaging ideas to enter the modern church. Scripture knows nothing of it.',
+    excerpt: "Most Christians think their work matters to God only if it involves ministry. The Bible tells a very different story about what it means to work faithfully in the world.",
+    author: AUTHORS[0],
+    category: CATEGORIES[4],
+    tags: ['faith and work', 'vocation', 'calling', 'theology of work'],
+    publishedAt: '2025-02-15T09:00:00Z',
+    updatedAt: '2025-02-15T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/secular-job/1920/1080',
+      alt: 'A craftsman working at a wooden bench in warm light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Somewhere along the way, evangelical Christianity developed a two-tier view of work. On the top tier: ministry, missions, pastoral work—things that count for eternity. On the lower tier: everything else. Accounting. Construction. Medicine. Teaching. These things are fine, but they are not quite sacred. They are the secular work Christians do to pay the bills while they serve God on evenings and weekends.</p>
+
+<p>This divide is one of the most theologically confused ideas in contemporary Christianity, and it has done enormous damage—to how Christians understand their vocations, to how they show up in their workplaces, and to how they relate to a God who, according to Scripture, cares very much about what happens Monday through Friday.</p>
+
+<h2>The Biblical Vision of Work</h2>
+
+<p>Work precedes the fall. Before sin entered the world, before the curse, God placed Adam in the garden "to work it and keep it" (Gen. 2:15). Work is not punishment. It is not the result of sin. It is the God-given means by which image-bearers participate in the ongoing care of creation. This is the foundational fact about work that most Christians have never fully absorbed.</p>
+
+<p>After the fall, work becomes harder. Thorns and thistles appear. Sweat enters the picture. But the fallenness of work does not change its nature. It is still the means by which God's creatures tend the world he made. The farmer who grows food, the engineer who builds bridges, the nurse who tends the sick—all are participating in God's own ongoing care for his creation. Their work is, in a very real sense, an extension of the work God himself does in sustaining the world.</p>
+
+<blockquote class="pull-quote">
+  <p>Work is not where Christians go before they get to do something meaningful. Work is one of the primary places where a Christian life is actually lived.</p>
+</blockquote>
+
+<h2>What Luther Got Right</h2>
+
+<p>The Protestant Reformers recovered this vision and gave it a name: vocation. Martin Luther, in particular, argued that the cobbler who makes shoes, if he makes them well and honestly, glorifies God as surely as the monk who sings matins. Every honest vocation is a site of genuine service to God and neighbor. The idea that only ministry workers serve God in their work is, Luther insisted, a remnant of medieval Catholic clericalism that the Reformation should sweep away.</p>
+
+<p>That sweeping has not been thorough enough. The sacred-secular divide persists, sometimes in subtle forms. We praise missionaries while treating accountants as second-class kingdom citizens. We urge college students toward "ministry" as if engineering or law were somehow less God-honoring. We talk about bringing faith into the workplace as though faith were a briefcase attachment rather than the very air a Christian breathes.</p>
+
+<h3>Faithful Presence</h3>
+
+<p>The alternative is not a theology that sacralizes ambition or baptizes workaholism. It is a theology of faithful presence—showing up fully in the places God has put us, doing excellent work for the love of God and neighbor, and allowing the character of Christ to shape the manner of our working as much as the content. This is not a lesser calling than ministry. It is the calling of every Christian who has ever had a job.</p>
+    `,
+  },
+  {
+    id: 19,
+    slug: 'when-ambition-becomes-an-idol',
+    title: 'When Ambition Becomes an Idol',
+    subheading: "Christian ambition and worldly ambition can look identical on the outside. The difference lies entirely in what you are willing to sacrifice.",
+    excerpt: 'Ambition is not a sin. But unchecked ambition—ambition that swallows relationships, integrity, and rest—is idolatry wearing a productive disguise.',
+    author: AUTHORS[3],
+    category: CATEGORIES[4],
+    tags: ['ambition', 'idolatry', 'faith and work', 'character', 'success'],
+    publishedAt: '2025-02-12T09:00:00Z',
+    updatedAt: '2025-02-12T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/ambition-idol/1920/1080',
+      alt: 'A lone figure climbing a steep mountain ridge at sunrise',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">Christians are often suspicious of ambition. The word carries connotations of pride, self-promotion, and the willingness to step on others to get ahead. And sometimes those connotations are accurate. But the answer to disordered ambition is not the absence of ambition—it is ambition rightly ordered. The question is not whether you want to excel but why, and at what cost.</p>
+
+<h2>Ambition Has a Good Pedigree</h2>
+
+<p>Paul, the most prolific missionary in the history of Christianity, was a deeply ambitious man. He wanted to preach where no one had preached before (Rom. 15:20). He pressed on toward the goal (Phil. 3:14). He competed, strained, ran—the athletic metaphors in his letters are not accidental. He was a man of extraordinary drive, and he understood that drive as a gift oriented toward the glory of God and the good of others.</p>
+
+<p>The same is true of the Proverbs tradition, which has little patience for sloth and much praise for the diligent hand. "Do you see a man skillful in his work? He will stand before kings" (Prov. 22:29). The Bible is not an ode to mediocrity. It invites excellence, diligence, and the desire to do important things well.</p>
+
+<blockquote class="pull-quote">
+  <p>The test of your ambition is not what you are reaching for, but what you are willing to let go of to get there.</p>
+</blockquote>
+
+<h2>When Ambition Crosses the Line</h2>
+
+<p>Ambition becomes idolatrous when it claims what belongs to God alone: ultimate worth, security, and identity. You can identify idolatrous ambition by what it demands as sacrifice. If your career requires the neglect of your children, the compromise of your integrity, the sacrifice of your health, or the erosion of your character, it has stopped being a vocation and become a master.</p>
+
+<p>The idol of professional success is particularly dangerous because it is culturally celebrated. Nobody holds an intervention for the workaholic the way they might for the alcoholic, even though both are in the grip of a compulsion that is destroying them. The workaholic is just destroying things that are harder to see—marriage, presence, rest, the inner life—and doing it in a way that earns applause.</p>
+
+<h3>Reordering the Drive</h3>
+
+<p>The gospel reorders ambition without extinguishing it. You are not ultimately valued by your output, so you do not have to produce your way to significance. You are not ultimately secured by your career, so you do not have to protect it at all costs. And you are not ultimately defined by what you have built, so you can hold it loosely when it is threatened or taken. This is not the end of ambition. It is ambition set free from the desperate grip of self-justification—and that is a much better kind of drive.</p>
+    `,
+  },
+  {
+    id: 20,
+    slug: 'a-theology-of-hard-work',
+    title: 'A Theology of Hard Work and the Grace of Difficulty',
+    subheading: 'Why the hardest parts of your work may be its most spiritually significant moments.',
+    excerpt: "We want work to be easy. But God uses the resistance, the failure, and the grind to form the character he intends. Difficulty is not a malfunction—it is the curriculum.",
+    author: AUTHORS[2],
+    category: CATEGORIES[4],
+    tags: ['work', 'suffering', 'character', 'perseverance', 'faith and work'],
+    publishedAt: '2025-02-08T09:00:00Z',
+    updatedAt: '2025-02-08T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/hard-work/1920/1080',
+      alt: 'Hands worn from physical labor resting on rough wood',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Nobody brochures the hard parts of a career. We celebrate the promotions, the accomplishments, the moments where the work paid off. We rarely talk about the decade of grinding before the breakthrough, the project that failed publicly, the boss who didn't see what we were doing, or the season when we wondered whether we were in the wrong field entirely. And yet those hard parts may be the most spiritually significant parts of the whole story.</p>
+
+<h2>Resistance as Formation</h2>
+
+<p>God uses difficulty to form character in ways that ease cannot. This is not a peripheral observation in Scripture—it is a structural feature of the biblical narrative. Joseph's story does not move from the coat of many colors to the throne of Egypt in a straight line. It passes through the pit, through slavery, through false accusation, through years of unjust imprisonment. Every stage of resistance is simultaneously a stage of formation. The man who emerges to save Egypt and his brothers is not the same young man who was thrown into the pit. He has been changed by difficulty into someone capable of the task that awaits him.</p>
+
+<p>James opens his letter with a command that is almost offensive in its directness: "Count it all joy, my brothers, when you meet trials of various kinds" (1:2). This is not a call to perform happiness. It is a call to a radically different way of interpreting resistance—to see it as the means by which "the testing of your faith produces steadfastness" (v. 3). Steadfastness is not a quality you can acquire any other way. It requires the thing you are trying to avoid.</p>
+
+<blockquote class="pull-quote">
+  <p>The hard parts of your work are not detours from the life God intends. They are the road.</p>
+</blockquote>
+
+<h2>Working Through, Not Around</h2>
+
+<p>The Christian response to professional difficulty is not stoicism—the gritted-teeth determination to push through by willpower alone. It is something more like attentiveness. What is this difficulty trying to teach me? Where is my pride being exposed? Where am I relying on my own competence rather than God's provision? The grind is not something to be endured in silence. It is something to be brought to God with questions.</p>
+
+<p>This does not make the difficulty less real or the grind less hard. But it changes the orientation. Work that is only evaluated by outcomes—did the project succeed, did I get the promotion, did the numbers improve—is work that can only ever produce anxiety or pride. Work that is also evaluated by formation—what did this season make of me, how did difficulty shape my character, where did I encounter God in the resistance—is work that has resources for meaning even when the outcomes are not what we hoped.</p>
+    `,
+  },
+
+  // ─── Current Events ───────────────────────────────────────────────────────
+  {
+    id: 21,
+    slug: 'what-artificial-intelligence-cannot-do',
+    title: 'What Artificial Intelligence Cannot Do',
+    subheading: 'The AI revolution is real and its implications are vast. But it cannot do the one thing the human person most deeply needs.',
+    excerpt: "AI can generate sermons, write poetry, and diagnose cancer. What it cannot do is love, grieve, forgive, or bear witness. And those limitations matter more than any capability.",
+    author: AUTHORS[1],
+    category: CATEGORIES[3],
+    tags: ['artificial intelligence', 'technology', 'human dignity', 'culture'],
+    publishedAt: '2025-02-05T09:00:00Z',
+    updatedAt: '2025-02-05T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/ai-limits/1920/1080',
+      alt: 'A human hand and a robotic hand reaching toward each other',
+      caption: '',
+    },
+    isFeatured: true,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">It is difficult to write about artificial intelligence without either panicking or boosterizing. The technology is genuinely extraordinary, and its implications for work, creativity, education, and social life are real and significant. But amid the noise, Christians have resources for a more measured assessment—one that begins not with what AI can do but with what human beings are, and what that implies about what AI cannot do.</p>
+
+<h2>The Impressive Part</h2>
+
+<p>Large language models can produce fluent, well-organized text on almost any topic. They can generate code, analyze medical images, summarize legal documents, and write hymns in the style of Isaac Watts. These capabilities are expanding rapidly and will continue to expand. The economic and professional disruptions they are causing are real. Many jobs that currently exist will look very different in a decade, and some will not exist at all. Christians who work in fields affected by AI need to think carefully and practically about what that means for their vocations.</p>
+
+<p>But there is a category error lurking behind much of the conversation about AI, and it is one that Christians are unusually positioned to identify. The error is to treat the production of human-like output as equivalent to the exercise of human capacities. AI can produce text that resembles thought. It cannot think. It can produce text that resembles care. It cannot care.</p>
+
+<blockquote class="pull-quote">
+  <p>AI can simulate the outputs of human relationship. It cannot be in one. And that distinction matters more than any benchmark.</p>
+</blockquote>
+
+<h2>What Image-Bearing Requires</h2>
+
+<p>The Christian doctrine of the imago dei is not a claim about cognitive capacity. It is a claim about ontological status, relational depth, and moral accountability. Human beings are made in the image of God—not because they can process information, but because they are made to know and be known, to love and be loved, to bear responsibility and give account. These are not capacities that can be simulated in silico, however impressive the simulation becomes.</p>
+
+<p>The pastor who sits with a dying parishioner is not providing a service that an AI hospice bot could replicate if it were sophisticated enough. The presence, the grief, the shared mortality, the prayer of one creature to the Creator on behalf of another creature—these things depend on the humanness of the pastor. The mother who forgives her child is doing something that requires her to have been wronged, to feel it, and to choose otherwise. The witness who testifies to the risen Christ is staking their life on what they know. None of these acts can be automated.</p>
+
+<h3>The Question We Should Be Asking</h3>
+
+<p>The question Christians need to be asking about AI is not "can it do this?" but "should we use it for this?" A technology can be capable of producing something without that thing being worth producing that way. AI-generated sermons may be grammatically coherent and theologically orthodox. They are still not the word of the Lord mediated through a particular human life, formed by particular struggles, aimed at a particular congregation. That particularity is not inefficiency. It is the point.</p>
+    `,
+  },
+  {
+    id: 22,
+    slug: 'the-church-and-political-polarization',
+    title: 'The Church in an Age of Political Polarization',
+    subheading: 'Political tribalism has infiltrated the church in ways that should alarm every pastor and trouble every pew.',
+    excerpt: "When Christians sort themselves politically before they sort themselves theologically, the gospel is not the organizing principle of the church. Something else is.",
+    author: AUTHORS[3],
+    category: CATEGORIES[3],
+    tags: ['politics', 'polarization', 'church', 'unity', 'current events'],
+    publishedAt: '2025-02-01T09:00:00Z',
+    updatedAt: '2025-02-01T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/polarization/1920/1080',
+      alt: 'Empty church pews with American and Christian flags on opposite sides',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The data is now undeniable: Americans are sorting themselves into political tribes with increasing intensity, and those tribes are shaping every dimension of social life—including, and perhaps especially, church life. Christians attend different churches based on political affiliation as much as theological conviction. They read different Bibles, it sometimes seems—or at least find very different things there. And they are losing the capacity to share communion with people who pull the other lever in the voting booth.</p>
+
+<h2>How We Got Here</h2>
+
+<p>Political polarization is not simply an external phenomenon that has infected the church from outside. The church has participated in its own polarization, often eagerly. When pastors treat partisan political positions as tests of orthodoxy, they teach their congregations to do the same. When churches function as affinity communities for people who share a political aesthetic, they surrender the scandalous cross-social unity that the New Testament treats as one of the primary evidences of the gospel's power.</p>
+
+<p>Paul's letter to the Ephesians describes the church as the place where the "dividing wall of hostility" between Jew and Gentile has been abolished (2:14). This is not a metaphor for emotional warmth across demographic difference. It is a claim about a new social reality created by the gospel—a community in which the deepest human divisions are transcended by a shared allegiance to Christ. The political divide in contemporary America is not as fundamental as the Jew-Gentile divide of the first century. If the gospel could bridge that, it can bridge this. But the church has to want to.</p>
+
+<blockquote class="pull-quote">
+  <p>When Christians sort themselves politically before they sort themselves theologically, something other than the gospel is organizing the church.</p>
+</blockquote>
+
+<h2>What Faithful Engagement Looks Like</h2>
+
+<p>Christians are not called to be apolitical. The prophets were not apolitical. Jesus was not apolitical. The New Testament's insistence that Jesus is Lord is, among other things, a political claim—one that relativizes every other political claim, including the ones we find most congenial.</p>
+
+<p>But there is a difference between political engagement shaped by theological conviction and political identity that has swallowed theological conviction. The former can produce a Christian who holds surprising combinations of political positions, serves across the aisle, and maintains genuine relationships with people who vote differently. The latter produces a Christian who is, essentially, a partisan who goes to church.</p>
+
+<h3>The Pastor's Responsibility</h3>
+
+<p>Pastors have an outsized role in this. A pastor who uses the pulpit to shore up partisan political positions is not serving their congregation—they are feeding a hunger that the gospel is not designed to satisfy. The congregation leaves politically confirmed rather than spiritually formed. The pastor who refuses to be used that way, who insists that the pulpit belongs to the whole counsel of God and not to any party platform, will face resistance. But they will also, over time, produce a congregation with something rarer and more valuable than political consensus: the capacity to disagree about politics while remaining genuinely united around Christ.</p>
+    `,
+  },
+  {
+    id: 23,
+    slug: 'a-christian-framework-for-thinking-about-immigration',
+    title: 'A Christian Framework for Thinking About Immigration',
+    subheading: 'The immigration debate is among the most politically charged conversations in America. The Bible is not silent, but it is more nuanced than either side admits.',
+    excerpt: "Scripture speaks clearly about the stranger and the sojourner. What it does not do is resolve every policy question for us—and pretending otherwise is a disservice to both the Bible and our neighbors.",
+    author: AUTHORS[4],
+    category: CATEGORIES[3],
+    tags: ['immigration', 'current events', 'justice', 'policy', 'stranger'],
+    publishedAt: '2025-01-28T09:00:00Z',
+    updatedAt: '2025-01-28T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/immigration/1920/1080',
+      alt: 'Families walking along a road at dusk carrying their belongings',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Few political topics produce more heat and less light than immigration. On the left, the conversation is often framed as simple compassion: open hearts and open borders. On the right, it is often framed as simple security: rule of law and national sovereignty. Christians who try to navigate between these framings will find that both sides are willing to accuse them of bad faith. But the biblical vision of justice and mercy does not map cleanly onto either political position, and pretending that it does is a disservice to Scripture, to politics, and to the millions of real people whose lives are shaped by these policies.</p>
+
+<h2>What the Bible Actually Says</h2>
+
+<p>The Old Testament's concern for the "stranger" (ger) who lives among Israel is extensive and serious. Leviticus 19:34 commands: "The stranger who sojourns with you shall be to you as the native among you, and you shall love him as yourself, for you were strangers in the land of Egypt." The prophets list mistreatment of the sojourner alongside injustice to the poor and the widow as marks of covenant unfaithfulness.</p>
+
+<p>This is not a marginal theme. It is a structural feature of the covenant community's obligations. And it is rooted in Israel's own history—they were aliens and slaves in Egypt, and God delivered them. The memory of vulnerability is supposed to generate compassion for the vulnerable.</p>
+
+<blockquote class="pull-quote">
+  <p>Scripture is clear about the obligation to the stranger. It does not resolve every question of modern immigration policy—but it determines the moral register in which those questions must be asked.</p>
+</blockquote>
+
+<h2>What the Bible Does Not Settle</h2>
+
+<p>What the Bible does not do is adjudicate between different systems of border policy in a modern nation-state context. The ger of ancient Israel was not navigating a welfare state, a labor market distorted by wage differentials, or a refugee system with specific legal categories. The biblical principles—welcome the stranger, do justice, love mercy, remember your own vulnerability—are real and binding. But they do not determine whether any particular policy is the wisest means of honoring those principles.</p>
+
+<p>This matters because Christians on both sides of the political debate often overreach. Progressives imply that open borders are the obvious biblical position, ignoring the real complexities of state authority, ordered society, and the effects of rapid demographic change on existing communities. Conservatives imply that strict enforcement is the obvious biblical position, ignoring the human cost of enforcement policies and the church's specific obligations to the vulnerable.</p>
+
+<h3>The Posture We Need</h3>
+
+<p>Christians are not exempt from doing the hard analytical work of immigration policy. The biblical mandate to love the stranger does not translate automatically into any particular set of visa caps or enforcement mechanisms. It does mean that Christians should engage the policy question with a strong presumption toward the dignity and welfare of immigrant persons—documented or not—and a willingness to accept political costs in the service of that commitment. That is a harder position than either partisan pole, and it is the one the gospel demands.</p>
+    `,
+  },
+
+  // ─── Bible & Theology ─────────────────────────────────────────────────────
+  {
+    id: 24,
+    slug: 'why-the-doctrine-of-hell-makes-sense',
+    title: 'Why the Doctrine of Hell Makes Sense',
+    subheading: "Hell is the doctrine modern people most want to eliminate from Christianity. It is also, properly understood, one of its most morally serious teachings.",
+    excerpt: "The objection to hell is almost always framed as compassion. But a God who cannot condemn evil is not a God who can be trusted to vindicate the victims of it.",
+    author: AUTHORS[0],
+    category: CATEGORIES[1],
+    tags: ['hell', 'judgment', 'justice', 'doctrine', 'theology'],
+    publishedAt: '2025-01-25T09:00:00Z',
+    updatedAt: '2025-01-25T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/doctrine-hell/1920/1080',
+      alt: 'Storm clouds gathering over an open landscape at dusk',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">No Christian doctrine is more unpopular in contemporary culture than the doctrine of hell. It strikes modern people as cruel, disproportionate, and incompatible with a loving God. Pastors who preach it openly risk alienating their congregations. Many simply do not preach it at all. But the doctrine deserves more serious treatment than a polite silence, because the objections to hell are less compelling than they initially appear—and the reasons for holding the doctrine are more morally serious than its critics acknowledge.</p>
+
+<h2>The Moral Case for Judgment</h2>
+
+<p>The objection to hell is usually framed as a compassion argument: How could a loving God condemn anyone to eternal suffering? But the argument cuts both ways. The same moral intuition that rebels against hell also demands that evil not go unanswered. We feel this viscerally when we think about history's worst crimes—genocide, systematic abuse, the destruction of innocents. The victims of those crimes are owed more than a universe in which the perpetrators simply cease to exist at death, morally equivalent in the end to their victims.</p>
+
+<p>The biblical doctrine of hell is, at its core, a doctrine of cosmic justice. It is the affirmation that evil will not have the last word—that God will vindicate the victims of injustice and hold their oppressors accountable. This is not the angry God of caricature. This is the God of Psalm 9: "He does not forget the cry of the afflicted." A God who cannot condemn is a God who cannot vindicate, and a God who cannot vindicate is not the God the Bible reveals.</p>
+
+<blockquote class="pull-quote">
+  <p>The same moral seriousness that makes hell repellent is the seriousness that demands it. A universe without ultimate justice is not a kind universe—it is an indifferent one.</p>
+</blockquote>
+
+<h2>What Hell Is Not</h2>
+
+<p>Much of the popular objection to hell is directed at a caricature. Hell in the Christian tradition is not God torturing people for the pleasure of it. It is the condition of those who have definitively and finally refused the love of God—the state of a soul that has sealed its own rejection of the only source of life and joy. C.S. Lewis put it memorably: "The door of hell is locked on the inside." Whether that is the best formulation is debatable. But it captures something important: that God does not send people to hell against their deepest desires. He honors, finally and permanently, the choice they have made.</p>
+
+<h3>Preaching It Faithfully</h3>
+
+<p>Pastors who avoid the doctrine of hell in the name of compassion are, in fact, doing their congregations a disservice. They are withholding one of the most powerful motivations for evangelism, one of the most clarifying lenses on the seriousness of sin, and one of the most urgent reasons to flee to Christ. Jesus spoke of hell more than any other figure in the New Testament. If we are to take his teaching seriously, we cannot simply edit out the parts that make us uncomfortable. We can preach them with gentleness, with tears, with the full weight of the gospel as the alternative. But we cannot not preach them.</p>
+    `,
+  },
+  {
+    id: 25,
+    slug: 'reading-the-old-testament-as-christian-scripture',
+    title: 'Reading the Old Testament as Christian Scripture',
+    subheading: 'For many Christians, the Old Testament is a confusing collection of laws, genealogies, and violent stories. It is also the soil in which the entire New Testament grows.',
+    excerpt: "The church that neglects the Old Testament will eventually misunderstand the New. Here is why the first three-quarters of your Bible deserve more than you are giving them.",
+    author: AUTHORS[6],
+    category: CATEGORIES[1],
+    tags: ['Old Testament', 'Bible', 'Scripture', 'hermeneutics', 'theology'],
+    publishedAt: '2025-01-22T09:00:00Z',
+    updatedAt: '2025-01-22T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/old-testament/1920/1080',
+      alt: 'Ancient scrolls of parchment in warm candlelight',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">A quiet Marcionism has settled over much of the evangelical church. We do not formally reject the Old Testament as the product of an inferior God. We simply ignore most of it. Our preaching cycles through Paul and the Gospels. Our Sunday school material touches the familiar stories—Noah, Moses, David—and then moves quickly on. The prophets are visited mainly to find predictions of Jesus. The law is mined for devotional nuggets and then set aside. The result is a Christianity that grows increasingly thin, because the root system it depends on is being neglected.</p>
+
+<h2>The Old Testament Is Not Optional</h2>
+
+<p>When Paul tells Timothy that "all Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness" (2 Tim. 3:16), the Scripture he has in mind is almost entirely what we call the Old Testament. The New Testament canon was not yet assembled. Paul is making a claim about the Psalms, the Torah, the Prophets—about Leviticus and Numbers and Ezekiel and Zephaniah. These texts, he insists, are profitable. Not just historically interesting. Profitable—for the formation of the person of God.</p>
+
+<p>Jesus himself treats the Old Testament as the living word of God. "Have you not read?" is one of his most frequent rhetorical questions, and it is always pointing his interlocutors back to texts they thought they knew but had not understood. He tells the disciples on the Emmaus road that the entire Hebrew canon—"Moses and all the Prophets"—speaks about him (Luke 24:27). The Old Testament is not the prelude to the real story. It is the same story, told from an earlier vantage point.</p>
+
+<blockquote class="pull-quote">
+  <p>A church that neglects the Old Testament will not merely miss half the Bible. It will misunderstand the half it keeps.</p>
+</blockquote>
+
+<h2>How to Read It</h2>
+
+<p>The challenge is not that the Old Testament is unimportant. The challenge is that it requires more work. You need to know something about ancient Near Eastern culture to understand why the dietary laws functioned the way they did. You need to know something about the structure of the covenant to understand why the psalms of lament are addressed the way they are. You need to understand the typological relationship between the temple and Christ's body before Ezekiel's vision of the restored temple makes sense in a Christian reading.</p>
+
+<p>This is not a counsel of despair. It is an invitation. The Old Testament rewards the reader who brings patience, curiosity, and a willingness to read slowly. There is a reason the greatest theologians of the church—Augustine, Calvin, Luther, Edwards—spent enormous energy on the Old Testament. They knew that you cannot understand grace, covenant, justice, kingship, sacrifice, or the nature of God without reading it carefully. Neither can we.</p>
+    `,
+  },
+
+  // ─── Christian Living ──────────────────────────────────────────────────────
+  {
+    id: 26,
+    slug: 'how-to-disagree-well',
+    title: 'How to Disagree Well: A Biblical Framework for Conflict',
+    subheading: 'Disagreement is inevitable. Destructive conflict is not. The Bible gives us the tools to do the former without the latter.',
+    excerpt: "Most Christians are bad at disagreement—either avoiding it entirely or handling it in ways that damage relationships and witness. Scripture offers a better way.",
+    author: AUTHORS[5],
+    category: CATEGORIES[2],
+    tags: ['conflict', 'disagreement', 'community', 'reconciliation', 'peacemaking'],
+    publishedAt: '2025-01-18T09:00:00Z',
+    updatedAt: '2025-01-18T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/disagree-well/1920/1080',
+      alt: 'Two people sitting across a table in conversation',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Most Christians are bad at disagreement. Some avoid it entirely, smoothing over differences with a superficial peace that resolves nothing and stores up resentment for later. Others engage it destructively—turning every disagreement into a referendum on the other person's character, their intelligence, or their faith. Neither approach serves the body of Christ, and both cause damage that takes years to repair.</p>
+
+<p>But there is a third way, modeled in Scripture and demonstrated by Christians across the centuries, that takes disagreement seriously without letting it become warfare.</p>
+
+<h2>Distinguish the Issue from the Person</h2>
+
+<p>The first discipline of healthy disagreement is the discipline of distinction: keeping clear in your mind the difference between the position you are challenging and the person who holds it. This sounds obvious. In practice, it is remarkably hard. When someone disagrees with us on something we care about, we almost automatically begin to question their motives, their intelligence, or their character. This is a cognitive error as well as a moral one.</p>
+
+<p>Proverbs is full of instruction about the kind of person who can receive a well-aimed rebuke and grow from it rather than retaliate. "A wise son hears his father's instruction" (13:1). "Reprove a wise man, and he will love you" (9:8). The wise person has learned to separate the challenge to their position from a challenge to their personhood. The fool has not. Disagreement with a fool is dangerous not because the fool is unintelligent but because they take every challenge to their position as a personal attack and respond accordingly.</p>
+
+<blockquote class="pull-quote">
+  <p>You can be completely right about the issue and completely wrong about how you handle the person. Both things matter.</p>
+</blockquote>
+
+<h2>Assume Good Faith Until Proven Otherwise</h2>
+
+<p>One of the most important disciplines in productive disagreement is the practice of charitable interpretation. Before you decide why someone holds a position you find wrong, give them the most generous plausible reading. Ask yourself: what would a reasonable, well-intentioned person have to believe to hold this view? You may still conclude they are wrong. But you will understand them better, and your disagreement will be more accurate—targeted at the actual position rather than a caricature.</p>
+
+<h3>The Goal Is Understanding, Not Winning</h3>
+
+<p>Perhaps the most fundamental reorientation required for good disagreement is a change of goal. If you enter disagreement to win—to have your position vindicated and the other person's position defeated—you have already made an error that will corrupt everything that follows. The goal of disagreement in the body of Christ is understanding: to find truth together, to correct one another in love, and to emerge with a relationship that is more honest and more durable than the one that entered the room. You can win an argument and lose a brother. The math is never worth it.</p>
+    `,
+  },
+  {
+    id: 27,
+    slug: 'why-christians-should-read-more-fiction',
+    title: 'Why Christians Should Read More Fiction',
+    subheading: "Reading novels is not an escape from reality. It is one of the most reliable means of entering it more deeply.",
+    excerpt: "The novel trains a capacity that the digital age is systematically destroying: the ability to inhabit another person's experience long enough to be changed by it.",
+    author: AUTHORS[1],
+    category: CATEGORIES[2],
+    tags: ['fiction', 'reading', 'formation', 'imagination', 'literature'],
+    publishedAt: '2025-01-15T09:00:00Z',
+    updatedAt: '2025-01-15T09:00:00Z',
+    readingTime: 6,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/read-fiction/1920/1080',
+      alt: 'A stack of well-read novels on a windowsill with afternoon light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">There is a type of Christian who regards fiction with mild suspicion—not exactly sinful, but not quite serious either. A guilty pleasure, perhaps. Something for vacation or illness. Nonfiction is where the real spiritual formation happens: theology, biography, commentary. Fiction is what you read when you have already read the important things. This view is mistaken, and it is costing the church more than it realizes.</p>
+
+<h2>What Novels Do</h2>
+
+<p>A great novel does something no other form of communication quite accomplishes: it gives you sustained, interior access to a person who is not you. Not a summary of their beliefs or a report on their experiences—actual interiority. You inhabit their consciousness as events unfold, feel what they feel, misunderstand what they misunderstand, and gradually come to see what they see. This is an exercise of the imagination that is not merely entertaining. It is morally formative.</p>
+
+<p>Psychologists have studied this and found what readers have always known: consistent novel-reading is correlated with greater capacity for empathy, stronger theory of mind (the ability to attribute mental states to others), and more nuanced moral reasoning. You become better at people by reading about people—even fictional ones. Perhaps especially fictional ones, because the novelist has complete access to the interiority that real social encounters never reveal.</p>
+
+<blockquote class="pull-quote">
+  <p>A great novel does not take you away from the world. It teaches you to see the one you are already in.</p>
+</blockquote>
+
+<h2>The Imagination as a Moral Faculty</h2>
+
+<p>C.S. Lewis argued that the imagination is not the faculty of unreality—it is the faculty of reality-extension. Through imagination, you can hold in mind things that are not immediately present: the suffering of a person you have not met, the consequences of an action not yet taken, the shape of a world organized by different values than yours. This is not escapism. It is a prerequisite for the kind of other-centered attention that Christian love requires.</p>
+
+<p>A Christian who reads Tolstoy, or Marilynne Robinson, or Dostoevsky, or Flannery O'Connor is not wasting time. They are training a capacity for attentiveness, for sitting with complexity, for understanding how the human heart works in its fallen and redeemed dimensions. They are also engaging with some of the most serious theological thinking of the last two centuries—because the greatest novelists have always been essentially theological writers, wrestling with questions about meaning, grace, death, and what human beings are for.</p>
+
+<h3>What to Read</h3>
+
+<p>If you do not know where to begin, begin with the canon. Tolstoy's <em>Anna Karenina</em> or <em>The Death of Ivan Ilyich</em>. Dostoevsky's <em>The Brothers Karamazov</em>. Marilynne Robinson's <em>Gilead</em>. Flannery O'Connor's short stories. Graham Greene's <em>The Power and the Glory</em>. These are not merely literary classics. They are sustained meditations on sin, grace, suffering, and the nature of the good life—written by people who took these questions seriously and committed their best artistic work to them. Read them slowly. Reread them. Allow them to do what they are designed to do.</p>
+    `,
+  },
+
+  // ─── Keller Center ────────────────────────────────────────────────────────
+  {
+    id: 28,
+    slug: 'meeting-the-secular-person-where-they-are',
+    title: 'Meeting the Secular Person Where They Are',
+    subheading: "Effective apologetics in a secular age begins not with arguments but with listening—understanding what people actually believe before you challenge it.",
+    excerpt: "Most apologetic encounters fail not because the Christian runs out of arguments but because they never understood the actual objection they were answering.",
+    author: AUTHORS[7],
+    category: CATEGORIES[7],
+    tags: ['apologetics', 'evangelism', 'secular', 'Keller Center', 'cultural engagement'],
+    publishedAt: '2025-01-12T09:00:00Z',
+    updatedAt: '2025-01-12T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/secular-meeting/1920/1080',
+      alt: 'Two people in genuine conversation over coffee in a cafe',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Most Christians who engage in apologetics prepare for the wrong conversation. They bone up on the cosmological argument, memorize the evidence for the resurrection, and develop crisp responses to Dawkins and Hitchens. Then they sit down with their secular friend and discover that the actual conversation is somewhere else entirely. Their friend is not troubled by the fine-tuning argument. They are troubled by the church's historic complicity in injustice, or the existence of their gay nephew, or the feeling that religion is simply a coping mechanism for people who cannot face reality. The prepared argument does not fit the actual question.</p>
+
+<h2>The Listening Gap</h2>
+
+<p>Apologetics in a secular age requires, above all else, the discipline of listening. This is not a strategic concession—it is theologically grounded. If we believe that every human being is made in the image of God, then every human being's questions, doubts, and objections deserve to be taken seriously on their own terms. The objection "religion is just wish fulfillment" is not a dumb question asked in bad faith. It is a real concern with a real pedigree (Feuerbach, Freud, Marx) that many thoughtful people find compelling. Dismissing it as a mere rationalization insults the person asking it and guarantees that the conversation goes nowhere.</p>
+
+<p>The first move in effective apologetic engagement is not to answer but to understand. What is the person actually worried about? What story about the world makes Christianity seem implausible to them? What would have to be true for Christianity to be worth considering? These questions are not tactical delay. They are the precondition of genuine dialogue.</p>
+
+<blockquote class="pull-quote">
+  <p>Before you can answer the objection, you have to understand the person raising it. Those are not the same task.</p>
+</blockquote>
+
+<h2>The Inside-Out Method</h2>
+
+<p>Tim Keller often spoke of "inside-out" apologetics: beginning with the secular person's own deepest commitments and showing how Christianity makes better sense of them than secularism does. Every secular worldview has a set of values it cannot fully account for on its own terms—justice, human dignity, moral progress, the meaningfulness of love and sacrifice. The Christian is not trying to convince the secular person to accept alien values. They are trying to show that the values the secular person already holds most deeply point toward a Christian account of reality.</p>
+
+<p>This approach requires intellectual generosity. It requires being genuinely curious about what the secular person believes and why, finding the real truth in their concerns before pointing to where the secular framework fails to sustain them. It is a longer conversation than the argument-and-rebuttal model. But it is more honest, more relational, and far more likely to produce genuine movement.</p>
+
+<h3>What the Keller Center Exists to Do</h3>
+
+<p>The mission of the Keller Center for Cultural Apologetics is not to win debates. It is to equip Christians for the kind of deep, generous, intellectually serious engagement with secular culture that the moment demands. The secular person in your neighborhood, your family, or your office is not an opponent to be defeated. They are an image-bearer in whom God is already at work—and the Christian who learns to see them that way, and to listen well before they speak, will have more conversations that matter.</p>
+    `,
+  },
+  {
+    id: 29,
+    slug: 'ten-objections-to-christianity-answered',
+    title: 'Ten Common Objections to Christianity — And What They Get Right',
+    subheading: "The best response to an objection is not a refutation. It is an honest engagement that takes the objection more seriously than the objector expected.",
+    excerpt: "Christianity's most thoughtful defenders have always acknowledged that the objections have weight. The question is whether the gospel has more.",
+    author: AUTHORS[8],
+    category: CATEGORIES[7],
+    tags: ['apologetics', 'objections', 'doubt', 'faith', 'Keller Center'],
+    publishedAt: '2025-01-08T09:00:00Z',
+    updatedAt: '2025-01-08T09:00:00Z',
+    readingTime: 10,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/objections-answered/1920/1080',
+      alt: 'A library wall of philosophy and theology books',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The objections to Christian faith are not new. The claim that religion is wish fulfillment is at least as old as Feuerbach. The problem of evil has occupied philosophers since at least the time of Epicurus. The accusation that Christianity is bad for women, bad for science, or bad for minorities has been leveled in various forms for centuries. Christians who are surprised by these objections have not been paying attention. Christians who are afraid of them have not thought them through carefully enough.</p>
+
+<p>The best response to a serious objection is not a quick rebuttal. It is an engagement that takes the objection more seriously than the objector expected—that acknowledges what is true in it, traces where it goes wrong, and shows why the gospel addresses the real concern more adequately than the objection assumed.</p>
+
+<h2>"Christianity Is Just a Crutch"</h2>
+
+<p>The objection assumes that needing help is a disqualification. But this is a strange premise. Medicine is a crutch for the sick; that does not make medicine false. The question is not whether Christianity provides comfort and support—of course it does—but whether the reality it describes is true. If it is, then the comfort it provides is appropriate, not suspect. If it is false, then the objection still needs to grapple with the historical resurrection, not merely the psychological benefits of belief.</p>
+
+<h2>"Science Has Disproven God"</h2>
+
+<p>Science has done no such thing. Science is a method for investigating the natural world through observation, hypothesis, and testing. It is extraordinarily powerful within its domain. But it is not equipped to adjudicate claims about what lies outside that domain. The existence of God is a metaphysical claim, not a scientific one—and metaphysical claims are not refuted by scientific discoveries, any more than the discovery of the structure of DNA refutes the claim that Hamlet is a great play. Scientism—the view that science is the only valid form of knowledge—is itself not a scientific claim. It is a philosophical one, and a poorly supported one at that.</p>
+
+<blockquote class="pull-quote">
+  <p>The Christian does not need to be afraid of hard questions. They need to take them more seriously than the person asking expects.</p>
+</blockquote>
+
+<h2>"Christianity Is Homophobic"</h2>
+
+<p>This objection requires honest engagement. The church has too often treated gay and lesbian people with contempt rather than compassion. That is a real failure, and it deserves real acknowledgment. But the church's failures do not determine whether its teaching is true. The Christian sexual ethic—that sex is designed for marriage between a man and a woman—is not rooted in contempt for gay people. It is rooted in a theology of embodiment, covenant, and eschatology. One can disagree with that theology, but dismissing it as mere bigotry avoids the actual argument. The Christian who is willing to sit with this objection honestly—acknowledging the hurt the church has caused while also explaining the theological framework—will have a more credible and more productive conversation than the one who simply denies the charge.</p>
+
+<h3>The Posture Beneath the Answers</h3>
+
+<p>What unites all of these responses is not a set of arguments but a posture: intellectual honesty, genuine compassion for the person asking, and confidence that truth has nothing to fear from inquiry. The Christian apologist is not defending a position that is too fragile to be questioned. They are articulating a faith that has been questioned for two thousand years and has not yet been defeated by the questioning—because the questioning, when done well, keeps running into the same stubborn facts: an empty tomb, a transformed community, and a gospel that keeps making sense of the human condition.</p>
+    `,
+  },
+  {
+    id: 30,
+    slug: 'the-gospel-and-the-cry-for-justice',
+    title: "The Gospel's Answer to the Cry for Justice",
+    subheading: "The hunger for justice that animates our cultural moment is not a rival to the gospel. It is one of the places where the gospel is most urgently needed.",
+    excerpt: "Every generation that cries out for justice is, whether it knows it or not, testifying to a moral order it did not create and cannot explain without recourse to something like God.",
+    author: AUTHORS[9],
+    category: CATEGORIES[7],
+    tags: ['justice', 'gospel', 'culture', 'apologetics', 'Keller Center'],
+    publishedAt: '2025-01-05T09:00:00Z',
+    updatedAt: '2025-01-05T09:00:00Z',
+    readingTime: 7,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/gospel-justice/1920/1080',
+      alt: 'A sunrise breaking over city rooftops with golden light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">One of the most striking features of secular culture in the twenty-first century is its intense moral passion. Whatever one thinks of the particular causes, the hunger for justice—for the vulnerable to be protected, the powerful to be held accountable, the historical record to be set right—is a genuine and deep feature of contemporary life. Many Christians experience this cultural moment primarily as a threat, as a set of ideological claims to be resisted. But there is another way to see it: as an apologetic opportunity of the first order.</p>
+
+<h2>The Moral Testimony of the Secular Age</h2>
+
+<p>Every person who cries out against injustice is, at some level, making a claim about moral reality. They are not merely expressing a preference—they are asserting that something wrong has been done, that there is a standard that has been violated, that the victims are owed something that has been withheld from them. This is, at its core, a moral realist claim. And moral realism is very difficult to ground on a naturalistic account of reality.</p>
+
+<p>If the universe is fundamentally material and morality is simply the product of evolutionary pressures and social convention, then "this was unjust" means something like "I strongly dislike this, and so do enough people that we can enforce consequences." That is not what justice activists mean, and most of them know it. They mean something more—that a real wrong has been done, that it matters cosmically, that it deserves redress that may not be fully available in this life. These are intuitions that point beyond naturalism.</p>
+
+<blockquote class="pull-quote">
+  <p>The hunger for justice is not a rival to the gospel. It is one of the places where the gospel is most urgently needed—because it is one of the deepest longings the gospel is designed to address.</p>
+</blockquote>
+
+<h2>Where Only the Gospel Goes</h2>
+
+<p>The gospel addresses the cry for justice in ways that secular frameworks cannot. It provides a ground for moral realism: there is a God who is just, who has built justice into the structure of reality, and whose character is the ultimate standard against which human conduct is measured. It provides hope that historical injustices will not go unaddressed: the God of Scripture is the one who "executes justice for the oppressed" (Ps. 146:7) and before whom all will give account. And it provides resources for the perpetrators of injustice that purely retributive frameworks cannot: not merely punishment but repentance, not merely consequences but forgiveness, not merely accountability but transformation.</p>
+
+<h3>The Conversation Christians Should Be Seeking</h3>
+
+<p>The Christian who engages the justice-hungry secularist not as an opponent but as someone whose deepest intuitions are pointing, however confusedly, toward truth, will find a conversation worth having. You do not need to agree with every political conclusion drawn from the cry for justice to affirm the reality of what is being pointed at. You do not need to validate every particular claim to take seriously the underlying hunger. And you may find that the person who came to the conversation prepared to argue is actually searching for something the gospel is the only adequate answer to.</p>
+    `,
+  },
+  {
+    id: 31,
+    slug: 'why-there-is-no-neutral-worldview',
+    title: 'Why There Is No Neutral Worldview',
+    subheading: "Secularism presents itself as the absence of a worldview—the neutral starting point from which other positions deviate. This is one of the great intellectual illusions of our age.",
+    excerpt: "The secular person does not hold no worldview. They hold a worldview that claims to be none. The Christian thinker's task is to make that visible.",
+    author: AUTHORS[10],
+    category: CATEGORIES[7],
+    tags: ['worldview', 'secularism', 'philosophy', 'apologetics', 'Keller Center'],
+    publishedAt: '2025-01-02T09:00:00Z',
+    updatedAt: '2025-01-02T09:00:00Z',
+    readingTime: 9,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/neutral-worldview/1920/1080',
+      alt: 'A prism splitting white light into a spectrum on a dark background',
+      caption: '',
+    },
+    isFeatured: true,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">One of the most effective rhetorical moves in the modern secular playbook is the claim to neutrality. The secular person does not have a worldview—they simply accept the deliverances of science and reason, while religious people add a layer of unprovable metaphysical commitments on top. On this account, secularism is the default position, and religion is the deviation. Christians who accept this framing before the conversation begins have already conceded too much.</p>
+
+<h2>There Is No View from Nowhere</h2>
+
+<p>The philosopher Thomas Nagel titled one of his most important books <em>The View from Nowhere</em>—and his point was that no one has access to such a view. Every perspective is a perspective from somewhere. Every account of reality is built on prior commitments about what counts as evidence, what kinds of explanations are admissible, what questions are worth asking. These are not scientific questions. They are philosophical ones, and the secular thinker answers them just as much as the religious one—they simply answer them less consciously.</p>
+
+<p>The secular worldview holds, among other things, that material reality is all there is, that consciousness is a product of physical processes, that moral values are constructed rather than discovered, and that meaning is something humans create rather than find. These are not scientific findings. They are metaphysical commitments, held on the basis of philosophical argument and personal conviction. They are, in the relevant sense, a faith—a set of prior commitments that cannot themselves be verified by the methods they privilege.</p>
+
+<blockquote class="pull-quote">
+  <p>Secularism does not occupy the neutral ground between worldviews. It is a worldview—with its own metaphysics, its own anthropology, its own account of the good life. The Christian's task is to make that visible.</p>
+</blockquote>
+
+<h2>What This Means for Apologetics</h2>
+
+<p>Recognizing that secularism is a worldview rather than a default position changes the terms of apologetic engagement. The Christian is not asking a secular person to add unprovable claims to a neutral foundation. They are proposing that a Christian account of reality is more coherent, more comprehensive, and more honest about the full range of human experience than the secular alternative. This is a genuine intellectual contest between two comprehensive views of reality—not between a view and the absence of a view.</p>
+
+<p>This matters because it levels the epistemic playing field. Both the Christian and the secular person are making commitments that cannot be fully verified by neutral means. Both are operating on faith in some meaningful sense. The question is which faith is better supported, which account of reality is more adequate to the evidence of human experience, history, consciousness, and moral intuition. That is a conversation worth having—and one that Christianity, properly understood, has every reason to welcome.</p>
+
+<h3>Reading the Signs</h3>
+
+<p>Chris Watkin's method of "biblical critical theory"—engaging secular thought by showing how biblical categories both illuminate and transcend secular ones—offers a model for this kind of engagement. Rather than simply opposing secular ideas, the Christian thinker can show how the deepest insights of secular philosophy are better explained, more fully honored, and more safely grounded within a Christian account of reality. This is not intellectual surrender. It is the confidence of a tradition that has been doing serious intellectual work for two thousand years and expects to keep doing it.</p>
+    `,
+  },
+  {
+    id: 32,
+    slug: 'bearing-witness-in-a-distracted-age',
+    title: 'Bearing Witness in a Distracted Age',
+    subheading: "The witness of a Christian life requires the kind of sustained attention and unhurried presence that the digital age is systematically dismantling.",
+    excerpt: "You cannot bear witness to a person you have never truly attended to. And attention—deep, patient, unhurried attention—is becoming one of the rarest things in the world.",
+    author: AUTHORS[11],
+    category: CATEGORIES[7],
+    tags: ['witness', 'attention', 'technology', 'apologetics', 'Keller Center'],
+    publishedAt: '2024-12-28T09:00:00Z',
+    updatedAt: '2024-12-28T09:00:00Z',
+    readingTime: 8,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/witness-distracted/1920/1080',
+      alt: 'A person sitting still looking out a rain-streaked window',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: false,
+    content: `
+<p class="article-lead">Christian witness has always required the capacity to attend—to pay the kind of deep, patient, particular attention to a person that says, without words, <em>you matter, I am here, I am not going anywhere</em>. This is not a communication strategy. It is the baseline of any genuine relationship. And it is precisely this capacity that the attention economy has spent the last two decades systematically eroding.</p>
+
+<h2>What Attention Is</h2>
+
+<p>Simone Weil, the French philosopher and mystic, wrote that "attention is the rarest and purest form of generosity." She meant that truly attending to a person—setting aside your own agenda, your own next thought, your own phone—is one of the most costly and most valuable things you can give. It is costly because attention is scarce. We have only so much of it, and we are being pressured from every direction to disperse it across a thousand surfaces rather than concentrate it on any one thing or person.</p>
+
+<p>The economics of the internet are built on the capture and monetization of attention. Every notification, every scroll, every algorithmically curated feed is designed to keep your attention moving—because moving attention is attention that can be sold. The consequence is a culture in which sustained attention is becoming genuinely rare, and in which the capacity for the kind of deep engagement that meaningful relationships require is quietly degrading.</p>
+
+<blockquote class="pull-quote">
+  <p>Attention is not just a cognitive resource. It is a moral act. To truly attend to a person is to tell them, with your whole self, that they matter.</p>
+</blockquote>
+
+<h2>Why This Matters for Witness</h2>
+
+<p>Christian witness depends on relationships. Not on arguments alone, though arguments matter. Not on programs, though programs have their place. On the lived reality of a Christian life encountered in close enough proximity to be seen clearly. And that requires presence—the willingness to be with a person long enough, attentively enough, unhurriedly enough, that something real passes between you.</p>
+
+<p>The person who is half-present, perpetually available to their phone, incapable of a conversation that is not interrupted every eight minutes, cannot be this kind of witness. Not because they lack the right beliefs, but because they have not cultivated the capacity for the kind of presence in which those beliefs become visible in a life.</p>
+
+<h3>Recovering Attention as a Spiritual Practice</h3>
+
+<p>Alan Noble's work on disruptive witness argues that the recovery of attention is itself an apologetic act—that a Christian who is genuinely present, genuinely still, genuinely attending to the people around them, is offering something that the distracted world around them recognizes as extraordinary and does not know how to account for. The capacity to be unhurried is a form of countercultural witness. The discipline of undivided presence is a form of love. And love, in a distracted age, is conspicuous.</p>
+    `,
+  },
+  {
+    id: 33,
+    slug: 'the-historical-evidence-for-the-resurrection',
+    title: 'The Historical Evidence for the Resurrection',
+    subheading: "The resurrection of Jesus is not a matter of private faith. It is a historical claim, and the historical evidence for it is stronger than most people realize.",
+    excerpt: "Most people assume that believing in the resurrection requires you to check your historical-critical faculties at the door. The evidence suggests otherwise.",
+    author: AUTHORS[12],
+    category: CATEGORIES[7],
+    tags: ['resurrection', 'history', 'apologetics', 'evidence', 'Keller Center'],
+    publishedAt: '2024-12-22T09:00:00Z',
+    updatedAt: '2024-12-22T09:00:00Z',
+    readingTime: 9,
+    format: 'standard',
+    featuredImage: {
+      src: 'https://picsum.photos/seed/resurrection-evidence/1920/1080',
+      alt: 'An ancient stone tomb entrance in warm morning light',
+      caption: '',
+    },
+    isFeatured: false,
+    isEditorsPick: true,
+    content: `
+<p class="article-lead">The claim that Jesus rose from the dead is the central claim of Christianity. Paul says as much: "If Christ has not been raised, your faith is futile and you are still in your sins" (1 Cor. 15:17). Everything hangs on this. And yet many Christians treat it as a matter of pure faith—something believed in despite the absence of evidence, by the exercise of a religious will that suspends historical inquiry. This is a mistake, and a costly one. The historical evidence for the resurrection is more robust than most people—including most Christians—realize.</p>
+
+<h2>The Minimal Facts Approach</h2>
+
+<p>Historians Gary Habermas and Michael Licona have developed what they call the "minimal facts" approach to the resurrection—working only from facts that are accepted by a broad majority of critical New Testament scholars, including those who are skeptical of Christianity. These minimal facts include: Jesus died by crucifixion; his tomb was found empty shortly after his death; the disciples claimed to have seen him alive after his death and were transformed by this experience; Paul, a persecutor of Christians, was suddenly converted, claiming to have encountered the risen Christ; and James, the brother of Jesus, who was skeptical during Jesus's ministry, became a leader in the early church.</p>
+
+<p>These are not disputed by serious historians. The question is what best accounts for them. The resurrection hypothesis—that Jesus actually rose from the dead—provides a singularly coherent explanation of all of these facts together. The alternatives—hallucination, legendary development, body theft—each fail to account for some or several of the facts, and none accounts for all of them as well as the resurrection does.</p>
+
+<blockquote class="pull-quote">
+  <p>The question is not whether the resurrection is possible. The question is whether it is the best explanation of the evidence that every historian accepts. The case that it is has never been adequately answered.</p>
+</blockquote>
+
+<h2>The Transformation of the Disciples</h2>
+
+<p>Perhaps the most historically powerful evidence for the resurrection is the transformation of the disciples. These were men who, at the moment of Jesus's arrest, fled. Peter denied knowing him three times. They locked themselves in a room "for fear of the Jews" (John 20:19). And then, within weeks, they were publicly proclaiming his resurrection in Jerusalem—the very city where he had been crucified—at personal risk to themselves, and with a boldness that got most of them eventually killed.</p>
+
+<p>The hallucination hypothesis cannot account for this transformation, because hallucinations do not produce the kind of cohesive, consistent, socially shared experience across hundreds of people that Paul describes in 1 Corinthians 15. The legendary development hypothesis cannot account for it because the proclamation begins immediately, in the first weeks after the crucifixion, not in a later generation when memories had faded and legends could grow.</p>
+
+<h3>Faith and Evidence</h3>
+
+<p>None of this proves the resurrection with mathematical certainty. Historical inquiry cannot do that for any event. What it can do is establish which explanation of the evidence is most probable, given everything we know. And the honest historian, willing to follow the evidence where it leads without imposing prior philosophical commitments about what is or is not possible, will find that the resurrection is a remarkably well-attested historical event. The Christian does not believe in spite of the evidence. They believe because of it—and because of the cumulative testimony of twenty centuries of transformed lives that the living Christ continues to produce.</p>
     `,
   },
 ]
