@@ -31,8 +31,10 @@ export default async function HomePage() {
       <HeroSection featured={featured} recent={recent} />
 
       {/* Top leaderboard ad */}
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        <AdBlock variant="leaderboard" />
+      <div className="w-full bg-stone-100 py-5">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+          <AdBlock variant="leaderboard" />
+        </div>
       </div>
 
       {/* Editors' Picks */}
@@ -52,8 +54,10 @@ export default async function HomePage() {
       )}
 
       {/* Mid-page ad */}
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        <AdBlock variant="leaderboard" />
+      <div className="w-full bg-stone-100 py-5">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+          <AdBlock variant="leaderboard" />
+        </div>
       </div>
 
       {/* Arts & Culture */}
@@ -72,8 +76,10 @@ export default async function HomePage() {
       )}
 
       {/* Bottom leaderboard ad */}
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-        <AdBlock variant="leaderboard" />
+      <div className="w-full bg-stone-100 py-5">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+          <AdBlock variant="leaderboard" />
+        </div>
       </div>
     </>
   )

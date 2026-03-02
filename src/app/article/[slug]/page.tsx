@@ -9,9 +9,19 @@ import AdBlock from '@/components/Article/AdBlock'
 import ArticleCard from '@/components/Article/ArticleCard'
 import ShareButtons from '@/components/Article/ShareButtons'
 import FollowAuthorButton from '@/components/Article/FollowAuthorButton'
+import KellerCenterGate from '@/components/Article/KellerCenterGate'
 import { ARTICLES } from '@/lib/mockData'
 import { tagToSlug } from '@/lib/tagUtils'
 import { smartQuotes } from '@/lib/typography'
+
+function splitForGate(html: string): { preview: string; rest: string; shouldGate: boolean } {
+  // Split after the 3rd closing </p> — roughly 20 lines of body text
+  const parts = html.split('</p>')
+  if (parts.length <= 4) return { preview: html, rest: '', shouldGate: false }
+  const preview = parts.slice(0, 3).join('</p>') + '</p>'
+  const rest = parts.slice(3).join('</p>')
+  return { preview, rest, shouldGate: true }
+}
 
 interface Params {
   params: Promise<{ slug: string }>
@@ -66,6 +76,10 @@ export default async function ArticlePage({ params }: Params) {
   const related = getRelated(article.slug, article.category.slug)
   const isDark = article.format === 'darkread'
   const isLongRead = article.format === 'longread' || article.format === 'darkread'
+  const isKellerCenter = article.category.slug === 'keller-center'
+  const { preview, rest, shouldGate } = isKellerCenter
+    ? splitForGate(article.content)
+    : { preview: '', rest: '', shouldGate: false }
 
   /* ═══════════════════════════════════════════════════════
      LONG-READ & DARK-READ FORMAT
@@ -137,63 +151,118 @@ export default async function ArticlePage({ params }: Params) {
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
               {/* Main content */}
-              <article className="lg:col-span-8 xl:col-span-7">
-                <div className="article-prose">
-                  <ArticleBody content={article.content} dark={isDark} />
-                </div>
-
-                {/* Author bio card */}
-                <div className={`mt-12 p-6 rounded-sm border ${isDark ? 'border-white/10 bg-white/5' : 'border-stone-200 bg-stone-50'}`}>
-                  <p className={`text-xs font-ui font-bold uppercase tracking-widest mb-3 ${isDark ? 'text-stone-400' : 'text-stone-400'}`}>
-                    About the Author
-                  </p>
-                  <div className="flex items-start gap-4">
-                    <Image
-                      src={article.author.avatar}
-                      alt={article.author.name}
-                      width={56}
-                      height={56}
-                      className="rounded-full flex-shrink-0"
-                    />
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3">
-                        <Link
-                          href={`/author/${article.author.slug}`}
-                          className={`font-ui font-semibold hover:text-crimson transition-colors ${isDark ? 'text-white' : 'text-charcoal'}`}
-                        >
-                          {article.author.name}
-                        </Link>
-                        <FollowAuthorButton author={article.author} />
-                      </div>
-                      <p className={`font-ui text-sm mt-1 leading-relaxed ${isDark ? 'text-stone-400' : 'text-stone-500'}`}>
-                        {article.author.bio}
+              <article className="lg:col-span-8">
+                {isKellerCenter && shouldGate ? (
+                  <KellerCenterGate previewHtml={preview} fullHtml={rest} dark={isDark}>
+                    {/* Author bio card */}
+                    <div className={`mt-12 p-6 rounded-sm border ${isDark ? 'border-white/10 bg-white/5' : 'border-stone-200 bg-stone-50'}`}>
+                      <p className="text-xs font-ui font-bold uppercase tracking-widest mb-3 text-stone-400">
+                        About the Author
                       </p>
+                      <div className="flex items-start gap-4">
+                        <Image
+                          src={article.author.avatar}
+                          alt={article.author.name}
+                          width={56}
+                          height={56}
+                          className="rounded-full flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <div className="flex items-center gap-3">
+                            <Link
+                              href={`/author/${article.author.slug}`}
+                              className={`font-ui font-semibold hover:text-crimson transition-colors ${isDark ? 'text-white' : 'text-charcoal'}`}
+                            >
+                              {article.author.name}
+                            </Link>
+                            <FollowAuthorButton author={article.author} />
+                          </div>
+                          <p className={`font-ui text-sm mt-1 leading-relaxed ${isDark ? 'text-stone-400' : 'text-stone-500'}`}>
+                            {article.author.bio}
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
 
-                {/* Tags */}
-                {article.tags.length > 0 && (
-                  <div className="mt-8 flex flex-wrap gap-2">
-                    {article.tags.map(tag => (
-                      <Link
-                        key={tag}
-                        href={`/tag/${tagToSlug(tag)}`}
-                        className={`px-3 py-1 text-xs font-ui rounded-full border transition-colors ${
-                          isDark
-                            ? 'border-white/20 text-stone-300 hover:border-white/40 hover:text-white'
-                            : 'border-stone-200 text-stone-500 hover:border-stone-400 hover:text-charcoal'
-                        }`}
-                      >
-                        {tag}
-                      </Link>
-                    ))}
-                  </div>
+                    {/* Tags */}
+                    {article.tags.length > 0 && (
+                      <div className="mt-8 flex flex-wrap gap-2">
+                        {article.tags.map(tag => (
+                          <Link
+                            key={tag}
+                            href={`/tag/${tagToSlug(tag)}`}
+                            className={`px-3 py-1 text-xs font-ui rounded-full border transition-colors ${
+                              isDark
+                                ? 'border-white/20 text-stone-300 hover:border-white/40 hover:text-white'
+                                : 'border-stone-200 text-stone-500 hover:border-stone-400 hover:text-charcoal'
+                            }`}
+                          >
+                            {tag}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </KellerCenterGate>
+                ) : (
+                  <>
+                    <div className="article-prose">
+                      <ArticleBody content={article.content} dark={isDark} />
+                    </div>
+
+                    {/* Author bio card */}
+                    <div className={`mt-12 p-6 rounded-sm border ${isDark ? 'border-white/10 bg-white/5' : 'border-stone-200 bg-stone-50'}`}>
+                      <p className="text-xs font-ui font-bold uppercase tracking-widest mb-3 text-stone-400">
+                        About the Author
+                      </p>
+                      <div className="flex items-start gap-4">
+                        <Image
+                          src={article.author.avatar}
+                          alt={article.author.name}
+                          width={56}
+                          height={56}
+                          className="rounded-full flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <div className="flex items-center gap-3">
+                            <Link
+                              href={`/author/${article.author.slug}`}
+                              className={`font-ui font-semibold hover:text-crimson transition-colors ${isDark ? 'text-white' : 'text-charcoal'}`}
+                            >
+                              {article.author.name}
+                            </Link>
+                            <FollowAuthorButton author={article.author} />
+                          </div>
+                          <p className={`font-ui text-sm mt-1 leading-relaxed ${isDark ? 'text-stone-400' : 'text-stone-500'}`}>
+                            {article.author.bio}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Tags */}
+                    {article.tags.length > 0 && (
+                      <div className="mt-8 flex flex-wrap gap-2">
+                        {article.tags.map(tag => (
+                          <Link
+                            key={tag}
+                            href={`/tag/${tagToSlug(tag)}`}
+                            className={`px-3 py-1 text-xs font-ui rounded-full border transition-colors ${
+                              isDark
+                                ? 'border-white/20 text-stone-300 hover:border-white/40 hover:text-white'
+                                : 'border-stone-200 text-stone-500 hover:border-stone-400 hover:text-charcoal'
+                            }`}
+                          >
+                            {tag}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
                 )}
               </article>
 
               {/* Sidebar */}
-              <aside className="lg:col-span-4 xl:col-span-5">
+              <aside className="lg:col-span-4">
                 <div className="sticky top-24 space-y-8">
                   <AdBlock variant="sidebar" />
                   {related.length > 0 && (
@@ -296,72 +365,141 @@ export default async function ArticlePage({ params }: Params) {
               )}
             </div>
 
-            {/* Article body */}
-            <div className="article-prose">
-              <ArticleBody content={article.content} dark={false} />
-            </div>
-
-            {/* Tags */}
-            {article.tags.length > 0 && (
-              <div className="mt-8 pt-6 border-t border-stone-200 flex flex-wrap gap-2">
-                <span className="text-xs font-ui text-stone-400 mr-1 self-center">Topics:</span>
-                {article.tags.map(tag => (
-                  <Link
-                    key={tag}
-                    href={`/tag/${tagToSlug(tag)}`}
-                    className="px-3 py-1 text-xs font-ui text-stone-600 bg-stone-100 rounded-full border border-stone-200 hover:border-stone-400 hover:text-charcoal transition-colors"
-                  >
-                    {tag}
-                  </Link>
-                ))}
-              </div>
-            )}
-
-            {/* Author bio */}
-            <div className="mt-10 p-6 bg-stone-50 border border-stone-200 rounded-sm">
-              <p className="text-xs font-ui font-bold uppercase tracking-widest text-stone-400 mb-3">
-                About the Author
-              </p>
-              <div className="flex items-start gap-4">
-                <Image
-                  src={article.author.avatar}
-                  alt={article.author.name}
-                  width={56}
-                  height={56}
-                  className="rounded-full flex-shrink-0"
-                />
-                <div className="flex-1">
-                  <div className="flex items-center gap-3">
-                    <Link
-                      href={`/author/${article.author.slug}`}
-                      className="font-ui font-semibold text-charcoal hover:text-crimson transition-colors"
-                    >
-                      {article.author.name}
-                    </Link>
-                    <FollowAuthorButton author={article.author} />
+            {/* Article body — gated for Keller Center */}
+            {isKellerCenter && shouldGate ? (
+              <KellerCenterGate previewHtml={preview} fullHtml={rest} dark={false}>
+                {/* Tags */}
+                {article.tags.length > 0 && (
+                  <div className="mt-8 pt-6 border-t border-stone-200 flex flex-wrap gap-2">
+                    <span className="text-xs font-ui text-stone-400 mr-1 self-center">Topics:</span>
+                    {article.tags.map(tag => (
+                      <Link
+                        key={tag}
+                        href={`/tag/${tagToSlug(tag)}`}
+                        className="px-3 py-1 text-xs font-ui text-stone-600 bg-stone-100 rounded-full border border-stone-200 hover:border-stone-400 hover:text-charcoal transition-colors"
+                      >
+                        {tag}
+                      </Link>
+                    ))}
                   </div>
-                  {article.author.role && (
-                    <p className="text-stone-500 text-xs font-ui mt-0.5">{article.author.role}</p>
-                  )}
-                  <p className="font-ui text-sm text-stone-500 mt-2 leading-relaxed">
-                    {article.author.bio}
-                  </p>
-                </div>
-              </div>
-            </div>
+                )}
 
-            {/* More from category */}
-            {related.length > 0 && (
-              <section className="mt-12 pt-8 border-t border-stone-200">
-                <h2 className="font-headline text-xl text-charcoal mb-6">
-                  More from {article.category.name}
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {related.slice(0, 2).map(rel => (
-                    <ArticleCard key={rel.id} article={rel} variant="default" showCategory={false} />
-                  ))}
+                {/* Author bio */}
+                <div className="mt-10 p-6 bg-stone-50 border border-stone-200 rounded-sm">
+                  <p className="text-xs font-ui font-bold uppercase tracking-widest text-stone-400 mb-3">
+                    About the Author
+                  </p>
+                  <div className="flex items-start gap-4">
+                    <Image
+                      src={article.author.avatar}
+                      alt={article.author.name}
+                      width={56}
+                      height={56}
+                      className="rounded-full flex-shrink-0"
+                    />
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3">
+                        <Link
+                          href={`/author/${article.author.slug}`}
+                          className="font-ui font-semibold text-charcoal hover:text-crimson transition-colors"
+                        >
+                          {article.author.name}
+                        </Link>
+                        <FollowAuthorButton author={article.author} />
+                      </div>
+                      {article.author.role && (
+                        <p className="text-stone-500 text-xs font-ui mt-0.5">{article.author.role}</p>
+                      )}
+                      <p className="font-ui text-sm text-stone-500 mt-2 leading-relaxed">
+                        {article.author.bio}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </section>
+
+                {/* More from category */}
+                {related.length > 0 && (
+                  <section className="mt-12 pt-8 border-t border-stone-200">
+                    <h2 className="font-headline text-xl text-charcoal mb-6">
+                      More from {article.category.name}
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      {related.slice(0, 2).map(rel => (
+                        <ArticleCard key={rel.id} article={rel} variant="default" showCategory={false} />
+                      ))}
+                    </div>
+                  </section>
+                )}
+              </KellerCenterGate>
+            ) : (
+              <>
+                <div className="article-prose">
+                  <ArticleBody content={article.content} dark={false} />
+                </div>
+
+                {/* Tags */}
+                {article.tags.length > 0 && (
+                  <div className="mt-8 pt-6 border-t border-stone-200 flex flex-wrap gap-2">
+                    <span className="text-xs font-ui text-stone-400 mr-1 self-center">Topics:</span>
+                    {article.tags.map(tag => (
+                      <Link
+                        key={tag}
+                        href={`/tag/${tagToSlug(tag)}`}
+                        className="px-3 py-1 text-xs font-ui text-stone-600 bg-stone-100 rounded-full border border-stone-200 hover:border-stone-400 hover:text-charcoal transition-colors"
+                      >
+                        {tag}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+                {/* Author bio */}
+                <div className="mt-10 p-6 bg-stone-50 border border-stone-200 rounded-sm">
+                  <p className="text-xs font-ui font-bold uppercase tracking-widest text-stone-400 mb-3">
+                    About the Author
+                  </p>
+                  <div className="flex items-start gap-4">
+                    <Image
+                      src={article.author.avatar}
+                      alt={article.author.name}
+                      width={56}
+                      height={56}
+                      className="rounded-full flex-shrink-0"
+                    />
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3">
+                        <Link
+                          href={`/author/${article.author.slug}`}
+                          className="font-ui font-semibold text-charcoal hover:text-crimson transition-colors"
+                        >
+                          {article.author.name}
+                        </Link>
+                        <FollowAuthorButton author={article.author} />
+                      </div>
+                      {article.author.role && (
+                        <p className="text-stone-500 text-xs font-ui mt-0.5">{article.author.role}</p>
+                      )}
+                      <p className="font-ui text-sm text-stone-500 mt-2 leading-relaxed">
+                        {article.author.bio}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* More from category */}
+                {related.length > 0 && (
+                  <section className="mt-12 pt-8 border-t border-stone-200">
+                    <h2 className="font-headline text-xl text-charcoal mb-6">
+                      More from {article.category.name}
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      {related.slice(0, 2).map(rel => (
+                        <ArticleCard key={rel.id} article={rel} variant="default" showCategory={false} />
+                      ))}
+                    </div>
+                  </section>
+                )}
+              </>
             )}
           </article>
 
@@ -386,11 +524,11 @@ export default async function ArticlePage({ params }: Params) {
               )}
 
               {/* Newsletter CTA */}
-              <div className="bg-navy text-white p-6 rounded-sm">
-                <h3 className="font-headline text-lg mb-2">
+              <div className="bg-stone-100 border border-stone-200 p-6 rounded-sm">
+                <h3 className="font-headline text-lg mb-2 text-charcoal">
                   Stay Connected
                 </h3>
-                <p className="text-stone-300 text-sm font-ui mb-4 leading-relaxed">
+                <p className="text-stone-500 text-sm font-ui mb-4 leading-relaxed">
                   Get the best of TGC delivered to your inbox.
                 </p>
                 <Link
